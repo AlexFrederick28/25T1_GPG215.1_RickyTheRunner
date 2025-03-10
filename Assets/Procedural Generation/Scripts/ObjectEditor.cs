@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MovePlatform : MonoBehaviour
+public class ObjectEditor : MonoBehaviour
 {
     #region variables
 

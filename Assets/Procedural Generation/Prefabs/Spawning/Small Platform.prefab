@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4889700218802925374}
   - component: {fileID: 5575224491053109285}
   - component: {fileID: 6846721481570474109}
+  - component: {fileID: 8892260559288694149}
   m_Layer: 0
   m_Name: Small Platform
   m_TagString: Untagged
@@ -149,3 +150,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move: {x: -1, y: 0, z: 0}
   speed: 4
+--- !u!50 &8892260559288694149
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7514962837270393133}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

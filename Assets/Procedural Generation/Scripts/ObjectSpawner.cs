@@ -9,6 +9,8 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] private GameObject spawnerOne;
     [Tooltip("Min spawn horizontal postion two")]
     [SerializeField] private GameObject spawnerTwo;
+    [Tooltip("Objects that hit this collider will despawn")]
+    [SerializeField] private GameObject objectDespawner;
 
     [Tooltip("Max spawn height")]
     [SerializeField] private float maxHeight;
