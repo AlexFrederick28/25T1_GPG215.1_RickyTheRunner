@@ -457,6 +457,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4441371014254881035, guid: 627b9afdb07d71044bfba8123220eed9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 99a4a4b898f870d49b70e0059c8ef437, type: 2}
     - target: {fileID: 4600014217989669553, guid: 627b9afdb07d71044bfba8123220eed9, type: 3}
       propertyPath: m_Interpolate
       value: 1
