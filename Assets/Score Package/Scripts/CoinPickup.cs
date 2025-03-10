@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Nick - the script that makes the coin have purpose such as its rarity and value + the sound it plays
+
 public class CoinPickup : MonoBehaviour
 {
 
@@ -18,19 +20,24 @@ public class CoinPickup : MonoBehaviour
     {
         if (other.CompareTag("Player")) // checks to make sure the player collides with coin
         {
+
             Debug.Log("Coin: [" + coinRarity + "] Worth: [" + scoreValue + "]");
+
             ScoreboardManager.instance.AddScore(scoreValue);
 
             #region Sound Check
+
             if (coinPickup != null)
             {
                 SoundManager.instance.sfxSource.PlayOneShot(coinPickup);
                 Debug.Log("Sound Played.");
             }
+
             else
             {
                 Debug.Log("Coin Sound Missing.");
             }
+
             #endregion 
 
             Destroy(gameObject);

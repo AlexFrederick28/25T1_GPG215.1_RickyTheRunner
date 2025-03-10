@@ -1,6 +1,8 @@
 using TMPro;
 using UnityEngine;
 
+// Nick - general manager for handling of the score including UI and changing the value
+
 public class ScoreboardManager : MonoBehaviour
 {
 
@@ -23,6 +25,7 @@ public class ScoreboardManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
+
         else
         {
             Destroy(gameObject);
@@ -31,6 +34,7 @@ public class ScoreboardManager : MonoBehaviour
 
     void Start()
     {
+        // used to reset score when game starts
         currentScore = 0;
         scoreText.text = currentScore.ToString();
     }

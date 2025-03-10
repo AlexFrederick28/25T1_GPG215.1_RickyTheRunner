@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Nick - simple movement for testing (not the actual movement script for the player)
+
 public class PlayerMovement : MonoBehaviour
 {
     // NOTE (if you want Spacebar for jump - in Project Settings -> Input Manager -> Axes -> Vertical, change alt postive button to "space"

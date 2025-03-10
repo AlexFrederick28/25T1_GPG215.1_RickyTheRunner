@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Nick - sound manager that manages.. sound, has a SFX and BGM function to allow both playing at the same time
+
 public class SoundManager : MonoBehaviour
 {
 
