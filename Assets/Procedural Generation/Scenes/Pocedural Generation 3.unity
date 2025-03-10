@@ -599,6 +599,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4125549222907952510, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
+      propertyPath: objectToSpawn.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125549222907952510, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
+      propertyPath: 'objectToSpawn.Array.data[2]'
+      value: 
+      objectReference: {fileID: 3769823325824382554, guid: 8b123e1a0737f6441909ea30686ca2a8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
