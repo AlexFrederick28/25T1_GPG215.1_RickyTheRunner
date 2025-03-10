@@ -2,14 +2,17 @@ using UnityEngine;
 
 public class characterController : MonoBehaviour
 {
-    private float jumpPower = 6f;
+    [SerializeField] private float jumpPower = 6f;
     private float horizontal;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask ground;
     private Animator anim;
-    
-     void Start()
+
+    [SerializeField] private Collider2D circleCollider;
+    [SerializeField] private Collider2D capsuleCollider;
+
+    void Start()
     {
       rb = GetComponent<Rigidbody2D>();
      anim = GetComponent<Animator>();
@@ -24,10 +27,14 @@ public class characterController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isJumping", true);
+
+            capsuleCollider.enabled = true;
+            circleCollider.enabled = false;
         }
         if (IsGrounded() && Mathf.Abs(horizontal) > 0f)
         {
-        anim.SetBool("isRunning", true);
+            anim.SetBool("isRunning", true);
+
         }
         else
         {
@@ -43,11 +50,17 @@ public class characterController : MonoBehaviour
             if (Input.GetMouseButton(1) || (Input.touchCount > 1 && Input.GetTouch(1).phase == TouchPhase.Moved))
             {
                 anim.SetBool("isCrouching", true);
+                capsuleCollider.enabled = false;
+                circleCollider.enabled = true;
             }
             else
                   if (Input.GetMouseButtonUp(1) || (Input.touchCount > 1 && Input.GetTouch(1).phase == TouchPhase.Moved))
             {
             anim.SetBool("isCrouching", false);
+
+                circleCollider.enabled = false;
+                capsuleCollider.enabled = true;
+
             }
         }
 

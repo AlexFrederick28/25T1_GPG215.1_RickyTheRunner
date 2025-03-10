@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 6811987087255187183}
   - component: {fileID: 4600014217989669553}
   - component: {fileID: 2831575462892476209}
-  - component: {fileID: 2302016448986984006}
+  - component: {fileID: 423101867817090602}
   - component: {fileID: 4441371014254881035}
+  - component: {fileID: 2755651855546683916}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -156,8 +157,8 @@ CapsuleCollider2D:
   m_Offset: {x: 0.008882046, y: 0.07989931}
   m_Size: {x: 0.73699856, y: 1.4190178}
   m_Direction: 0
---- !u!70 &2302016448986984006
-CapsuleCollider2D:
+--- !u!58 &423101867817090602
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -190,9 +191,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.009705782, y: 0.082680464}
-  m_Size: {x: 0.7375493, y: 1.4145551}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.3703677
 --- !u!95 &4441371014254881035
 Animator:
   serializedVersion: 7
@@ -215,6 +215,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2755651855546683916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361712775249128078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba22cfd3443520349840b452e90d3a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpPower: 10
+  rb: {fileID: 4600014217989669553}
+  groundChecker: {fileID: 6918528546320685236}
+  ground:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &7630875463418691312
 GameObject:
   m_ObjectHideFlags: 0
