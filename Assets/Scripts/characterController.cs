@@ -65,10 +65,6 @@ public class characterController : MonoBehaviour
         }
 
     }
-    private void FixedUpdate()
-    {
-     
-    }
     public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundChecker.position, 0.1f, ground);
