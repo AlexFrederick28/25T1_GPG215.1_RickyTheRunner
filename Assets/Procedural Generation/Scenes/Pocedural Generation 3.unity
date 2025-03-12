@@ -601,10 +601,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4125549222907952510, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
       propertyPath: objectToSpawn.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4125549222907952510, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
+      propertyPath: 'objectToSpawn.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3180847876571836858, guid: ee8790aa723569b48bf00e7b3bdd1d88, type: 3}
+    - target: {fileID: 4125549222907952510, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
       propertyPath: 'objectToSpawn.Array.data[2]'
+      value: 
+      objectReference: {fileID: 3769823325824382554, guid: 8b123e1a0737f6441909ea30686ca2a8, type: 3}
+    - target: {fileID: 4125549222907952510, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
+      propertyPath: 'objectToSpawn.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2766750639246707610, guid: 7d8c39151c2d30c44812aeca2b731aad, type: 3}
+    - target: {fileID: 4125549222907952510, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
+      propertyPath: 'objectToSpawn.Array.data[4]'
       value: 
       objectReference: {fileID: 3769823325824382554, guid: 8b123e1a0737f6441909ea30686ca2a8, type: 3}
     m_RemovedComponents: []

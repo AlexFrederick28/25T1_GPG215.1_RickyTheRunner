@@ -17,37 +17,79 @@ public class ObjectSpawner : MonoBehaviour
     [Tooltip("Min spawn height")]
     [SerializeField] private float minHeight;
     [Tooltip("How often an object spawns")]
-    [SerializeField] private float waitTime;
+    [SerializeField] private float objectWaitTime;
+    [Tooltip("How often a dangerous object spawns")]
+    [SerializeField] private float dangerObjectWaitTime;
+    [Tooltip("How often a coin object spawns")]
+    [SerializeField] private float coinObjectWaitTime;
     [Tooltip("Active game time")]
-    [SerializeField] private float timeTillSpawn;
-    
+    private float objectTimeTillSpawn;
+    private float dangerObjectTimeTillSpawn;
+    private float coinObjectTimeTillSpawn;
+
     [Tooltip("Array of gameobjects")]
     [SerializeField] private GameObject[] objectToSpawn;
+    [Tooltip("Array of gameobjects")]
+    [SerializeField] private GameObject[] dangerObjectToSpawn;
+    [Tooltip("Array of gameobjects")]
+    [SerializeField] private GameObject[] coinObjectToSpawn;
 
 
     #endregion
 
-   
+
     private void Update()
     {
 
        SpawnObjects();
+
+       SpawnDangerObjects();   
         
+       SpawnCoinObjects();
     }
     private void SpawnObjects()
     {
-        timeTillSpawn += Time.deltaTime;
+        objectTimeTillSpawn += Time.deltaTime;
 
-        if (timeTillSpawn >= waitTime)
+        if (objectTimeTillSpawn >= objectWaitTime)
         {
             Vector2 objectSpawnPosition = new Vector2(Random.Range(spawnerOne.transform.position.x, spawnerTwo.transform.position.x), Random.Range(minHeight, maxHeight));
 
             Instantiate(objectToSpawn[Random.Range(0, objectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
 
-            timeTillSpawn = 0;
+            objectTimeTillSpawn = 0;
         }
 
     }
 
+    private void SpawnDangerObjects()
+    {
+        dangerObjectTimeTillSpawn += Time.deltaTime;
+
+        if (dangerObjectTimeTillSpawn >= dangerObjectWaitTime)
+        {
+            Vector2 objectSpawnPosition = new Vector2(Random.Range(spawnerOne.transform.position.x, spawnerTwo.transform.position.x), Random.Range(minHeight, maxHeight));
+
+            Instantiate(dangerObjectToSpawn[Random.Range(0, dangerObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
+
+            dangerObjectTimeTillSpawn = 0;
+        }
+
+    }
+
+    private void SpawnCoinObjects()
+    {
+        coinObjectTimeTillSpawn += Time.deltaTime;
+
+        if (coinObjectTimeTillSpawn >= coinObjectWaitTime)
+        {
+            Vector2 objectSpawnPosition = new Vector2(Random.Range(spawnerOne.transform.position.x, spawnerTwo.transform.position.x), Random.Range(minHeight, maxHeight));
+
+            Instantiate(coinObjectToSpawn[Random.Range(0, coinObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
+
+            coinObjectTimeTillSpawn = 0;
+        }
+
+    }
 
 }
