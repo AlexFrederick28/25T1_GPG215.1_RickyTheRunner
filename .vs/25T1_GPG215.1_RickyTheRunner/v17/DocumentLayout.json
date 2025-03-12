@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\assets\\title\\scenemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\title\\scenemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Emilio Scriptd\\Camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\assets\\scripts\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Free 2D Cartoon Parallax Background\\Demo\\Script\\ParallaxBackground_0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Free 2D Cartoon Parallax Background\\Demo\\Script\\ParallaxBackground_0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Parallax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Emilio Scriptd\\Parallax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\Camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\Movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|c:\\users\\amd\\onedrive\\documents\\25t1_gpg215.1_rickytherunner\\assets\\moving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\moving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,88 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Camera.cs",
-              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Camera.cs",
-              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Camera.cs",
-              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Camera.cs",
-              "RelativeToolTip": "Assets\\Emilio Scriptd\\Camera.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T23:30:59.241Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SceneManagement.cs",
-              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\SceneManagement.cs",
-              "RelativeDocumentMoniker": "Assets\\Title\\SceneManagement.cs",
-              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\SceneManagement.cs",
-              "RelativeToolTip": "Assets\\Title\\SceneManagement.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "Title": "Moving.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Moving.cs",
+              "RelativeDocumentMoniker": "Assets\\Moving.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Moving.cs",
+              "RelativeToolTip": "Assets\\Moving.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T02:15:18.393Z",
+              "WhenOpened": "2025-03-12T01:12:40.251Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Parallax.cs",
-              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Parallax.cs",
-              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Parallax.cs",
-              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Parallax.cs",
-              "RelativeToolTip": "Assets\\Emilio Scriptd\\Parallax.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T00:01:25.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ParallaxBackground_0.cs",
-              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Free 2D Cartoon Parallax Background\\Demo\\Script\\ParallaxBackground_0.cs",
-              "RelativeDocumentMoniker": "Assets\\Free 2D Cartoon Parallax Background\\Demo\\Script\\ParallaxBackground_0.cs",
-              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Free 2D Cartoon Parallax Background\\Demo\\Script\\ParallaxBackground_0.cs",
-              "RelativeToolTip": "Assets\\Free 2D Cartoon Parallax Background\\Demo\\Script\\ParallaxBackground_0.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T23:52:42.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "characterController.cs",
-              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\characterController.cs",
-              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\characterController.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwEIAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T06:23:29.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Camera.cs",
-              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\Camera.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera.cs",
-              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\Camera.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Camera.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T06:20:00.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Movement.cs",
-              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\Movement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
-              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\Movement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T06:19:35.997Z"
             }
           ]
         }
