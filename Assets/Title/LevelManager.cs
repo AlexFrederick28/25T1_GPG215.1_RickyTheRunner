@@ -13,11 +13,6 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);// Title
     }
-
-    public void Options()
-    {
-        SceneManager.LoadScene(2);//Options 
-    }
     public void Quit()
     {
         Quit();
