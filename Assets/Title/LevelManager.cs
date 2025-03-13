@@ -17,8 +17,8 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
-    public void Quit()
+    public void QuitGame()
     {
-        Quit();
+     Application.Quit();
     }
 }
