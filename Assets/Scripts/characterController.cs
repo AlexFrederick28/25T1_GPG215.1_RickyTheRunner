@@ -52,24 +52,27 @@ public class characterController : MonoBehaviour
         }
         {
            if (anim.GetBool("isJumping") && rb.linearVelocity.y < 0.1f && IsGrounded())
-            {
+           {
                 anim.SetBool("isJumping", false);
-            }
-           if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
+           }
+           if (Input.GetMouseButtonDown(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
 
-            {
+           {
+               
                 anim.SetBool("isCrouching", true);
                 capsuleCollider.enabled = false;
                 circleCollider.enabled = true;
-            }
-            if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(3).phase == TouchPhase.Ended))
-            {
-            anim.SetBool("isCrouching", false);
+
+           }
+           else 
+           if (Input.GetMouseButtonUp(1) || (Input.touchCount > 0 && Input.GetTouch(3).phase == TouchPhase.Ended))
+           {
+                anim.SetBool("isCrouching", false);
 
                 circleCollider.enabled = false;
                 capsuleCollider.enabled = true;
 
-            }
+           }
         }
 
     }

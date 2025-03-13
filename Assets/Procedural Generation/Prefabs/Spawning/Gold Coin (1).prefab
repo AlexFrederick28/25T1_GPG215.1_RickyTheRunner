@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3255964159458139669}
   - component: {fileID: 3061668149640267044}
+  - component: {fileID: -5766672115010498238}
   - component: {fileID: 4503622021151486702}
   - component: {fileID: 3906120759602360677}
-  - component: {fileID: -5766672115010498238}
+  - component: {fileID: 3960837850792269241}
   m_Layer: 0
   m_Name: Gold Coin (1)
   m_TagString: Untagged
@@ -90,6 +91,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-5766672115010498238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755100480978875891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efbc7cc762df31e4e8f6de020e643d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: {x: -1, y: 0, z: 0}
+  speed: 6
+  frequency: 0.6
+  amplitude: 0.8
+  pushPlayer: 0
+  destroyOnInteraction: 0
+  pushDirectionX: 0
+  pushDirectionY: 0
+  pushMultiplier: 0
 --- !u!61 &4503622021151486702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -151,24 +173,30 @@ MonoBehaviour:
   coinRarity: Gold
   scoreValue: 5
   coinPickup: {fileID: 8300000, guid: 8198ccd2b60b5004380bab7a548f6638, type: 3}
---- !u!114 &-5766672115010498238
-MonoBehaviour:
+--- !u!50 &3960837850792269241
+Rigidbody2D:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755100480978875891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efbc7cc762df31e4e8f6de020e643d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: {x: -1, y: 0, z: 0}
-  speed: 6
-  frequency: 0.6
-  amplitude: 0.8
-  pushPlayer: 0
-  destroyOnInteraction: 0
-  pushDirectionX: 0
-  pushDirectionY: 0
-  pushMultiplier: 0
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

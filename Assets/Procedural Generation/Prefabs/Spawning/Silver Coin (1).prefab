@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 1724231303714871151}
   - component: {fileID: 6709382555425242950}
   - component: {fileID: 2079753607593008120}
-  - component: {fileID: 8657547524194546281}
+  - component: {fileID: 1589036784067804094}
+  - component: {fileID: 6555788957818582697}
   m_Layer: 0
   m_Name: Silver Coin (1)
   m_TagString: Untagged
@@ -151,7 +152,7 @@ MonoBehaviour:
   coinRarity: Silver
   scoreValue: 3
   coinPickup: {fileID: 8300000, guid: 8198ccd2b60b5004380bab7a548f6638, type: 3}
---- !u!114 &8657547524194546281
+--- !u!114 &1589036784067804094
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,10 +166,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move: {x: -1, y: 0, z: 0}
   speed: 5
-  frequency: 0.6
-  amplitude: 0.8
+  frequency: 0.5
+  amplitude: 0.5
   pushPlayer: 0
   destroyOnInteraction: 0
   pushDirectionX: 0
   pushDirectionY: 0
   pushMultiplier: 0
+--- !u!50 &6555788957818582697
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313431788319921194}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

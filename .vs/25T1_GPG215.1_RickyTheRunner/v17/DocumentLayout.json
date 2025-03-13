@@ -1,26 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|c:\\users\\amd\\onedrive\\documents\\25t1_gpg215.1_rickytherunner\\assets\\scripts\\death\\death.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\uni 2024 - 2025\\25t1_uni\\25t1_gpg215.1_rickytherunner\\assets\\procedural generation\\scripts\\despawnobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\procedural generation\\scripts\\despawnobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\uni 2024 - 2025\\25t1_uni\\25t1_gpg215.1_rickytherunner\\assets\\score package\\scripts\\scoreboardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\score package\\scripts\\scoreboardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\uni 2024 - 2025\\25t1_uni\\25t1_gpg215.1_rickytherunner\\assets\\scripts\\death\\death.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\death\\death.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|c:\\users\\amd\\onedrive\\documents\\25t1_gpg215.1_rickytherunner\\assets\\title\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\scripts\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\title\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\title\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Death.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Death.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Death.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\SceneManagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Title\\SceneManagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\assets\\scripts\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\SceneManagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,10 +41,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DespawnObjects.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\DespawnObjects.cs",
+              "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\DespawnObjects.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\DespawnObjects.cs",
+              "RelativeToolTip": "Assets\\Procedural Generation\\Scripts\\DespawnObjects.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T01:01:43.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScoreboardManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\ScoreboardManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Score Package\\Scripts\\ScoreboardManager.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\ScoreboardManager.cs",
+              "RelativeToolTip": "Assets\\Score Package\\Scripts\\ScoreboardManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T00:55:15.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Death.cs",
-              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\Death\\Death.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\Death\\Death.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Death\\Death.cs",
-              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\Death\\Death.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\Death\\Death.cs",
               "RelativeToolTip": "Assets\\Scripts\\Death\\Death.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -47,48 +79,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Death.cs",
               "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Death.cs",
-              "RelativeDocumentMoniker": "Assets\\Death.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Death.cs",
               "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Death.cs",
-              "RelativeToolTip": "Assets\\Death.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Death.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T00:12:49.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "characterController.cs",
-              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\characterController.cs",
-              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
               "RelativeToolTip": "Assets\\Scripts\\characterController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABEAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwEMAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:42:54.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LevelManager.cs",
-              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\LevelManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Title\\LevelManager.cs",
-              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\LevelManager.cs",
-              "RelativeToolTip": "Assets\\Title\\LevelManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T05:42:49.368Z",
+              "WhenOpened": "2025-03-12T06:42:54.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "LevelManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\LevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Title\\LevelManager.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\LevelManager.cs",
+              "RelativeToolTip": "Assets\\Title\\LevelManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T05:42:49.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "SceneManagement.cs",
               "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\SceneManagement.cs",
-              "RelativeDocumentMoniker": "Assets\\Title\\SceneManagement.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\SceneManagement.cs",
               "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\SceneManagement.cs",
-              "RelativeToolTip": "Assets\\Title\\SceneManagement.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\SceneManagement.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T05:38:02.77Z"
             }
