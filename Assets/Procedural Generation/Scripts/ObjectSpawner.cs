@@ -40,7 +40,6 @@ public class ObjectSpawner : MonoBehaviour
 
     private void Update()
     {
-
        SpawnObjects();
 
        SpawnDangerObjects();   
