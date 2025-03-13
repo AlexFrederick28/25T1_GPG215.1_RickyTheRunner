@@ -237,6 +237,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1564539071716034825, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
+      propertyPath: objectToCentre
+      value: 
+      objectReference: {fileID: 829866747}
     - target: {fileID: 2365412505439203266, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.45129853
@@ -281,7 +285,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5837821808750522706, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5837821808750522706, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5837821808750522706, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8263816752400663479, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
     m_RemovedGameObjects:
     - {fileID: 3938905868220074826, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
     m_AddedGameObjects: []
@@ -644,6 +661,11 @@ CircleCollider2D:
 --- !u!70 &829866746 stripped
 CapsuleCollider2D:
   m_CorrespondingSourceObject: {fileID: 2831575462892476209, guid: 627b9afdb07d71044bfba8123220eed9, type: 3}
+  m_PrefabInstance: {fileID: 829866744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &829866747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 361712775249128078, guid: 627b9afdb07d71044bfba8123220eed9, type: 3}
   m_PrefabInstance: {fileID: 829866744}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1201733762
