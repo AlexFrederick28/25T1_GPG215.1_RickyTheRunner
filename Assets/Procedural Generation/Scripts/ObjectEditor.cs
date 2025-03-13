@@ -65,11 +65,11 @@ public class ObjectEditor : MonoBehaviour
 
             Debug.Log("Player hit!");
 
-            _CharacterController.transform.position += new Vector3(pushDirectionX, transform.position.y + pushDirectionY, transform.position.z) * pushMultiplier * Time.deltaTime;
+            _CharacterController.transform.position += new Vector3(pushDirectionX, pushDirectionY, 0) * pushMultiplier * Time.deltaTime;
 
             if (destroyOnInteraction == true)
             {
-
+                Debug.Log("Explosion");
                 StartCoroutine(ExplosionAnimation());
             }
 

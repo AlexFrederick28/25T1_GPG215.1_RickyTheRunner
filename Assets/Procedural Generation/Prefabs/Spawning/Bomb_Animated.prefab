@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8432902865661733130}
   - component: {fileID: 685849612480719417}
-  - component: {fileID: 8182012530123887177}
-  - component: {fileID: 7600064568673809409}
+  - component: {fileID: 3696008545350538132}
   - component: {fileID: 5044871272939634466}
+  - component: {fileID: 7041227646825072606}
   - component: {fileID: 1055937988244712040}
   m_Layer: 0
   m_Name: Bomb_Animated
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.3257055, y: 0.13838199, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,29 +91,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8182012530123887177
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4522826855581712352}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b6f626fb643cf0e49b5212459aaf4b5a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7600064568673809409
+--- !u!114 &3696008545350538132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,9 +109,9 @@ MonoBehaviour:
   amplitude: 0
   pushPlayer: 1
   destroyOnInteraction: 1
-  pushDirectionX: -50
+  pushDirectionX: -1
   pushDirectionY: 0
-  pushMultiplier: 20
+  pushMultiplier: 60
 --- !u!58 &5044871272939634466
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -168,8 +146,30 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.011339396, y: -0.09071556}
-  m_Radius: 0.38093588
+  m_Offset: {x: 0.011339426, y: -0.18888748}
+  m_Radius: 0.727865
+--- !u!95 &7041227646825072606
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4522826855581712352}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6f626fb643cf0e49b5212459aaf4b5a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!50 &1055937988244712040
 Rigidbody2D:
   serializedVersion: 5

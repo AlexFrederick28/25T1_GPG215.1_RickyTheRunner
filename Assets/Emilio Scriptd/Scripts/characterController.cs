@@ -11,12 +11,6 @@ public class characterController : MonoBehaviour
     [SerializeField] private float maxSwipeTime;
     [SerializeField] private float minSwipeDis;
 
-    private float swipeStartTime;
-    private float swipeEndTime;
-    private float swipeTime;
-    private float swipeLenght;
-    private Vector2 startSwipePosition;
-    private Vector2 endSwipePosition;
     private Animator anim;
 
     [SerializeField] private Collider2D circleCollider;
@@ -25,13 +19,11 @@ public class characterController : MonoBehaviour
     void Start()
     {
       rb = GetComponent<Rigidbody2D>();
-     anim = GetComponent<Animator>();
+      anim = GetComponent<Animator>();
     }
-
 
     private void Update()
     {
-
         if (Input.GetMouseButtonDown(0) && IsGrounded() || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) && IsGrounded())
 
         {
@@ -51,34 +43,30 @@ public class characterController : MonoBehaviour
             anim.SetBool("isRunning", false);
         }
         {
-           if (anim.GetBool("isJumping") && rb.linearVelocity.y < 0.1f && IsGrounded())
-           {
+            if (anim.GetBool("isJumping") && rb.linearVelocity.y < 0.1f && IsGrounded())
+            {
                 anim.SetBool("isJumping", false);
-           }
-           if (Input.GetMouseButtonDown(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
+            }
+            if (Input.GetMouseButtonDown(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
 
-           {
-               
+            {
+
                 anim.SetBool("isCrouching", true);
                 capsuleCollider.enabled = false;
                 circleCollider.enabled = true;
 
-           }
-           else 
-           if (Input.GetMouseButtonUp(1) || (Input.touchCount > 0 && Input.GetTouch(3).phase == TouchPhase.Ended))
-           {
+            }
+            else
+            if (Input.GetMouseButtonUp(1) || (Input.touchCount > 0 && Input.GetTouch(3).phase == TouchPhase.Ended))
+            {
                 anim.SetBool("isCrouching", false);
 
                 circleCollider.enabled = false;
                 capsuleCollider.enabled = true;
 
-           }
+            }
         }
 
-    }
-    private void FixedUpdate()
-    {
-     
     }
     public bool IsGrounded()
     {
