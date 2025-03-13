@@ -10,7 +10,7 @@ public class parrallax : MonoBehaviour
 
      void Start()
     {
-     mat = GetComponent<Renderer>().material;
+       mat = GetComponent<Renderer>().material;
     }
 
      void Update()

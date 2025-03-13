@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {x: -1, y: 0, z: 0}
-  speed: 3
+  speed: 7
   frequency: 0.3
   amplitude: 0.5
   pushPlayer: 0

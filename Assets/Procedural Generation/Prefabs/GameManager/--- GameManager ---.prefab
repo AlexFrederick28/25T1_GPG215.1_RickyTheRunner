@@ -206,16 +206,17 @@ MonoBehaviour:
   coinObjectWaitTime: 4
   objectToSpawn:
   - {fileID: 3180847876571836858, guid: ee8790aa723569b48bf00e7b3bdd1d88, type: 3}
-  - {fileID: 2766750639246707610, guid: 7d8c39151c2d30c44812aeca2b731aad, type: 3}
-  - {fileID: 1505351108050245623, guid: 227eda72eddc04d42a9b81943faeefb5, type: 3}
   - {fileID: 3065198833873792107, guid: 39cc1fbb443c9d84b8b771d7aa35a7bc, type: 3}
   - {fileID: 6604247488178370268, guid: 37cac318d76612d4fbe63cc346637474, type: 3}
+  - {fileID: 2766750639246707610, guid: 7d8c39151c2d30c44812aeca2b731aad, type: 3}
+  - {fileID: 1505351108050245623, guid: 227eda72eddc04d42a9b81943faeefb5, type: 3}
   dangerObjectToSpawn:
   - {fileID: 4522826855581712352, guid: 9cc0b501c866d3b4b9d7da4de741826b, type: 3}
   coinObjectToSpawn:
   - {fileID: 3769823325824382554, guid: 8b123e1a0737f6441909ea30686ca2a8, type: 3}
   - {fileID: 755100480978875891, guid: a33e69bcc825d1149b16e9429fbf4209, type: 3}
   - {fileID: 5313431788319921194, guid: 760b639ebcc83e348809f1eb622eeeee, type: 3}
+  - {fileID: 1227316388090210752, guid: ef962eca2559d744387eb0b40cc40494, type: 3}
 --- !u!114 &1564539071716034825
 MonoBehaviour:
   m_ObjectHideFlags: 0

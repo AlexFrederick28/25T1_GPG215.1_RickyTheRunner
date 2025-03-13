@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {x: -1, y: 0, z: 0}
-  speed: 6
+  speed: 8
   frequency: 0
   amplitude: 0
   pushPlayer: 0
@@ -182,9 +182,9 @@ CompositeCollider2D:
   - m_Collider: {fileID: 8392671906058319602}
     m_ColliderPaths:
     - - X: 12500000
-        Y: -5638420
+        Y: -4662937
       - X: -12500000
-        Y: -5638420
+        Y: -4662937
       - X: -12500000
         Y: -12295897
       - X: 12500000
@@ -192,9 +192,9 @@ CompositeCollider2D:
   - m_Collider: {fileID: 1787835090468886358}
     m_ColliderPaths:
     - - X: 12500002
-        Y: 5367397
+        Y: 6227636
       - X: 5684995
-        Y: 5367397
+        Y: 6227636
       - X: 5684995
         Y: -6172809
       - X: 12500002
@@ -202,10 +202,10 @@ CompositeCollider2D:
   m_CompositePaths:
     m_Paths:
     - - {x: 1.2499707, y: -1.2295897}
-      - {x: 1.2499709, y: 0.5367397}
-      - {x: 0.5684995, y: 0.5367104}
-      - {x: 0.5684701, y: -0.563842}
-      - {x: -1.25, y: -0.5638713}
+      - {x: 1.2499709, y: 0.62276363}
+      - {x: 0.5684995, y: 0.6227343}
+      - {x: 0.5684701, y: -0.4662937}
+      - {x: -1.25, y: -0.46632302}
       - {x: -1.2499707, y: -1.2295897}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
@@ -245,7 +245,7 @@ BoxCollider2D:
   m_UsedByEffector: 1
   m_CompositeOperation: 1
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.8967159}
+  m_Offset: {x: 0, y: -0.8479417}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -255,7 +255,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.5, y: 0.66574764}
+  m_Size: {x: 2.5, y: 0.763296}
   m_EdgeRadius: 0
 --- !u!61 &1787835090468886358
 BoxCollider2D:
@@ -291,7 +291,7 @@ BoxCollider2D:
   m_UsedByEffector: 1
   m_CompositeOperation: 1
   m_CompositeOrder: 0
-  m_Offset: {x: 0.9092499, y: -0.040270627}
+  m_Offset: {x: 0.9092499, y: 0.002741307}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -301,5 +301,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.6815007, y: 1.1540207}
+  m_Size: {x: 0.6815007, y: 1.2400446}
   m_EdgeRadius: 0

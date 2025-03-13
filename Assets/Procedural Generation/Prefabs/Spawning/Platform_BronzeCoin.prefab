@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {x: -1, y: 0, z: 0}
-  speed: 6
+  speed: 8
   frequency: 0
   amplitude: 0
   pushPlayer: 0
@@ -173,7 +173,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.03054209}
+  m_Offset: {x: 0, y: -0.00028957427}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -183,7 +183,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.5, y: 0.68891585}
+  m_Size: {x: 2.5, y: 0.7494209}
   m_EdgeRadius: 0
 --- !u!1001 &1650983377199869395
 PrefabInstance:

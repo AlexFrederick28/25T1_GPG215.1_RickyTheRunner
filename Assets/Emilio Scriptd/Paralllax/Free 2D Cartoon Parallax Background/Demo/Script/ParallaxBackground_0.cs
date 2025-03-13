@@ -10,14 +10,13 @@ public class ParallaxBackground_0 : MonoBehaviour
     public float[] Layer_Speed = new float[7];
     public GameObject[] Layer_Objects = new GameObject[7];
 
-    private Transform _camera;
+    [SerializeField] private Transform _camera;
     private float[] startPos = new float[7];
     private float boundSizeX;
     private float sizeX;
     private GameObject Layer_0;
     void Start()
     {
-     //   _camera = Camera.mainCamera.transform;
         sizeX = Layer_Objects[0].transform.localScale.x;
         boundSizeX = Layer_Objects[0].GetComponent<SpriteRenderer>().sprite.bounds.size.x;
         for (int i=0;i<5;i++){
