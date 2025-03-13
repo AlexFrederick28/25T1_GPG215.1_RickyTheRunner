@@ -18,6 +18,5 @@ EditorBuildSettings:
     path: Assets/Title/Scenes/Death.unity
     guid: bcb599c010f1e7241b3c16808ac715a7
   m_configObjects:
-    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 9a241abb43e798643b30200ed509c9be, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
