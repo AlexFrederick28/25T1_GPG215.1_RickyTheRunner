@@ -303,6 +303,8 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 8
+  maxSwipeTime: 0.5
+  minSwipeDis: 50
 --- !u!4 &1806523329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1452313656587952196, guid: 627b9afdb07d71044bfba8123220eed9, type: 3}
@@ -467,7 +469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6918528546320685236, guid: 627b9afdb07d71044bfba8123220eed9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.678
+      value: -0.685
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

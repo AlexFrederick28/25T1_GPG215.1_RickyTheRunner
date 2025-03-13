@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class characterController : MonoBehaviour
@@ -7,6 +8,15 @@ public class characterController : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask ground;
+    [SerializeField] private float maxSwipeTime;
+    [SerializeField] private float minSwipeDis;
+
+    private float swipeStartTime;
+    private float swipeEndTime;
+    private float swipeTime;
+    private float swipeLenght;
+    private Vector2 startSwipePosition;
+    private Vector2 endSwipePosition;
     private Animator anim;
     
      void Start()
@@ -38,14 +48,12 @@ public class characterController : MonoBehaviour
             {
                 anim.SetBool("isJumping", false);
             }
-         }
-        {
-            if (Input.GetMouseButton(1) || (Input.touchCount > 1 && Input.GetTouch(1).phase == TouchPhase.Moved))
+           if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
+
             {
                 anim.SetBool("isCrouching", true);
             }
-            else
-                  if (Input.GetMouseButtonUp(1) || (Input.touchCount > 1 && Input.GetTouch(1).phase == TouchPhase.Moved))
+            if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(3).phase == TouchPhase.Ended))
             {
             anim.SetBool("isCrouching", false);
             }
@@ -60,4 +68,5 @@ public class characterController : MonoBehaviour
     {
         return Physics2D.OverlapCircle(groundChecker.position, 0.1f, ground);
     }
+
 }
