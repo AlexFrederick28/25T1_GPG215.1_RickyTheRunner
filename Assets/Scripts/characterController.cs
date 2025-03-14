@@ -30,10 +30,16 @@ public class characterController : MonoBehaviour
     {
 
         if (Input.GetMouseButtonDown(0) && IsGrounded() || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) && IsGrounded())
+        {
+            if (Input.GetMouseButtonDown(0) && IsGrounded() || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) && IsGrounded() && rb.linearVelocity.y > 0.5f)
+            {
+             rb.linearVelocity = new Vector2(rb.linearVelocity.x,rb.linearVelocity.y * 0.5f);
+            }
+        }
 
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
-            anim.SetBool("isJumping", true);
+            anim.SetBool("isJumping", true); 
         }
         if (IsGrounded() && Mathf.Abs(horizontal) > 0f)
         {
