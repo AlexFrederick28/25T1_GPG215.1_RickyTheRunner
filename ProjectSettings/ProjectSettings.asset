@@ -905,10 +905,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: fd17cd43-b5c3-4e4a-a0d1-1f9a1a908bf0
+  cloudProjectId: eee1d02c-c03a-49a8-8988-9000bea5f144
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Week_2
+  projectName: Parralax_Effect
   organizationId: unity_1030776
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
