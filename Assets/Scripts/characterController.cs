@@ -18,61 +18,59 @@ public class characterController : MonoBehaviour
     private Vector2 startSwipePosition;
     private Vector2 endSwipePosition;
     private Animator anim;
-    
-     void Start()
+
+    void Start()
     {
-      rb = GetComponent<Rigidbody2D>();
-     anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
 
     private void Update()
     {
 
+
         if (Input.GetMouseButtonDown(0) && IsGrounded() || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) && IsGrounded())
         {
-            if (Input.GetMouseButtonDown(0) && IsGrounded() || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) && IsGrounded() && rb.linearVelocity.y > 0.5f)
-            {
-             rb.linearVelocity = new Vector2(rb.linearVelocity.x,rb.linearVelocity.y * 0.5f);
-            }
-        }
-
-        {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
-            anim.SetBool("isJumping", true); 
+            anim.SetBool("isJumping", true);
         }
-        if (IsGrounded() && Mathf.Abs(horizontal) > 0f)
+        if (Input.GetMouseButtonUp(1) && IsGrounded() || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) && IsGrounded() && rb.linearVelocity.y > 0.7f)
         {
-        anim.SetBool("isRunning", true);
-        }
-        else
-        {
-            anim.SetBool("isRunning", false);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.7f);
         }
         {
-           if (anim.GetBool("isJumping") && rb.linearVelocity.y < 0.1f && IsGrounded())
-            {
-                anim.SetBool("isJumping", false);
-            }
-           if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
 
+            if (IsGrounded() && Mathf.Abs(horizontal) > 0f)
             {
-                anim.SetBool("isCrouching", true);
-            }
-            if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(3).phase == TouchPhase.Ended))
-            {
-            anim.SetBool("isCrouching", false);
-            }
-        }
 
-    }
-    private void FixedUpdate()
-    {
+                anim.SetBool("isRunning", true);
+            }
+            else
+            {
+                anim.SetBool("isRunning", false);
+            }
+            {
+                if (anim.GetBool("isJumping") && rb.linearVelocity.y < 0.1f && IsGrounded())
+                {
+                    anim.SetBool("isJumping", false);
+                }
+                if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
+
+                {
+                    anim.SetBool("isCrouching", true);
+                }
+                if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(3).phase == TouchPhase.Ended))
+                {
+                    anim.SetBool("isCrouching", false);
+                }
+            }
+
+        }
      
     }
     public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundChecker.position, 0.1f, ground);
     }
-
 }

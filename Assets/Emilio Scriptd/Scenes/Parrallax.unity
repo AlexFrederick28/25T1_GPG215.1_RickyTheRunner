@@ -729,11 +729,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4600014217989669553, guid: 627b9afdb07d71044bfba8123220eed9, type: 3}
       propertyPath: m_GravityScale
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6811987087255187183, guid: 627b9afdb07d71044bfba8123220eed9, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649747861220127627, guid: 627b9afdb07d71044bfba8123220eed9, type: 3}
+      propertyPath: ground.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
