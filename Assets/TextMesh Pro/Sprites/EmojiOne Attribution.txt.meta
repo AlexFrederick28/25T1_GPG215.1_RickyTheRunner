@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
 guid: 381dcb09d5029d14897e55f98031fca5
 TextScriptImporter:
+========
+guid: ed342455f7c14534aaa5fa5878c03e91
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> feature/Character_Controls:Assets/Emilio Scriptd.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

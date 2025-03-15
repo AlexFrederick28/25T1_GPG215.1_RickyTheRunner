@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Title/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
 guid: cba2036566cabb047a504e23e210b3f8
 TextScriptImporter:
+========
+guid: 70e8ea64853d9b44582d03d7ebad9553
+DefaultImporter:
+>>>>>>>> feature/Character_Controls:Assets/Emilio Scriptd/Scenes/Parrallax.unity.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
