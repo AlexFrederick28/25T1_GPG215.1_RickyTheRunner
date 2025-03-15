@@ -33,6 +33,7 @@ public class characterController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isDoubleJumping", true);
+            anim.SetBool("isRunning", false);
             capsuleCollider.enabled = true;
             circleCollider.enabled = false;
             isJumping = false;
@@ -40,6 +41,7 @@ public class characterController : MonoBehaviour
         else
         {
             anim.SetBool("isDoubleJumping", false);
+            anim.SetBool("isRunning", true);
         }
         if (IsGrounded() && Mathf.Abs(horizontal) > 0f)
         {
@@ -54,9 +56,6 @@ public class characterController : MonoBehaviour
             anim.SetBool("isJumping", false);
         }
         if (anim.GetBool("isDoubleJumping") && rb.linearVelocity.y < 0.1f && IsGrounded())
-        {
-            anim.SetBool("isDoubleJumping", false);
-        }
         {
             if (Input.GetMouseButtonDown(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
             {
