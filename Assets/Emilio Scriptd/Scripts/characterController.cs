@@ -3,74 +3,77 @@ using UnityEngine;
 
 public class characterController : MonoBehaviour
 {
-    [SerializeField] private float jumpPower = 6f;
+    public float jumpPower = 6f;
     private float horizontal;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask ground;
-    [SerializeField] private float maxSwipeTime;
-    [SerializeField] private float minSwipeDis;
-
-    private Animator anim;
-
-    [SerializeField] private Collider2D circleCollider;
+     [SerializeField] private Collider2D circleCollider;
     [SerializeField] private Collider2D capsuleCollider;
-
+    private Animator anim;
+    private bool isJumping;
     void Start()
     {
-      rb = GetComponent<Rigidbody2D>();
-      anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
+
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && IsGrounded() || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) && IsGrounded())
-
+        if (Input.GetMouseButtonDown(0) && IsGrounded() || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && IsGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isJumping", true);
-
             capsuleCollider.enabled = true;
             circleCollider.enabled = false;
+            isJumping = true;
+        }
+        else if (Input.GetMouseButtonDown(0) && isJumping == true || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && isJumping == true)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
+            anim.SetBool("isDoubleJumping", true);
+            capsuleCollider.enabled = true;
+            circleCollider.enabled = false;
+            isJumping = false;
+        }
+        else
+        {
+            anim.SetBool("isDoubleJumping", false);
         }
         if (IsGrounded() && Mathf.Abs(horizontal) > 0f)
         {
             anim.SetBool("isRunning", true);
-
         }
         else
         {
             anim.SetBool("isRunning", false);
         }
+        if (anim.GetBool("isJumping") && rb.linearVelocity.y < 0.1f && IsGrounded())
         {
-            if (anim.GetBool("isJumping") && rb.linearVelocity.y < 0.1f && IsGrounded())
-            {
-                anim.SetBool("isJumping", false);
-            }
+            anim.SetBool("isJumping", false);
+        }
+        if (anim.GetBool("isDoubleJumping") && rb.linearVelocity.y < 0.1f && IsGrounded())
+        {
+            anim.SetBool("isDoubleJumping", false);
+        }
+        {
             if (Input.GetMouseButtonDown(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
-
             {
-
                 anim.SetBool("isCrouching", true);
                 capsuleCollider.enabled = false;
                 circleCollider.enabled = true;
-
             }
-            else
-            if (Input.GetMouseButtonUp(1) || (Input.touchCount > 0 && Input.GetTouch(3).phase == TouchPhase.Ended))
+            if (Input.GetMouseButtonUp(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Ended))
             {
                 anim.SetBool("isCrouching", false);
-
-                circleCollider.enabled = false;
                 capsuleCollider.enabled = true;
-
+                circleCollider.enabled = false;
             }
         }
-
     }
     public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundChecker.position, 0.1f, ground);
     }
-
 }
