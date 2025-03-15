@@ -5,14 +5,13 @@ public class FrameDetection : MonoBehaviour
 
     [SerializeField] private ParallaxBackground _ParallaxBackground;
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if (collision.GetComponent<ObjectEditor>())
+        if (collision.gameObject.CompareTag("Background"))
         {
-            Debug.Log("Collided");
-            collision.gameObject.transform.position = new Vector3(_ParallaxBackground.movePosition, 0, 0);
+            Debug.Log("Background frame detection triggered");
+
+            collision.transform.position = new Vector3(_ParallaxBackground.movePosition, 0, 0);
         }
-        
     }
 }

@@ -13,20 +13,20 @@ public class ParallaxBackground : MonoBehaviour
 
     public bool outOfFrame;
 
-    private void Update()
+    private void FixedUpdate()
     {
         MoveBackground();
 
         ChangeBackgroundPosition();
     }
-
     private void MoveBackground()
     {
         
-        Vector3 moveDirection = new Vector3(-21f - backgroundOne.transform.position.x, 0, 0).normalized;
+        Vector3 moveDirectionOne = new Vector3(-21f - backgroundOne.transform.position.x, 0, 0).normalized;
+        Vector3 moveDirectionTwo = new Vector3(-21f - backgroundTwo.transform.position.x, 0, 0).normalized;
 
-        backgroundOne.transform.position += speed * Time.deltaTime * moveDirection;
-        //backgroundTwo.transform.position += speed * Time.deltaTime * moveDirection;
+        backgroundOne.transform.position += speed * Time.deltaTime * moveDirectionOne;
+        backgroundTwo.transform.position += speed * Time.deltaTime * moveDirectionTwo;
        
 
     }
