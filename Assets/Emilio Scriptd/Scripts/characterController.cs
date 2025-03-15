@@ -29,7 +29,7 @@ public class characterController : MonoBehaviour
             circleCollider.enabled = false;
             isJumping = true;
         }
-        else if (Input.GetMouseButtonDown(0) && isJumping == true || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && isJumping == true)
+        else if (Input.GetMouseButtonUp(0) && isJumping == true || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && isJumping == true)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isDoubleJumping", true);
