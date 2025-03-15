@@ -56,7 +56,6 @@ public class characterController : MonoBehaviour
             if (Input.GetMouseButtonDown(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
             {
                 anim.SetBool("isCrouching", true);
-                Debug.Log("Ya Crouch");
             }
             if (Input.GetMouseButtonUp(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Ended))
             {
