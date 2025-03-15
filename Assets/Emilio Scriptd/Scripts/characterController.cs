@@ -37,10 +37,6 @@ public class characterController : MonoBehaviour
             circleCollider.enabled = false;
             isJumping = false;
         }
-        else
-        {
-            anim.SetBool("isDoubleJumping", false);
-        }
         if (IsGrounded() && Mathf.Abs(horizontal) > 0f)
         {
             anim.SetBool("isRunning", true);
@@ -54,9 +50,7 @@ public class characterController : MonoBehaviour
             anim.SetBool("isJumping", false);
         }
         if (anim.GetBool("isDoubleJumping") && rb.linearVelocity.y < 0.1f && IsGrounded())
-        {
             anim.SetBool("isDoubleJumping", false);
-        }
         {
             if (Input.GetMouseButtonDown(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
             {
