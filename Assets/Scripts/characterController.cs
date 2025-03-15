@@ -10,7 +10,7 @@ public class characterController : MonoBehaviour
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask ground;
     private Animator anim;
-    private bool isJumping;
+    public bool isJumping;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -22,11 +22,13 @@ public class characterController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && IsGrounded() || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && IsGrounded())
         {
+            isJumping = true;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isJumping", true);
-            isJumping = true;
+     
         }
-        else if (Input.GetMouseButtonDown(0) && isJumping == true || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && isJumping == true)
+
+         if (Input.GetMouseButtonUp(0) && isJumping == true || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && isJumping == true)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isDoubleJumping", true);
@@ -39,6 +41,7 @@ public class characterController : MonoBehaviour
         if (IsGrounded() && Mathf.Abs(horizontal) > 0f)
         {
             anim.SetBool("isRunning", true);
+ 
         }
         else
         {
@@ -55,11 +58,13 @@ public class characterController : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
             {
-                anim.SetBool("isCrouching", true);
+             anim.SetBool("isCrouching", true);
+       
             }
             if (Input.GetMouseButtonUp(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Ended))
             {
-                anim.SetBool("isCrouching", false);
+             anim.SetBool("isCrouching", false);
+             
             }
         }
     }
@@ -67,5 +72,6 @@ public class characterController : MonoBehaviour
     {
         return Physics2D.OverlapCircle(groundChecker.position, 0.1f, ground);
     }
+ 
 }
     

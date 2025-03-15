@@ -791,7 +791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649747861220127627, guid: 627b9afdb07d71044bfba8123220eed9, type: 3}
       propertyPath: isJumping
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8649747861220127627, guid: 627b9afdb07d71044bfba8123220eed9, type: 3}
       propertyPath: jumpPower
