@@ -11,7 +11,8 @@ public class FrameDetection : MonoBehaviour
         {
             Debug.Log("Background frame detection triggered");
 
-            collision.transform.position = new Vector3(_ParallaxBackground.movePosition, 0, 0);
+            collision.transform.position = new Vector3(_ParallaxBackground.movePosition, collision.transform.position.y, 0);
         }
     }
+
 }
