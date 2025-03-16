@@ -10,10 +10,10 @@ public class Ghost : MonoBehaviour
     }
     private IEnumerator CDestroyGameobject()
     {
-        Vector3 resizeScale = new Vector3(50 + transform.localScale.x, 50 + transform.localScale.y, 0).normalized;
+        Vector3 resizeScale = new Vector3(40 + transform.localScale.x, 40 + transform.localScale.y, 0).normalized;
         transform.localScale += 50 * Time.deltaTime * resizeScale;
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.5f);
 
         Destroy(gameObject);
     }

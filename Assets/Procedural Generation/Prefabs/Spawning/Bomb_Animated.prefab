@@ -111,7 +111,7 @@ MonoBehaviour:
   destroyOnInteraction: 1
   pushDirectionX: -1
   pushDirectionY: 0
-  pushMultiplier: 60
+  pushMultiplier: 180
 --- !u!58 &5044871272939634466
 CircleCollider2D:
   m_ObjectHideFlags: 0

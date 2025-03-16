@@ -31,7 +31,7 @@ public class characterController : MonoBehaviour
 
         }
 
-        if (Input.GetMouseButtonUp(0) && isJumping == true || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && isJumping == true)
+        if (Input.GetMouseButtonUp(0) && isJumping == true || Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Began && isJumping == true)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isDoubleJumping", true);
