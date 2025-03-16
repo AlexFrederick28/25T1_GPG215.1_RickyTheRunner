@@ -228,15 +228,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba22cfd3443520349840b452e90d3a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpPower: 40
+  jumpPower: 18
   rb: {fileID: 4600014217989669553}
   groundChecker: {fileID: 6918528546320685236}
+  circleCollider: {fileID: 423101867817090602}
+  capsuleCollider: {fileID: 2831575462892476209}
   ground:
     serializedVersion: 2
     m_Bits: 8
-  capsuleCollider: {fileID: 2831575462892476209}
-  circleCollider: {fileID: 423101867817090602}
-  isJumping: 0
 --- !u!114 &5455694858794614182
 MonoBehaviour:
   m_ObjectHideFlags: 0
