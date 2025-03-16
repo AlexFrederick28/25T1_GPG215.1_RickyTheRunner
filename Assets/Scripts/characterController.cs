@@ -9,6 +9,8 @@ public class characterController : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask ground;
+    [SerializeField] Collider2D capsuleCollider;
+    [SerializeField] Collider2D circleCollider;
     private Animator anim;
     public bool isJumping;
     void Start()
@@ -25,6 +27,8 @@ public class characterController : MonoBehaviour
             isJumping = true;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isJumping", true);
+            capsuleCollider.enabled = true;
+            circleCollider.enabled = false;
      
         }
 
@@ -33,6 +37,8 @@ public class characterController : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isDoubleJumping", true);
             isJumping = false;
+            capsuleCollider.enabled = true;
+            circleCollider.enabled = false;
         }
         else
         {
@@ -41,7 +47,8 @@ public class characterController : MonoBehaviour
         if (IsGrounded() && Mathf.Abs(horizontal) > 0f)
         {
             anim.SetBool("isRunning", true);
- 
+            capsuleCollider.enabled = true;
+            circleCollider.enabled = false;
         }
         else
         {
@@ -59,12 +66,15 @@ public class characterController : MonoBehaviour
             if (Input.GetMouseButtonDown(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
             {
              anim.SetBool("isCrouching", true);
-       
+                capsuleCollider.enabled = false;
+                circleCollider.enabled = true;
+
             }
             if (Input.GetMouseButtonUp(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Ended))
             {
              anim.SetBool("isCrouching", false);
-             
+                capsuleCollider.enabled = false;
+                circleCollider.enabled = true;
             }
         }
     }
