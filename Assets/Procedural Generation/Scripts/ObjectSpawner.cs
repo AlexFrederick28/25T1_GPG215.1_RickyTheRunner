@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour
@@ -6,16 +7,24 @@ public class ObjectSpawner : MonoBehaviour
     #region variables
 
     [Tooltip("Max spawn horizontal position One")]
-    [SerializeField] private GameObject spawnerOne;
+    [SerializeField] private GameObject airSpawnerOne;
     [Tooltip("Min spawn horizontal postion two")]
-    [SerializeField] private GameObject spawnerTwo;
+    [SerializeField] private GameObject airSpawnerTwo;
+    [Tooltip("Max spawn horizontal position One")]
+    [SerializeField] private GameObject groundSpawnerOne;
+    [Tooltip("Min spawn horizontal postion two")]
+    [SerializeField] private GameObject groundSpawnerTwo;
     [Tooltip("Objects that hit this collider will despawn")]
     [SerializeField] private GameObject objectDespawner;
 
     [Tooltip("Max spawn height")]
-    [SerializeField] private float maxHeight;
+    [SerializeField] private float maxAirHeight;
     [Tooltip("Min spawn height")]
-    [SerializeField] private float minHeight;
+    [SerializeField] private float minAirHeight;
+
+
+    [Tooltip("How often an object spawns")]
+    [SerializeField] private float groundObjectWaitTime;
     [Tooltip("How often an object spawns")]
     [SerializeField] private float objectWaitTime;
     [Tooltip("How often a dangerous object spawns")]
@@ -23,16 +32,20 @@ public class ObjectSpawner : MonoBehaviour
     [Tooltip("How often a coin object spawns")]
     [SerializeField] private float coinObjectWaitTime;
     [Tooltip("Active game time")]
+    private float groundObjectTimeTillSpawn;
     private float objectTimeTillSpawn;
     private float dangerObjectTimeTillSpawn;
     private float coinObjectTimeTillSpawn;
 
     [Tooltip("Array of gameobjects")]
-    [SerializeField] private GameObject[] objectToSpawn;
+    [SerializeField] private GameObject[] groundObjectToSpawn;
     [Tooltip("Array of gameobjects")]
-    [SerializeField] private GameObject[] dangerObjectToSpawn;
+    [SerializeField] private GameObject[] airObjectToSpawn;
+    [Tooltip("Array of gameobjects")]
+    [SerializeField] private GameObject[] airDangerObjectToSpawn;
     [Tooltip("Array of gameobjects")]
     [SerializeField] private GameObject[] coinObjectToSpawn;
+    
 
 
     #endregion
@@ -41,6 +54,8 @@ public class ObjectSpawner : MonoBehaviour
     private void Update()
     {
        SpawnObjects();
+
+       SpawnGroundObjects();
 
        SpawnDangerObjects();   
         
@@ -52,11 +67,26 @@ public class ObjectSpawner : MonoBehaviour
 
         if (objectTimeTillSpawn >= objectWaitTime)
         {
-            Vector2 objectSpawnPosition = new Vector2(Random.Range(spawnerOne.transform.position.x, spawnerTwo.transform.position.x), Random.Range(minHeight, maxHeight));
+            Vector2 objectSpawnPosition = new Vector2(Random.Range(airSpawnerOne.transform.position.x, airSpawnerTwo.transform.position.x), Random.Range(minAirHeight, maxAirHeight));
 
-            Instantiate(objectToSpawn[Random.Range(0, objectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
+            Instantiate(airObjectToSpawn[Random.Range(0, airObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
 
             objectTimeTillSpawn = 0;
+        }
+
+    }
+
+    private void SpawnGroundObjects()
+    {
+        groundObjectTimeTillSpawn += Time.deltaTime;
+
+        if (groundObjectTimeTillSpawn >= groundObjectWaitTime)
+        {
+            Vector2 objectSpawnPosition = new Vector2(Random.Range(groundSpawnerOne.transform.position.x, groundSpawnerTwo.transform.position.x), groundSpawnerOne.transform.position.y);
+
+            Instantiate(groundObjectToSpawn[Random.Range(0, groundObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
+
+            groundObjectTimeTillSpawn = 0;
         }
 
     }
@@ -67,9 +97,9 @@ public class ObjectSpawner : MonoBehaviour
 
         if (dangerObjectTimeTillSpawn >= dangerObjectWaitTime)
         {
-            Vector2 objectSpawnPosition = new Vector2(Random.Range(spawnerOne.transform.position.x, spawnerTwo.transform.position.x), Random.Range(minHeight, maxHeight));
+            Vector2 objectSpawnPosition = new Vector2(Random.Range(airSpawnerOne.transform.position.x, airSpawnerTwo.transform.position.x), Random.Range(minAirHeight, maxAirHeight));
 
-            Instantiate(dangerObjectToSpawn[Random.Range(0, dangerObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
+            Instantiate(airDangerObjectToSpawn[Random.Range(0, airDangerObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
 
             dangerObjectTimeTillSpawn = 0;
         }
@@ -82,7 +112,7 @@ public class ObjectSpawner : MonoBehaviour
 
         if (coinObjectTimeTillSpawn >= coinObjectWaitTime)
         {
-            Vector2 objectSpawnPosition = new Vector2(Random.Range(spawnerOne.transform.position.x, spawnerTwo.transform.position.x), Random.Range(minHeight, maxHeight));
+            Vector2 objectSpawnPosition = new Vector2(Random.Range(airSpawnerOne.transform.position.x, airSpawnerTwo.transform.position.x), Random.Range(minAirHeight, maxAirHeight));
 
             Instantiate(coinObjectToSpawn[Random.Range(0, coinObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
 
