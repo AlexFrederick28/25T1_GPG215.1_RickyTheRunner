@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6d974e24a4ca3004db93d7083fb6744a
+guid: 6c227c94b34763648b1192a863d68f21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2600813875648632634
-    second: Ricky Game over_0
+      213: 4515415628742821240
+    second: Ricky the runner title_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ricky Game over_0
+      name: Ricky the runner title_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c86e0f4f8d08ebd0800000000000000
-      internalID: -2600813875648632634
+      spriteID: 8758674379af9ae30800000000000000
+      internalID: 4515415628742821240
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Ricky Game over_0: -2600813875648632634
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
