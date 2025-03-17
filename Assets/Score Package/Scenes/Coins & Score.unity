@@ -1090,6 +1090,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9112411446336839166, guid: 33e7c5a91720b574592130ff896102d0, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1223,7 +1227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5589862513404235787, guid: 73dd2164bea71c04592f7dc79ddcf701, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: -1.93
       objectReference: {fileID: 0}
     - target: {fileID: 5589862513404235787, guid: 73dd2164bea71c04592f7dc79ddcf701, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1261,6 +1265,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6466288081331078934, guid: 73dd2164bea71c04592f7dc79ddcf701, type: 3}
+      propertyPath: coinPickup
+      value: 
+      objectReference: {fileID: 8300000, guid: 8198ccd2b60b5004380bab7a548f6638, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
