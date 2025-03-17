@@ -131,7 +131,7 @@ Animator:
   m_GameObject: {fileID: 361712775249128078}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 99a4a4b898f870d49b70e0059c8ef437, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5e2f7b01959725a498bb99cda9582bdc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694587fcb81e7894389510edd80545ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpPower: 20
+  jumpPower: 19
   rb: {fileID: 4600014217989669553}
   groundChecker: {fileID: 6918528546320685236}
   ground:
@@ -200,6 +200,8 @@ MonoBehaviour:
   capsuleCollider: {fileID: 1065741238280171504}
   circleCollider: {fileID: 423101867817090602}
   isJumping: 0
+  firstJump: {fileID: 8300000, guid: 8a645a361dcea2b418673621e094f121, type: 3}
+  secondJump: {fileID: 8300000, guid: b4aae8314693dab4399fc2c41acadc71, type: 3}
 --- !u!114 &5455694858794614182
 MonoBehaviour:
   m_ObjectHideFlags: 0

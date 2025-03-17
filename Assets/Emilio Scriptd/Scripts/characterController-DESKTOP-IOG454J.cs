@@ -12,6 +12,10 @@ public class characterController : MonoBehaviour
     [SerializeField] Collider2D circleCollider;
     private Animator anim;
     public bool isJumping;
+
+    [SerializeField] private AudioClip firstJump;
+    [SerializeField] private AudioClip secondJump;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,15 +33,21 @@ public class characterController : MonoBehaviour
             capsuleCollider.enabled = true;
             circleCollider.enabled = false;
 
+            SoundManager.instance.sfxSource.PlayOneShot(firstJump);
+
+
         }
 
-        if (Input.GetMouseButtonUp(0) && isJumping == true || Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Began && isJumping == true)
+        else if (Input.GetMouseButtonDown(0) && isJumping == true || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && isJumping == true)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isDoubleJumping", true);
             isJumping = false;
             capsuleCollider.enabled = true;
             circleCollider.enabled = false;
+
+            SoundManager.instance.sfxSource.PlayOneShot(secondJump);
+
         }
         else
         {
@@ -60,21 +70,7 @@ public class characterController : MonoBehaviour
         {
             anim.SetBool("isDoubleJumping", false);
         }
-        {
-            if (Input.GetMouseButtonDown(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Moved))
-            {
-                anim.SetBool("isCrouching", true);
-                capsuleCollider.enabled = false;
-                circleCollider.enabled = true;
-
-            }
-            if (Input.GetMouseButtonUp(1) || (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Ended))
-            {
-                anim.SetBool("isCrouching", false);
-                capsuleCollider.enabled = false;
-                circleCollider.enabled = true;
-            }
-        }
+      
     }
     public bool IsGrounded()
     {

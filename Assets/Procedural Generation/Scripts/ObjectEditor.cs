@@ -28,6 +28,8 @@ public class ObjectEditor : MonoBehaviour
     [SerializeField] private bool pushPlayer;
     [Tooltip("Destroy the object after interaction?")]
     [SerializeField] private bool destroyOnInteraction;
+    [Tooltip("Drop the destroy sound here")]
+    [SerializeField] private AudioClip destroySound;
     [Tooltip("Set to a negative number to go back (Eg. -50)")]
     [SerializeField] private float pushDirectionX;
     [Tooltip("Set as a positive number to go up (Eg. 10)")]
@@ -93,6 +95,7 @@ public class ObjectEditor : MonoBehaviour
         Animator explosion = GetComponent<Animator>();
 
         explosion.Play("Explosion");
+        SoundManager.instance.sfxSource.PlayOneShot(destroySound);
 
         CircleCollider2D circleCollider = GetComponent<CircleCollider2D>();
 

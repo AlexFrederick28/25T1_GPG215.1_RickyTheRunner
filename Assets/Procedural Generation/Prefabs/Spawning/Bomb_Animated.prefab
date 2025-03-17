@@ -109,6 +109,7 @@ MonoBehaviour:
   amplitude: 0
   pushPlayer: 1
   destroyOnInteraction: 1
+  destroySound: {fileID: 8300000, guid: 987f9c9e300807e428d682f78ad90741, type: 3}
   pushDirectionX: -1
   pushDirectionY: 0
   pushMultiplier: 180
