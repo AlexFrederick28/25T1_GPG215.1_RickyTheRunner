@@ -6,6 +6,7 @@ public class ObjectSpawner : MonoBehaviour
 {
     #region variables
 
+    [Header("Spawner and Despawner Objects")]
     [Tooltip("Max spawn horizontal position One")]
     [SerializeField] private GameObject airSpawnerOne;
     [Tooltip("Min spawn horizontal postion two")]
@@ -17,12 +18,15 @@ public class ObjectSpawner : MonoBehaviour
     [Tooltip("Objects that hit this collider will despawn")]
     [SerializeField] private GameObject objectDespawner;
 
+    [Space]
+    [Header("Air object Spawn Heights")]
     [Tooltip("Max spawn height")]
     [SerializeField] private float maxAirHeight;
     [Tooltip("Min spawn height")]
     [SerializeField] private float minAirHeight;
 
-
+    [Space]
+    [Header("Spawn Times")]
     [Tooltip("How often an object spawns")]
     [SerializeField] private float groundObjectWaitTime;
     [Tooltip("How often an object spawns")]
@@ -37,6 +41,8 @@ public class ObjectSpawner : MonoBehaviour
     private float dangerObjectTimeTillSpawn;
     private float coinObjectTimeTillSpawn;
 
+    [Space]
+    [Header("Objects to Spawn")]
     [Tooltip("Array of gameobjects")]
     [SerializeField] private GameObject[] groundObjectToSpawn;
     [Tooltip("Array of gameobjects")]
