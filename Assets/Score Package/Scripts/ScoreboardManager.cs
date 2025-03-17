@@ -44,7 +44,7 @@ public class ScoreboardManager : MonoBehaviour
 
         scoreText.text = currentScore.ToString(); // change text
 
-        Debug.Log("Current score: [" + currentScore + "]");
+        //Debug.Log("Current score: [" + currentScore + "]");
     }
 
 }

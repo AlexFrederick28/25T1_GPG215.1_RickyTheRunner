@@ -21,7 +21,7 @@ public class CoinPickup : MonoBehaviour
         if (other.CompareTag("Player")) // checks to make sure the player collides with coin
         {
 
-            Debug.Log("Coin: [" + coinRarity + "] Worth: [" + scoreValue + "]");
+            //Debug.Log("Coin: [" + coinRarity + "] Worth: [" + scoreValue + "]");
 
             ScoreboardManager.instance.AddScore(scoreValue);
 
@@ -30,12 +30,12 @@ public class CoinPickup : MonoBehaviour
             if (coinPickup != null)
             {
                 SoundManager.instance.sfxSource.PlayOneShot(coinPickup);
-                Debug.Log("Sound Played.");
+                //Debug.Log("Sound Played.");
             }
 
             else
             {
-                Debug.Log("Coin Sound Missing.");
+                //Debug.Log("Coin Sound Missing.");
             }
 
             #endregion 
