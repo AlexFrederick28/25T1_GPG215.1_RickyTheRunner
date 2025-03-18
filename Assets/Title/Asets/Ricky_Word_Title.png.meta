@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 8ccfb6b9d05ed564eaa1922756748c38
+guid: cd334d4d56c98c145a31756937c13f80
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2892940805986505021
-    second: Gold Coin - 128x128_0
+      213: 2624451701280915838
+    second: Ricky_Word_Title_0
+  - first:
+      213: -2001023091171377795
+    second: Ricky_Word_Title_1
+  - first:
+      213: 6076110677971623241
+    second: Ricky_Word_Title_2
+  - first:
+      213: 7768268853071744998
+    second: Ricky_Word_Title_3
+  - first:
+      213: 3468743403651533931
+    second: Ricky_Word_Title_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +151,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gold Coin - 128x128_0
+      name: Ricky_Word_Title_0
       rect:
         serializedVersion: 2
-        x: 49
-        y: 49
-        width: 30
-        height: 30
+        x: 0
+        y: 0
+        width: 11
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +166,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ce21f61aa53ad7d0800000000000000
-      internalID: -2892940805986505021
+      spriteID: e71c409daeceb6420800000000000000
+      internalID: 2624451701280915838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ricky_Word_Title_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d3067b910fa34e0800000000000000
+      internalID: -2001023091171377795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ricky_Word_Title_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94dd470187ea25450800000000000000
+      internalID: 6076110677971623241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ricky_Word_Title_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef82132d5f6ecb60800000000000000
+      internalID: 7768268853071744998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ricky_Word_Title_4
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c01a75fb3732030800000000000000
+      internalID: 3468743403651533931
       vertices: []
       indices: 
       edges: []
@@ -174,7 +274,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gold Coin - 128x128_0: -2892940805986505021
+      Ricky_Word_Title_0: 2624451701280915838
+      Ricky_Word_Title_1: -2001023091171377795
+      Ricky_Word_Title_2: 6076110677971623241
+      Ricky_Word_Title_3: 7768268853071744998
+      Ricky_Word_Title_4: 3468743403651533931
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

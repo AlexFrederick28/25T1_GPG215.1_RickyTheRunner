@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 8ccfb6b9d05ed564eaa1922756748c38
+guid: 780a653501e11ca489e14a5e140df5e3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2892940805986505021
-    second: Gold Coin - 128x128_0
+      213: 4101314732581221917
+    second: Runner_Word_Title_0
+  - first:
+      213: 6957495757206097202
+    second: Runner_Word_Title_1
+  - first:
+      213: -4259574263894346595
+    second: Runner_Word_Title_2
+  - first:
+      213: -5741319784965873332
+    second: Runner_Word_Title_3
+  - first:
+      213: 5002490408044471632
+    second: Runner_Word_Title_4
+  - first:
+      213: -4084349861375611217
+    second: Runner_Word_Title_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +154,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gold Coin - 128x128_0
+      name: Runner_Word_Title_0
       rect:
         serializedVersion: 2
-        x: 49
-        y: 49
-        width: 30
-        height: 30
+        x: 0
+        y: 0
+        width: 11
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +169,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ce21f61aa53ad7d0800000000000000
-      internalID: -2892940805986505021
+      spriteID: d167493050ccae830800000000000000
+      internalID: 4101314732581221917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runner_Word_Title_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d8e8e578dfd8060800000000000000
+      internalID: 6957495757206097202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runner_Word_Title_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d947e2276c3f2e4c0800000000000000
+      internalID: -4259574263894346595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runner_Word_Title_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41ef2b031cb250b0800000000000000
+      internalID: -5741319784965873332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runner_Word_Title_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0552ac3958a6c6540800000000000000
+      internalID: 5002490408044471632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runner_Word_Title_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae6a4ed0797157c0800000000000000
+      internalID: -4084349861375611217
       vertices: []
       indices: 
       edges: []
@@ -174,7 +299,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gold Coin - 128x128_0: -2892940805986505021
+      Runner_Word_Title_0: 4101314732581221917
+      Runner_Word_Title_1: 6957495757206097202
+      Runner_Word_Title_2: -4259574263894346595
+      Runner_Word_Title_3: -5741319784965873332
+      Runner_Word_Title_4: 5002490408044471632
+      Runner_Word_Title_5: -4084349861375611217
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
