@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -15,6 +16,8 @@ public class ScoreboardManager : MonoBehaviour
 
     [Tooltip("For the text number that will show the score")]
     public TextMeshProUGUI scoreText; // timer UI
+
+    public Leaderboard leaderboard;
 
     #endregion
 
@@ -38,6 +41,14 @@ public class ScoreboardManager : MonoBehaviour
         scoreText.text = currentScore.ToString();
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            StartCoroutine(DeathRoutine());
+        }
+    }
+
     public void AddScore(int scoreAdd) // used to add score for the player
     {
         currentScore += scoreAdd; // add text
@@ -46,5 +57,12 @@ public class ScoreboardManager : MonoBehaviour
 
         //Debug.Log("Current score: [" + currentScore + "]");
     }
+
+    IEnumerator DeathRoutine()
+    {
+        yield return leaderboard.SubmitScoreRoutine(currentScore);
+        Debug.Log("Death Routine");
+    }
+
 
 }
