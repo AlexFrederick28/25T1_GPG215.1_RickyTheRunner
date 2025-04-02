@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ObjectToCentre : MonoBehaviour
 {
@@ -6,6 +7,17 @@ public class ObjectToCentre : MonoBehaviour
     [SerializeField] private GameObject objectToCentre;
 
     [SerializeField] private float speed;
+
+    public UnityEvent AddSpeed;
+
+    private void OnEnable()
+    {
+        UpgradeEvents.UpgradeSpeed += SpeedUpgrade;
+    }
+    private void OnDisable()
+    {
+        UpgradeEvents.UpgradeSpeed -= SpeedUpgrade;
+    }
 
     private void Start()
     {
@@ -15,6 +27,11 @@ public class ObjectToCentre : MonoBehaviour
     private void Update()
     {
         MoveObjectToCentre();
+    }
+
+    private void SpeedUpgrade()
+    {
+        speed += 0.05f;
     }
 
     private void MoveObjectToCentre()

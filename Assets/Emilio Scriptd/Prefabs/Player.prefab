@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6811987087255187183}
   - component: {fileID: 4600014217989669553}
   - component: {fileID: 5427206178496731869}
-  - component: {fileID: 423101867817090602}
   - component: {fileID: 6244156281194319761}
   - component: {fileID: 5455694858794614182}
   - component: {fileID: 1065741238280171504}
@@ -143,42 +142,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!58 &423101867817090602
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361712775249128078}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.3703677
 --- !u!114 &6244156281194319761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,8 +160,7 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 8
-  capsuleCollider: {fileID: 1065741238280171504}
-  circleCollider: {fileID: 423101867817090602}
+  boxCollider: {fileID: 1065741238280171504}
   isJumping: 0
   firstJump: {fileID: 8300000, guid: 8a645a361dcea2b418673621e094f121, type: 3}
   secondJump: {fileID: 8300000, guid: b4aae8314693dab4399fc2c41acadc71, type: 3}

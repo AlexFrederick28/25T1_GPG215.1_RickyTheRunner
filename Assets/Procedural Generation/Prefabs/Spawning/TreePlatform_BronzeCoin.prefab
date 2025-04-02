@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9030684457279991487}
   - component: {fileID: 1264225784639690033}
   - component: {fileID: 5701136625601117060}
+  - component: {fileID: 8551985998640016058}
   m_Layer: 3
   m_Name: TreePlatform_BronzeCoin
   m_TagString: Background
@@ -111,6 +112,7 @@ MonoBehaviour:
   amplitude: 0
   pushPlayer: 0
   destroyOnInteraction: 0
+  destroySound: {fileID: 0}
   pushDirectionX: 0
   pushDirectionY: 0
   pushMultiplier: 0
@@ -145,7 +147,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.001051452}
@@ -187,6 +189,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!251 &8551985998640016058
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7103166076161636843}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1001 &1634046977869846688
 PrefabInstance:
   m_ObjectHideFlags: 0

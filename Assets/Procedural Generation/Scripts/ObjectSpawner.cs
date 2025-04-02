@@ -35,11 +35,14 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] private float dangerObjectWaitTime;
     [Tooltip("How often a coin object spawns")]
     [SerializeField] private float coinObjectWaitTime;
-    [Tooltip("Active game time")]
+    [Tooltip("How often a coin object spawns")]
+    [SerializeField] private float largeGroundObjectWaitTime;
+    
     private float groundObjectTimeTillSpawn;
     private float objectTimeTillSpawn;
     private float dangerObjectTimeTillSpawn;
     private float coinObjectTimeTillSpawn;
+    private float largeGroundObjectTimeTillSpawn;
 
     [Space]
     [Header("Objects to Spawn")]
@@ -51,7 +54,9 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] private GameObject[] airDangerObjectToSpawn;
     [Tooltip("Array of gameobjects")]
     [SerializeField] private GameObject[] coinObjectToSpawn;
-    
+    [Tooltip("Array of gameobjects")]
+    [SerializeField] private GameObject[] largeGroundObjectToSpawn;
+
 
 
     #endregion
@@ -66,6 +71,8 @@ public class ObjectSpawner : MonoBehaviour
        SpawnDangerObjects();   
         
        SpawnCoinObjects();
+
+       SpawnLargeGroundObjects();
     }
     private void SpawnObjects()
     {
@@ -125,6 +132,20 @@ public class ObjectSpawner : MonoBehaviour
             coinObjectTimeTillSpawn = 0;
         }
 
+    }
+
+    private void SpawnLargeGroundObjects()
+    {
+        largeGroundObjectTimeTillSpawn += Time.deltaTime;
+
+        if (largeGroundObjectTimeTillSpawn >= largeGroundObjectWaitTime)
+        {
+            Vector2 objectSpawnPosition = new Vector2(Random.Range(groundSpawnerOne.transform.position.x, groundSpawnerTwo.transform.position.x), groundSpawnerOne.transform.position.y);
+
+            Instantiate(largeGroundObjectToSpawn[Random.Range(0, largeGroundObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
+
+            largeGroundObjectTimeTillSpawn = 0;
+        }
     }
 
 }

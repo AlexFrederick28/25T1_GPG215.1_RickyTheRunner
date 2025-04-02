@@ -8,8 +8,8 @@ public class characterController : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask ground;
-    [SerializeField] Collider2D capsuleCollider;
-    [SerializeField] Collider2D circleCollider;
+    [SerializeField] Collider2D boxCollider;
+    
     private Animator anim;
     public bool isJumping;
 
@@ -30,8 +30,7 @@ public class characterController : MonoBehaviour
             isJumping = true;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isJumping", true);
-            capsuleCollider.enabled = true;
-            circleCollider.enabled = false;
+            boxCollider.enabled = true;
 
             SoundManager.instance.sfxSource.PlayOneShot(firstJump);
 
@@ -43,8 +42,7 @@ public class characterController : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isDoubleJumping", true);
             isJumping = false;
-            capsuleCollider.enabled = true;
-            circleCollider.enabled = false;
+            boxCollider.enabled = true;
 
             SoundManager.instance.sfxSource.PlayOneShot(secondJump);
 

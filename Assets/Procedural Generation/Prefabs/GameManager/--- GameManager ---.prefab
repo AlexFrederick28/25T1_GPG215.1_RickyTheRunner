@@ -223,6 +223,7 @@ MonoBehaviour:
   objectWaitTime: 6
   dangerObjectWaitTime: 2
   coinObjectWaitTime: 4
+  largeGroundObjectWaitTime: 12
   groundObjectToSpawn:
   - {fileID: 6068525469355468071, guid: 5bfee76f15fc35447a2b57806e374d93, type: 3}
   - {fileID: 7873829117620065064, guid: 88229bb04c9ded64fb0bbc908eb56663, type: 3}
@@ -237,6 +238,8 @@ MonoBehaviour:
   - {fileID: 5313431788319921194, guid: 760b639ebcc83e348809f1eb622eeeee, type: 3}
   - {fileID: 1227316388090210752, guid: ef962eca2559d744387eb0b40cc40494, type: 3}
   - {fileID: 8477988880034465826, guid: 6182a42ca4fb49c479cb750acde91b97, type: 3}
+  largeGroundObjectToSpawn:
+  - {fileID: 5486546985926046117, guid: 7852d37a6a43dfd4995beffab25ef22e, type: 3}
 --- !u!114 &1564539071716034825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +255,9 @@ MonoBehaviour:
   centreObject: {fileID: 3837643551045269731}
   objectToCentre: {fileID: 0}
   speed: 0.1
+  AddSpeed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3837643551045269731
 GameObject:
   m_ObjectHideFlags: 0
