@@ -94,7 +94,7 @@ public class characterController : MonoBehaviour
     }
     IEnumerator howLong()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         transform.localScale = new Vector2(1f, 1f);
     }
 }
