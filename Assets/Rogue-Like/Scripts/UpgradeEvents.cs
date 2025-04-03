@@ -5,7 +5,7 @@ public class UpgradeEvents
     
     public delegate void UpgradeEvent();
 
-    public static UpgradeEvent UpgradeSpeed;
+    public static UpgradeEvent UpgradeSpeedToCentre;
 
 
 }

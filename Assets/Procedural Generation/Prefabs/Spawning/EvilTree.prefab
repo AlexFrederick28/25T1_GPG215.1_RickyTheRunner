@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -230294645
   m_SortingLayer: 3
-  m_SortingOrder: -3
+  m_SortingOrder: -4
   m_Sprite: {fileID: -7344687594038744400, guid: cc57a4dcd1475ea4eb8218d274827db1, type: 3}
   m_Color: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
   m_FlipX: 0
@@ -514,7 +514,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -230294645
   m_SortingLayer: 3
-  m_SortingOrder: -3
+  m_SortingOrder: -4
   m_Sprite: {fileID: -7200794072573992323, guid: 1b5efa15209409b4485de2c424bccf77, type: 3}
   m_Color: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
   m_FlipX: 0
@@ -561,6 +561,7 @@ GameObject:
   - component: {fileID: 334084620520456725}
   - component: {fileID: 3711368226604266916}
   - component: {fileID: 1917328206762018100}
+  - component: {fileID: 3201946798256684975}
   m_Layer: 3
   m_Name: EvilTree_Fist
   m_TagString: Untagged
@@ -627,7 +628,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 741214845
   m_SortingLayer: 5
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_Sprite: {fileID: 4159928607940493755, guid: 081d2ff4546fc714691511642ec22802, type: 3}
   m_Color: {r: 0.93202287, g: 1, b: 0.8726415, a: 1}
   m_FlipX: 1
@@ -734,3 +735,55 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &3201946798256684975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8088335820096803348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_Priority: 5
+  m_ComponentVersion: 5
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 7d0a2e2c
+  m_ShapePath:
+  - {x: -0.15594035, y: -0.22965623, z: 0}
+  - {x: -0.15436865, y: 0.20646772, z: 0}
+  - {x: 0.23407513, y: 0.20454153, z: 0}
+  - {x: 0.23686565, y: -0.23802781, z: 0}
+  m_ShapePathHash: -350043031
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 0}
+  m_ShadowShape2DProvider:
+    rid: -2
+  m_ShadowCastingSource: 1
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: 0.040462643, y: -0.015780047, z: 0}
+      m_Extent: {x: 0.196403, y: 0.22224776, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0.1
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0.1
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 1
+  m_PreviousShadowShape2DSource: {fileID: 3711368226604266916}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

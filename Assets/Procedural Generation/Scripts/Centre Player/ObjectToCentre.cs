@@ -12,11 +12,11 @@ public class ObjectToCentre : MonoBehaviour
 
     private void OnEnable()
     {
-        UpgradeEvents.UpgradeSpeed += SpeedUpgrade;
+        UpgradeEvents.UpgradeSpeedToCentre += SpeedUpgrade;
     }
     private void OnDisable()
     {
-        UpgradeEvents.UpgradeSpeed -= SpeedUpgrade;
+        UpgradeEvents.UpgradeSpeedToCentre -= SpeedUpgrade;
     }
 
     private void Start()

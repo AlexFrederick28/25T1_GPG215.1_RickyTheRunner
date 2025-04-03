@@ -223,7 +223,7 @@ MonoBehaviour:
   objectWaitTime: 6
   dangerObjectWaitTime: 2
   coinObjectWaitTime: 4
-  largeGroundObjectWaitTime: 12
+  largeGroundObjectWaitTime: 16
   groundObjectToSpawn:
   - {fileID: 6068525469355468071, guid: 5bfee76f15fc35447a2b57806e374d93, type: 3}
   - {fileID: 7873829117620065064, guid: 88229bb04c9ded64fb0bbc908eb56663, type: 3}
@@ -240,6 +240,7 @@ MonoBehaviour:
   - {fileID: 8477988880034465826, guid: 6182a42ca4fb49c479cb750acde91b97, type: 3}
   largeGroundObjectToSpawn:
   - {fileID: 5486546985926046117, guid: 7852d37a6a43dfd4995beffab25ef22e, type: 3}
+  - {fileID: 5518267327298905420, guid: d01a0f68168409d4f86e08c9bcdf9ddf, type: 3}
 --- !u!114 &1564539071716034825
 MonoBehaviour:
   m_ObjectHideFlags: 0
