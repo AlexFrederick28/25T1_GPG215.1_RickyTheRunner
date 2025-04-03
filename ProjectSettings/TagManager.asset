@@ -7,6 +7,7 @@ TagManager:
   - Background
   - PowerUp
   - Bomb
+  - Small
   layers:
   - Default
   - TransparentFX

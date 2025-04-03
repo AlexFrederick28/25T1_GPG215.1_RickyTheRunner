@@ -7,6 +7,7 @@ public class characterController : MonoBehaviour
 {
     public float jumpPower = 6f;
     private float horizontal;
+    private bool isSmall;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask ground;
@@ -20,14 +21,15 @@ public class characterController : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-
+        {
+            rb = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
+        }
     }
-   
 
     private void Update()
     {
+        StartCoroutine(howLong());
         if (Input.GetMouseButtonDown(0) && IsGrounded() || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && IsGrounded())
         {
             isJumping = true;
@@ -74,10 +76,25 @@ public class characterController : MonoBehaviour
             anim.SetBool("isDoubleJumping", false);
         }
     }
+
     public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundChecker.position, 0.1f, ground);
     }
-
-  
+    public void Small()
+    {
+              transform.localScale = new Vector2(.7f, .7f);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Small"))
+        {
+         Small();
+        }
+    }
+    IEnumerator howLong()
+    {
+        yield return new WaitForSeconds(2);
+        transform.localScale = new Vector2(1f, 1f);
+    }
 }

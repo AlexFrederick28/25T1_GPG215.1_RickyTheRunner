@@ -14,7 +14,7 @@ public class Inventory : MonoBehaviour
         }
         if (collision.CompareTag("Bomb"))
         {
-        Remove();
+            Remove();
         }
     }
     public void Add()
@@ -23,7 +23,6 @@ public class Inventory : MonoBehaviour
     }
     public void Remove()
     {
-     SheildManager.sheild--;
+        SheildManager.sheild--;
     }
-  
 }
