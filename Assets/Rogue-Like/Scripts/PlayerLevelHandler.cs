@@ -4,9 +4,14 @@ using UnityEngine.UI;
 
 public class PlayerLevelHandler : MonoBehaviour
 {
+    [SerializeField] private int maxLevel;
+    [SerializeField] private int maxExperience;
+
     [SerializeField] private int currentLevel;
     [SerializeField] private int requiredCoinsForLevelUp;
-    
+    [SerializeField] private int experienceAmplifier;
+
+    [SerializeField] private AnimationCurve experienceCurve;
 
     private ScoreboardManager _ScoreboardManager;
 
@@ -26,9 +31,14 @@ public class PlayerLevelHandler : MonoBehaviour
     private void ExperienceFormula()
     {
         
-        requiredCoinsForLevelUp = (currentLevel * 10);
+        requiredCoinsForLevelUp = experienceAmplifier;
 
-       
+        if (_ScoreboardManager.currentScore >= requiredCoinsForLevelUp)
+        {
+            currentLevel++;
+            experienceAmplifier = Mathf.RoundToInt(experienceCurve.Evaluate(Mathf.InverseLerp(0, maxLevel, currentLevel)) * maxExperience);
+        }
+
     }
 
    
