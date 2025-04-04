@@ -8,6 +8,7 @@ TagManager:
   - PowerUp
   - Bomb
   - Small
+  - Ghost
   layers:
   - Default
   - TransparentFX

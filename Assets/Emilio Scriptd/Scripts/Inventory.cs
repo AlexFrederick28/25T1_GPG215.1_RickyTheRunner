@@ -25,4 +25,8 @@ public class Inventory : MonoBehaviour
     {
         SheildManager.sheild--;
     }
+    public void goSmall()
+    {
+     
+    }
 }

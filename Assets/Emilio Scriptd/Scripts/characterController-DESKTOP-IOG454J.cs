@@ -1,5 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
+using System.Collections.Generic;
+using Unity.Android.Gradle.Manifest;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -21,6 +23,7 @@ public class characterController : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine(isFlying());
         {
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
@@ -29,7 +32,7 @@ public class characterController : MonoBehaviour
 
     private void Update()
     {
-        StartCoroutine(howLong());
+
         if (Input.GetMouseButtonDown(0) && IsGrounded() || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && IsGrounded())
         {
             isJumping = true;
@@ -81,20 +84,28 @@ public class characterController : MonoBehaviour
     {
         return Physics2D.OverlapCircle(groundChecker.position, 0.1f, ground);
     }
-    public void Small()
+
+    private void Fly()
     {
-              transform.localScale = new Vector2(.7f, .7f);
+        transform.position = new Vector2(-0.31f, 0f);
+        capsuleCollider.enabled = false;
+        circleCollider.enabled = false;
+        rb.gravityScale = 0f;
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Small"))
+        if (collision.CompareTag("Ghost"))
         {
-         Small();
+            Fly();
         }
     }
-    IEnumerator howLong()
+    IEnumerator isFlying()
     {
-        yield return new WaitForSeconds(3);
-        transform.localScale = new Vector2(1f, 1f);
+        yield return new WaitForSeconds(2);
+        transform.position = new Vector3(-0.31f, -3.32f);
+        capsuleCollider.enabled = true;
+        circleCollider.enabled = true;
+        rb.gravityScale = 5f;
     }
 }

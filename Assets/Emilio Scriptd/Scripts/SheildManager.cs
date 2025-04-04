@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 public class SheildManager : MonoBehaviour
@@ -18,5 +19,5 @@ public class SheildManager : MonoBehaviour
          sheilds[i].sprite = fullSheild;    
         }
     }
-  
+ 
 }
