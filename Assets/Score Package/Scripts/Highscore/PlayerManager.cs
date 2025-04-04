@@ -4,10 +4,19 @@ using System.Collections;
 
 public class PlayerManager : MonoBehaviour
 {
+
+    public Leaderboard leaderBoard;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(LoginRoutine());
+        StartCoroutine(SetupRoutine());
+    }
+
+    IEnumerator SetupRoutine()
+    {
+        yield return LoginRoutine();
+        yield return leaderBoard.FetchTopHighscoresRoutine();
     }
 
     IEnumerator LoginRoutine()
