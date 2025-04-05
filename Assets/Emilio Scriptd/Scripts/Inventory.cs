@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 using static UnityEditor.Progress;
 
@@ -9,6 +10,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] Collider2D circleCollider;
     [SerializeField] Collider2D capsuleCollider;
     [SerializeField] Rigidbody2D rb;
+   [SerializeField] SpriteRenderer spriteRenderer;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,9 +23,8 @@ public class Inventory : MonoBehaviour
             Remove();
         }
         if (other.CompareTag("Ghost"))
-        {      
-                isFlying();
-            
+        {
+            canFly();
         }
     }
     public void Add()
@@ -34,17 +35,24 @@ public class Inventory : MonoBehaviour
     {
         SheildManager.sheild--;
     }
- 
-    IEnumerator isFlying()
+    public void canFly()
     {
-        yield return new WaitForSeconds(5);
-        transform.position = new Vector3(-0.31f, 0f);
-        capsuleCollider.enabled = true;
-        circleCollider.enabled = true;
-        rb.gravityScale = 5f;
-    }
-    private void Start()
-    {
-        StartCoroutine(isFlying());
+        transform.position = new Vector2( - 0.31f, 0f);
+        rb.gravityScale = 0f;
+        capsuleCollider.enabled = false;
+        circleCollider.enabled = false;
+        spriteRenderer.enabled = false;
+        
+
+        IEnumerator Fly()
+        {
+            yield return new WaitForSecondsRealtime(3f);
+            transform.position = new Vector2(-0.31f, -3.31f);
+            rb.gravityScale = 5f;
+            capsuleCollider.enabled = true;
+            circleCollider.enabled = true;
+            spriteRenderer.enabled = true;
+        }
+        StartCoroutine(Fly());
     }
 }

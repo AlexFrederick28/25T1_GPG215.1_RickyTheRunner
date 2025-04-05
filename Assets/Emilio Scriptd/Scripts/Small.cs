@@ -3,9 +3,9 @@ using UnityEngine;
 public class Small : MonoBehaviour
 {
     public float speed = 5f;
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-     if(collision.CompareTag("Player"))
+     if(other.CompareTag("Player"))
      Destroy(gameObject);
      }
     private void Update()
