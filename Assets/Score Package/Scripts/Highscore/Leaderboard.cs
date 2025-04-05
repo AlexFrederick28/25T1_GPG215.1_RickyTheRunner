@@ -71,8 +71,12 @@ public class Leaderboard : MonoBehaviour
                 }
 
                 done = true;
-                playerNames.text = tempPlayerNames;
-                playerScores.text = tempPlayerScores;
+
+                if(playerNames & playerScores != null)
+                {
+                    playerNames.text = tempPlayerNames;
+                    playerScores.text = tempPlayerScores;
+                }
 
             }
             else
