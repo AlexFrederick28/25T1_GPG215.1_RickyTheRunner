@@ -10,7 +10,6 @@ public class Inventory : MonoBehaviour
     [SerializeField] Collider2D circleCollider;
     [SerializeField] Collider2D capsuleCollider;
     [SerializeField] Rigidbody2D rb;
-   [SerializeField] SpriteRenderer spriteRenderer;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -25,6 +24,10 @@ public class Inventory : MonoBehaviour
         if (other.CompareTag("Ghost"))
         {
             canFly();
+        }
+        if (other.CompareTag("Small"))
+        {
+            Small();
         }
     }
     public void Add()
@@ -41,7 +44,6 @@ public class Inventory : MonoBehaviour
         rb.gravityScale = 0f;
         capsuleCollider.enabled = false;
         circleCollider.enabled = false;
-        spriteRenderer.enabled = false;
         
 
         IEnumerator Fly()
@@ -51,8 +53,20 @@ public class Inventory : MonoBehaviour
             rb.gravityScale = 5f;
             capsuleCollider.enabled = true;
             circleCollider.enabled = true;
-            spriteRenderer.enabled = true;
         }
         StartCoroutine(Fly());
+    }
+    public void Small()
+    {
+        transform.localScale = new Vector2(.7f, .7f);
+    }
+    IEnumerator howLong()
+    {
+        yield return new WaitForSeconds(3);
+        transform.localScale = new Vector2(1f, 1f);
+    }
+    private void Start()
+    {
+        StartCoroutine(howLong());
     }
 }

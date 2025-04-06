@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1477029578018338163}
   - component: {fileID: 3926027035051267027}
   - component: {fileID: 9037498460632660612}
-  - component: {fileID: 5398258553588098056}
   - component: {fileID: 340409253781473376}
   m_Layer: 0
   m_Name: Fairy
@@ -112,19 +111,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5398258553588098056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66937226615150171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 408d6e2dd3b1d5444964425c5f475c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!58 &340409253781473376
 CircleCollider2D:
   m_ObjectHideFlags: 0
