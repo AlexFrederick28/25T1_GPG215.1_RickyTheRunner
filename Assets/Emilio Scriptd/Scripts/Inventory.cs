@@ -62,7 +62,7 @@ public class Inventory : MonoBehaviour
     }
     IEnumerator howLong()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5f);
         transform.localScale = new Vector2(1f, 1f);
     }
     private void Start()
