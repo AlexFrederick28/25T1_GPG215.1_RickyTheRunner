@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 182cd195a28310e479cddf7ff82822f8, type: 3}
   m_Name: LootLockerConfig
   m_EditorClassIdentifier: 
-  apiKey: dev_2cf6468988dc495f906dbfcdeb2c9252
-  token: 3d5a226f92b5b2c0f0650cc2b77c0c78a840bf1c
+  apiKey: Ricky The Runner
+  token: f26b313e6ecd334f814e9e96841fe503968556c5
   adminToken: 0827cfba6930891ad9760a9ae2c6c93e8e5a4c4e
   refreshToken: 
   domainKey: y9988jwm
