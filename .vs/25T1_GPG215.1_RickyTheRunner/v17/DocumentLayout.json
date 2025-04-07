@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\uni 2024 - 2025\\25t1_uni\\25t1_gpg215.1_rickytherunner\\assets\\title\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\title\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\uni 2024 - 2025\\25t1_uni\\25t1_gpg215.1_rickytherunner\\assets\\rogue-like\\scripts\\playerlevelhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\rogue-like\\scripts\\playerlevelhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -74,6 +78,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LevelManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\LevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Title\\LevelManager.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\LevelManager.cs",
+              "RelativeToolTip": "Assets\\Title\\LevelManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T05:18:34.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerLevelHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\PlayerLevelHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Rogue-Like\\Scripts\\PlayerLevelHandler.cs",
@@ -86,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ScoreboardManager.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\ScoreboardManager.cs",
               "RelativeDocumentMoniker": "Assets\\Score Package\\Scripts\\ScoreboardManager.cs",
@@ -98,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "EvilTree.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Enemy\\EvilTree.cs",
               "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\Enemy\\EvilTree.cs",
@@ -110,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UpgradeEvents.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\UpgradeEvents.cs",
               "RelativeDocumentMoniker": "Assets\\Rogue-Like\\Scripts\\UpgradeEvents.cs",
@@ -122,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ObjectSpawner.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\ObjectSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\ObjectSpawner.cs",
@@ -134,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "characterController-DESKTOP-IOG454J.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Scripts\\characterController-DESKTOP-IOG454J.cs",
               "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Scripts\\characterController-DESKTOP-IOG454J.cs",
@@ -146,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Ghost.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Enemy\\Ghost.cs",
               "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\Enemy\\Ghost.cs",
@@ -158,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "characterController.cs",
               "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
@@ -170,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Death.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Scripts\\Death\\Death.cs",
               "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Scripts\\Death\\Death.cs",
@@ -182,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ObjectToCentre.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Centre Player\\ObjectToCentre.cs",
               "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\Centre Player\\ObjectToCentre.cs",
@@ -194,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "SettingsManager.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Game Settings\\SettingsManager.cs",
               "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\Game Settings\\SettingsManager.cs",
@@ -206,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ObjectEditor.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\ObjectEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\ObjectEditor.cs",
@@ -218,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "CoinPickup.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\CoinPickup.cs",
               "RelativeDocumentMoniker": "Assets\\Score Package\\Scripts\\CoinPickup.cs",
@@ -230,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "parrallax.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Paralllax\\parrallax.cs",
               "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Paralllax\\parrallax.cs",
@@ -242,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DespawnObjects.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\DespawnObjects.cs",
               "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\DespawnObjects.cs",

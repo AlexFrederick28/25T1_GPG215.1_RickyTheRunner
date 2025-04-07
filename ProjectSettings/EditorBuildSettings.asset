@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Title/Scenes/Title-DESKTOP-IOG454J.unity
     guid: 488d2b7c81e633f4e8dae9f68de7dc39
   - enabled: 1
-    path: Assets/RickyTheRunner/Scenes/Parallax Testing.unity
-    guid: 9bdccd1df19cdb7419adf2c590942bfd
+    path: Assets/RickyTheRunner/Scenes/Prototype.unity
+    guid: a0756302c254a3e4eac042bab7068e86
   - enabled: 1
     path: Assets/Title/Scenes/Options.unity
     guid: 6576fde2d2072d44d950d22fc39c6ddd

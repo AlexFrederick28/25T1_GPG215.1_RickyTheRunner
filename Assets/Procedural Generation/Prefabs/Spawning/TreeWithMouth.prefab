@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5298208441146561730}
   - component: {fileID: 3680089475299315954}
   - component: {fileID: 5028229522239219982}
-  - component: {fileID: 3961770989043348881}
   m_Layer: 3
   m_Name: Top
   m_TagString: Untagged
@@ -169,8 +168,8 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 1
-  m_CompositeOperation: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.069433466, y: -0.070471585}
   m_SpriteTilingProperty:
@@ -263,65 +262,6 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
---- !u!66 &3961770989043348881
-CompositeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3230810283166604275}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
-  m_GenerationType: 0
-  m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 5298208441146561730}
-    m_ColliderPaths:
-    - - X: 2569511
-        Y: 16803066
-      - X: -11248695
-        Y: 16803066
-      - X: -11248695
-        Y: -25612016
-      - X: 2569511
-        Y: -25612016
-  m_CompositePaths:
-    m_Paths:
-    - - {x: 0.2569218, y: -2.5612016}
-      - {x: 0.2569218, y: 1.6803067}
-      - {x: -1.1248695, y: 1.6802772}
-      - {x: -1.1248403, y: -2.5612016}
-  m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
-  m_UseDelaunayMesh: 0
-  m_CompositeGameObject: {fileID: 3230810283166604275}
 --- !u!1 &5518267327298905420
 GameObject:
   m_ObjectHideFlags: 0

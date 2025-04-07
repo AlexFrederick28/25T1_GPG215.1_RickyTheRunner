@@ -217,7 +217,7 @@ MonoBehaviour:
   groundSpawnerOne: {fileID: 7440136197045833460}
   groundSpawnerTwo: {fileID: 7110984526094591391}
   objectDespawner: {fileID: 2047476068760580033}
-  maxAirHeight: 2.5
+  maxAirHeight: 2.3
   minAirHeight: -0.5
   groundObjectWaitTime: 4
   objectWaitTime: 6
