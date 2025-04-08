@@ -55,10 +55,10 @@ public class ScoreboardManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            StartCoroutine(DeathRoutine());
-        }
+        //if (Input.GetKeyDown(KeyCode.U))
+        //{
+        //    StartCoroutine(DeathRoutine());
+        //}
     }
 
     public void AddScore(int scoreAdd) // used to add score for the player
@@ -70,7 +70,7 @@ public class ScoreboardManager : MonoBehaviour
         //Debug.Log("Current score: [" + currentScore + "]");
     }
 
-    IEnumerator DeathRoutine()
+    public IEnumerator DeathRoutine()
     {
         yield return leaderboard.SubmitScoreRoutine(currentScore);
         //Debug.Log("Death Routine");

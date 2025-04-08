@@ -16,7 +16,7 @@ public class Leaderboard : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        FetchTopHighscoresRoutine();
     }
 
     public IEnumerator SubmitScoreRoutine(int scoreToUpload)
