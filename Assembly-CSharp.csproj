@@ -87,6 +87,7 @@
     <Compile Include="Assets\GhostPowerup.cs" />
     <Compile Include="Assets\Emilio Scriptd\Scripts\Moving.cs" />
     <Compile Include="Assets\Emilio Scriptd\Scripts\Inventory.cs" />
+    <Compile Include="Assets\transformSize.cs" />
     <Compile Include="Assets\Parallax\Scripts\ParallaxBackground.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,8 @@
+using NUnit.Framework.Constraints;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Android.Gradle.Manifest;
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEditor.Progress;
 
@@ -40,7 +42,7 @@ public class Inventory : MonoBehaviour
     }
     public void canFly()
     {
-        transform.position = new Vector2( - 0.31f, 0f);
+        transform.position = new Vector2(-0.31f, -0.63f);
         rb.gravityScale = 0f;
         capsuleCollider.enabled = false;
         circleCollider.enabled = false;
