@@ -23,18 +23,7 @@ public class PlayerLevelHandler : MonoBehaviour
 
     private bool levelUp = false;
 
-    #endregion
-
-    #region UpgradeUI
-
     [SerializeField] private GameObject upgradeDisplay;
-    [SerializeField] private GameObject[] threeCardSlots;
-
-    [SerializeField] private List<GameObject> bronzeCards;
-    [SerializeField] private List<GameObject> silverCards;
-    [SerializeField] private List<GameObject> goldCards;
-
-    [SerializeField] private List<GameObject> discardPile;
 
     #endregion
 
@@ -46,6 +35,8 @@ public class PlayerLevelHandler : MonoBehaviour
     private void Update()
     {
         ExperienceFormula();
+
+        ShowUpgradeDisplay();
     }
 
     private void ExperienceFormula()
@@ -84,8 +75,4 @@ public class PlayerLevelHandler : MonoBehaviour
         }
     }
 
-    public void DrawCards()
-    {
-        
-    }
 }
