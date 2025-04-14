@@ -33,7 +33,7 @@ public class PlayerLevelHandler : MonoBehaviour
         
         requiredCoinsForLevelUp = experienceAmplifier;
 
-        if (_ScoreboardManager.currentScore >= requiredCoinsForLevelUp)
+        if (ScoreboardManager.currentScore >= requiredCoinsForLevelUp)
         {
             currentLevel++;
             experienceAmplifier = Mathf.RoundToInt(experienceCurve.Evaluate(Mathf.InverseLerp(0, maxLevel, currentLevel)) * maxExperience);

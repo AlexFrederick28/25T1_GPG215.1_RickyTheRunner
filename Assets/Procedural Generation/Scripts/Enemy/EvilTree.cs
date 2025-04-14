@@ -17,7 +17,7 @@ public class EvilTree : MonoBehaviour
     [SerializeField] private GameObject positionTwo;
     [SerializeField] private GameObject positionThree;
 
-    private bool movedToPosOne = false;
+    //private bool movedToPosOne = false;
     private bool movedToPosTwo = false;
     private bool movedToPosThree = false;
 
