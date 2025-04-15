@@ -1,8 +1,12 @@
 using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEditor.Tilemaps;
+using UnityEditor.Timeline.Actions;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Jobs;
 using UnityEngine.UI;
 
@@ -21,11 +25,16 @@ public class PlayerLevelHandler : MonoBehaviour
 
     private ScoreboardManager _ScoreboardManager;
 
-    private bool levelUp = false;
+    public bool levelUp = false;
+    public bool activateOnce = false;
 
     [SerializeField] private GameObject upgradeDisplay;
 
+    public UnityEvent displayCards;
+    public UnityEvent pauseGame;
+
     #endregion
+
 
     private void Start()
     {
@@ -35,24 +44,25 @@ public class PlayerLevelHandler : MonoBehaviour
     private void Update()
     {
         ExperienceFormula();
-
-        ShowUpgradeDisplay();
     }
 
     private void ExperienceFormula()
     {
         requiredCoinsForLevelUp = experienceAmplifier;
-
         if (_ScoreboardManager.currentScore >= requiredCoinsForLevelUp)
         {
-            currentLevel++;
-            experienceAmplifier = Mathf.RoundToInt(experienceCurve.Evaluate(Mathf.InverseLerp(0, maxLevel, currentLevel)) * maxExperience);
-            levelUp = true;
-        }
+            if (levelUp == false)
+            {
+                currentLevel++;
+                experienceAmplifier = Mathf.RoundToInt(experienceCurve.Evaluate(Mathf.InverseLerp(0, maxLevel, currentLevel)) * maxExperience);
+                levelUp = true;
+                ShowUpgradeDisplay();
+            }
 
+        }
+        HideUpgradeDisplay();
     }
 
-   
     private void GetReferences()
     {
         if (_ScoreboardManager == null)
@@ -63,15 +73,21 @@ public class PlayerLevelHandler : MonoBehaviour
 
     private void ShowUpgradeDisplay()
     {
-        if (levelUp == true)
+        if (levelUp == true && activateOnce == false)
         {
+            Debug.Log("upgrading");
             upgradeDisplay.SetActive(true);
-            // Pause game
+            pauseGame.Invoke();
+            displayCards.Invoke();
+            activateOnce = true;
         }
-        else
+    }
+
+    private void HideUpgradeDisplay()
+    {
+        if (levelUp == false)
         {
             upgradeDisplay.SetActive(false);
-            // Play game
         }
     }
 
