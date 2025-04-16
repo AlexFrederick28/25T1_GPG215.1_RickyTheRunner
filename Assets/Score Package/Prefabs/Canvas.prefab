@@ -787,6 +787,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7812041286807260280}
+  - component: {fileID: 1260271475358375344}
   - component: {fileID: 2739524966699565182}
   - component: {fileID: 7974268844715424802}
   - component: {fileID: 5460312678800123525}
@@ -806,7 +807,7 @@ RectTransform:
   m_GameObject: {fileID: 2315143882841646586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6282091003435182421}
@@ -818,6 +819,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1260271475358375344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315143882841646586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce22ae2aaab0b2e4aa7c48cc2ebeb163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cards:
+  - {fileID: 11400000, guid: 25f4928501a99dd40b03051b2dc4efb2, type: 2}
+  - {fileID: 11400000, guid: c2a60a35863ffe645acac81e7a469ce4, type: 2}
+  - {fileID: 11400000, guid: 6ec17c1adb8cd504daab5ddab309f124, type: 2}
+  - {fileID: 11400000, guid: 7eabe0bc8a3ba5a47a1e7715ccce47d6, type: 2}
+  cardName:
+  - {fileID: 6195367291241999168}
+  - {fileID: 6347742601836189151}
+  - {fileID: 1649638425664472737}
+  cardDescription:
+  - {fileID: 4893863232222816432}
+  - {fileID: 2083244359125573624}
+  - {fileID: 1397778155406083574}
+  cardImage:
+  - {fileID: 4215711188279153896}
+  - {fileID: 3386392901195860893}
+  - {fileID: 2805828557416609251}
+  leftButton: {fileID: 5534221808706870157}
+  middleButton: {fileID: 5401635440136167196}
+  rightButton: {fileID: 5446778453862326387}
+  leftCard: {fileID: 0}
+  middleCard: {fileID: 0}
+  rightCard: {fileID: 0}
 --- !u!223 &2739524966699565182
 Canvas:
   m_ObjectHideFlags: 0
@@ -1226,7 +1262,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2972224649891101}
-  - component: {fileID: 9172434791186199255}
   m_Layer: 5
   m_Name: --- Rogue-Like ---
   m_TagString: Untagged
@@ -1257,42 +1292,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &9172434791186199255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5388850901709530323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce22ae2aaab0b2e4aa7c48cc2ebeb163, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cards:
-  - {fileID: 11400000, guid: 25f4928501a99dd40b03051b2dc4efb2, type: 2}
-  - {fileID: 11400000, guid: c2a60a35863ffe645acac81e7a469ce4, type: 2}
-  - {fileID: 11400000, guid: 6ec17c1adb8cd504daab5ddab309f124, type: 2}
-  - {fileID: 11400000, guid: 7eabe0bc8a3ba5a47a1e7715ccce47d6, type: 2}
-  cardName:
-  - {fileID: 6195367291241999168}
-  - {fileID: 6347742601836189151}
-  - {fileID: 1649638425664472737}
-  cardDescription:
-  - {fileID: 4893863232222816432}
-  - {fileID: 2083244359125573624}
-  - {fileID: 1397778155406083574}
-  cardImage:
-  - {fileID: 4215711188279153896}
-  - {fileID: 3386392901195860893}
-  - {fileID: 2805828557416609251}
-  leftButton: {fileID: 5534221808706870157}
-  middleButton: {fileID: 5401635440136167196}
-  rightButton: {fileID: 5446778453862326387}
-  leftCard: {fileID: 0}
-  middleCard: {fileID: 0}
-  rightCard: {fileID: 0}
-  resetCards: 0
 --- !u!1 &6385409747894104421
 GameObject:
   m_ObjectHideFlags: 0

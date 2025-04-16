@@ -17,6 +17,7 @@ MonoBehaviour:
   bronzeArtwork: {fileID: 21300000, guid: d63df82ea813ed746ab1e616c1d47262, type: 3}
   silverArtwork: {fileID: 21300000, guid: d1335b54e3d32f14ca02e1de86c011a9, type: 3}
   goldArtwork: {fileID: 21300000, guid: 7286492ddf2f64d4ab95930c9b5bf187, type: 3}
+  upgradeLevel: 1
   isBronze: 1
   isSilver: 0
   isGold: 0

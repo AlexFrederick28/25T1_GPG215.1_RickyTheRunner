@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class CardHandler : MonoBehaviour
 {
     #region UpgradeUI
 
-    [SerializeField] private List<Card> cards;
+    public List<Card> cards;
 
     [SerializeField] private TextMeshProUGUI[] cardName;
     [SerializeField] private TextMeshProUGUI[] cardDescription;
@@ -27,11 +28,12 @@ public class CardHandler : MonoBehaviour
     private PlayerLevelHandler _PlayerLevelHandler;
 
     private bool pressedUpgradeButton = false;
-    [SerializeField] private bool resetCards = false;
+    private bool resetCards = false;
+    private bool upgradedCard = false;
 
     #endregion
 
-    public void Update()
+    private void Start()
     {
         if (resetCards == false)
         {
@@ -41,11 +43,15 @@ public class CardHandler : MonoBehaviour
                 card.isSilver = false;
                 card.isGold = false;
                 card.cardUsed = false;
+                card.upgradeLevel = 1;
             }
 
             resetCards = true;
         }
+    }
 
+    public void Update()
+    {
         GetReferences();
         SelectPowerUp();
     }
@@ -53,6 +59,7 @@ public class CardHandler : MonoBehaviour
     public void DrawRandomCards()
     {
         pressedUpgradeButton = false;
+        upgradedCard = false; // ensures that cards do not upgrade more than once on a single button press
 
         cardImage[0].sprite = null;
         cardImage[1].sprite = null;
@@ -70,11 +77,11 @@ public class CardHandler : MonoBehaviour
             {
                 cardImage[0].sprite = card.bronzeArtwork;
             }
-            if (card.isSilver) // custom card logic here
+            else if (card.isSilver) // custom card logic here
             {
                 cardImage[0].sprite = card.silverArtwork;
             }
-            if (card.isGold) // custom card logic here
+            else if (card.isGold) // custom card logic here
             {
                 cardImage[0].sprite = card.goldArtwork;
             }
@@ -96,11 +103,11 @@ public class CardHandler : MonoBehaviour
             {
                 cardImage[1].sprite = card.bronzeArtwork;
             }
-            if (card.isSilver) // custom card logic here
+            else if (card.isSilver) // custom card logic here
             {
                 cardImage[1].sprite = card.silverArtwork;
             }
-            if (card.isGold) // custom card logic here
+            else if (card.isGold) // custom card logic here
             {
                 cardImage[1].sprite = card.goldArtwork;
             }
@@ -122,11 +129,11 @@ public class CardHandler : MonoBehaviour
             {
                 cardImage[2].sprite = card.bronzeArtwork;
             }
-            if (card.isSilver) // custom card logic here
+            else if (card.isSilver) // custom card logic here
             {
                 cardImage[2].sprite = card.silverArtwork;
             }
-            if (card.isGold) // custom card logic here
+            else if (card.isGold) // custom card logic here
             {
                 cardImage[2].sprite = card.goldArtwork;
             }
@@ -150,33 +157,38 @@ public class CardHandler : MonoBehaviour
 
     private void LeftButtonPowerUp()
     {
-
         if (pressedUpgradeButton == false)
         {
             leftCard.upgradeEvent.Invoke();
-            _PlayerLevelHandler.levelUp = false;
-            _PlayerLevelHandler.pauseGame.Invoke();
+            _PlayerLevelHandler.levelUp = false; // finish level up sequence
             _PlayerLevelHandler.activateOnce = false; // prevents function from looping (protective lock)
+            _PlayerLevelHandler.pauseGame.Invoke();
 
-            if (leftCard.isBronze)
+            if (upgradedCard == false) // ensures that cards do not upgrade more than once on a single button press
             {
-                // upgrade card
-                leftCard.isBronze = false;
-                leftCard.isSilver = true;
-            }
-            else if (leftCard.isSilver)
-            {
-                // upgrade card
-                leftCard.isSilver = false;
-                leftCard.isGold = true;
-            }
-            else if (leftCard.isGold)
-            {
-                // upgrade card
-            }
+                switch (leftCard.upgradeLevel)
+                {
+                    case 1:
+                        leftCard.upgradeLevel = 2;
+                        leftCard.isBronze = false;
+                        leftCard.isSilver = true;
+                        leftCard.isGold = false;
+                        upgradedCard = true;
+                        break;
+                    case 2:
+                        leftCard.upgradeLevel = 3;
+                        leftCard.isBronze = false;
+                        leftCard.isSilver = false;
+                        leftCard.isGold = true;
+                        upgradedCard = true;
+                        break;
+                    case 3:
+                        leftCard.cardUsed = true;
+                        cards.Remove(leftCard);
+                        break;
 
-            Debug.Log("Pressing button");
-
+                }
+            }
             pressedUpgradeButton = true;
         }
        
@@ -184,51 +196,79 @@ public class CardHandler : MonoBehaviour
     }
     private void MiddleButtonPowerUp()
     {
-        middleCard.upgradeEvent.Invoke();
-        _PlayerLevelHandler.levelUp = false;
-        _PlayerLevelHandler.pauseGame.Invoke();
-        _PlayerLevelHandler.activateOnce = false; // prevents function from looping (protective lock)
 
-        if (middleCard.isBronze)
+        if (pressedUpgradeButton == false)
         {
-            // upgrade card
-            middleCard.isBronze = false;
-            middleCard.isSilver = true; 
+            middleCard.upgradeEvent.Invoke();
+            _PlayerLevelHandler.levelUp = false; // finish level up sequence
+            _PlayerLevelHandler.pauseGame.Invoke();
+            _PlayerLevelHandler.activateOnce = false; // prevents function from looping (protective lock)
+
+            if (upgradedCard == false) // ensures that cards do not upgrade more than once on a single button press
+            {
+                switch (middleCard.upgradeLevel)
+                {
+                    case 1:
+                        middleCard.upgradeLevel = 2;
+                        middleCard.isBronze = false;
+                        middleCard.isSilver = true;
+                        middleCard.isGold = false;
+                        upgradedCard = true;
+                        break;
+                    case 2:
+                        middleCard.upgradeLevel = 3;
+                        middleCard.isBronze = false;
+                        middleCard.isSilver = false;
+                        middleCard.isGold = true;
+                        upgradedCard = true;
+                        break;
+                    case 3:
+                        middleCard.cardUsed = true;
+                        cards.Remove(middleCard);
+                        break;
+                }
+            }
+            pressedUpgradeButton = true;
         }
-        if (middleCard.isSilver)
-        {
-            // upgrade card
-            middleCard.isSilver = false;
-            middleCard.isGold = true;
-        }
-        if (middleCard.isGold)
-        {
-            // upgrade card
-        }
+
     }
     private void RightButtonPowerUp()
     {
-        rightCard.upgradeEvent.Invoke();
-        _PlayerLevelHandler.levelUp = false;
-        _PlayerLevelHandler.pauseGame.Invoke();
-        _PlayerLevelHandler.activateOnce = false; // prevents function from looping (protective lock)
 
-        if (rightCard.isBronze)
+        if (pressedUpgradeButton == false)
         {
-            // upgrade card
-            rightCard.isBronze = false;
-            rightCard.isSilver = true;
+            rightCard.upgradeEvent.Invoke();
+            _PlayerLevelHandler.levelUp = false; // finish level up sequence
+            _PlayerLevelHandler.pauseGame.Invoke();
+            _PlayerLevelHandler.activateOnce = false; // prevents function from looping (protective lock)
+
+            if (upgradedCard == false) // ensures that cards do not upgrade more than once on a single button press
+            {
+                switch (rightCard.upgradeLevel)
+                {
+                    case 1:
+                        rightCard.upgradeLevel = 2;
+                        rightCard.isBronze = false;
+                        rightCard.isSilver = true;
+                        rightCard.isGold = false;
+                        upgradedCard = true;
+                        break;
+                    case 2:
+                        rightCard.upgradeLevel = 3;
+                        rightCard.isBronze = false;
+                        rightCard.isSilver = false;
+                        rightCard.isGold = true;
+                        upgradedCard = true;
+                        break;
+                    case 3:
+                        rightCard.cardUsed = true;
+                        cards.Remove(rightCard);
+                        break;
+                }
+            }
+            pressedUpgradeButton = true;
         }
-        if (rightCard.isSilver)
-        {
-            // upgrade card
-            rightCard.isSilver = false;
-            rightCard.isGold = true;
-        }
-        if (rightCard.isGold)
-        {
-            // upgrade card
-        }
+
     }
 
     private void GetReferences()

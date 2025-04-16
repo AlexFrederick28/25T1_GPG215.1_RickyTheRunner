@@ -9,6 +9,7 @@ public class Card : ScriptableObject
     public Sprite bronzeArtwork;
     public Sprite silverArtwork;
     public Sprite goldArtwork;
+    public int upgradeLevel = 0;
     public bool isBronze;
     public bool isSilver;
     public bool isGold;

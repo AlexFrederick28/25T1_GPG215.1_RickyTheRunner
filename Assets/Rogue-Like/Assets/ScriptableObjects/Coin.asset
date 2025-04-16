@@ -15,10 +15,11 @@ MonoBehaviour:
   cardName: Coin
   description: Spawns more coins!
   bronzeArtwork: {fileID: 21300000, guid: 13337539303d0d94281a8ed21175a273, type: 3}
-  silverArtwork: {fileID: 21300000, guid: 87e402cd55f76674a94bf9a973b2af7f, type: 3}
-  goldArtwork: {fileID: 21300000, guid: b55f11bd17c9a1949bda8a11c5fe2b3b, type: 3}
-  isBronze: 1
-  isSilver: 0
+  silverArtwork: {fileID: 21300000, guid: b55f11bd17c9a1949bda8a11c5fe2b3b, type: 3}
+  goldArtwork: {fileID: 21300000, guid: 87e402cd55f76674a94bf9a973b2af7f, type: 3}
+  upgradeLevel: 2
+  isBronze: 0
+  isSilver: 1
   isGold: 0
   cardUsed: 0
   upgradeEvent:
