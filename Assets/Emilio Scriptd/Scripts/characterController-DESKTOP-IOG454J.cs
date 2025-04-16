@@ -1,3 +1,7 @@
+using JetBrains.Annotations;
+using System.Collections;
+using System.Collections.Generic;
+using Unity.Android.Gradle.Manifest;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -5,6 +9,7 @@ public class characterController : MonoBehaviour
 {
     public float jumpPower = 6f;
     private float horizontal;
+    private bool isSmall;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask ground;
@@ -18,10 +23,11 @@ public class characterController : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        {
+            rb = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
+        }
     }
-
 
     private void Update()
     {
@@ -68,11 +74,12 @@ public class characterController : MonoBehaviour
         {
             anim.SetBool("isDoubleJumping", false);
         }
-      
     }
+
     public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundChecker.position, 0.1f, ground);
     }
+
 
 }

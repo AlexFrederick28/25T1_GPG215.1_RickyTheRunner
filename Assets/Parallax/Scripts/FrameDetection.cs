@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FrameDetection : MonoBehaviour
 {
-
+    
     [SerializeField] private ParallaxBackground _ParallaxBackground;
 
     private void OnTriggerEnter2D(Collider2D collision)

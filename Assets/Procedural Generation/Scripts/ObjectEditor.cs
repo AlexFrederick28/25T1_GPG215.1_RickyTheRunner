@@ -87,7 +87,6 @@ public class ObjectEditor : MonoBehaviour
         {
             playerCollided = true;
         }
-        
     }
 
     private IEnumerator ExplosionAnimation()
@@ -113,5 +112,4 @@ public class ObjectEditor : MonoBehaviour
             _CharacterController = FindFirstObjectByType<characterController>();
         }
     }
-
 }
