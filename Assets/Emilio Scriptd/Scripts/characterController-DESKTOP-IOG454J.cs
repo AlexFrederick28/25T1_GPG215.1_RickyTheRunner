@@ -80,6 +80,4 @@ public class characterController : MonoBehaviour
     {
         return Physics2D.OverlapCircle(groundChecker.position, 0.1f, ground);
     }
-
-
 }

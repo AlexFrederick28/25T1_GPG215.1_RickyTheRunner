@@ -63,10 +63,13 @@
   <ItemGroup>
     <Compile Include="Assets\Emilio Scriptd\Paralllax\Free 2D Cartoon Parallax Background\Demo\Script\ParallaxBackground_0.cs" />
     <Compile Include="Assets\Score Package\Scripts\ScoreboardManager.cs" />
+    <Compile Include="Assets\Score Package\Scripts\Highscore\PlayerManager.cs" />
+    <Compile Include="Assets\Emilio Scriptd\Scripts\ShieldManager.cs" />
     <Compile Include="Assets\Emilio Scriptd\Camera.cs" />
+    <Compile Include="Assets\Rogue-Like\Scripts\UpgradeEvents.cs" />
     <Compile Include="Assets\Procedural Generation\Scripts\Enemy\TombStone.cs" />
+    <Compile Include="Assets\Procedural Generation\Scripts\Enemy\EvilTree.cs" />
     <Compile Include="Assets\Emilio Scriptd\Paralllax\parrallax.cs" />
-    <Compile Include="Assets\Emilio Scriptd\Scripts\SheildManager.cs" />
     <Compile Include="Assets\Emilio Scriptd\Paralllax\Free 2D Cartoon Parallax Background\Demo\Script\BackgroundControl_0.cs" />
     <Compile Include="Assets\Procedural Generation\Scripts\Centre Player\ObjectToCentre.cs" />
     <Compile Include="Assets\Score Package\Scripts\SoundManager.cs" />
@@ -74,10 +77,12 @@
     <Compile Include="Assets\Title\LevelManager.cs" />
     <Compile Include="Assets\Score Package\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Procedural Generation\Scripts\DespawnObjects.cs" />
+    <Compile Include="Assets\Rogue-Like\Scripts\PlayerLevelHandler.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Emilio Scriptd\Scripts\characterController-DESKTOP-IOG454J.cs" />
     <Compile Include="Assets\Procedural Generation\Scripts\ObjectSpawner.cs" />
     <Compile Include="Assets\Score Package\Scripts\GamePause.cs" />
+    <Compile Include="Assets\Score Package\Scripts\Highscore\Leaderboard.cs" />
     <Compile Include="Assets\Score Package\Scripts\CoinPickup.cs" />
     <Compile Include="Assets\Procedural Generation\Scripts\Game Settings\SettingsManager.cs" />
     <Compile Include="Assets\Donotdestroy.cs" />
@@ -1393,6 +1398,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="LootLockerTestUtils.csproj">
+      <Project>{83D03124-9FE4-72E9-02FF-051D744FF8F7}</Project>
+      <Name>LootLockerTestUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="LootLockerExamples.csproj">
+      <Project>{7BDE4145-04D6-8596-B306-4BE9158BE576}</Project>
+      <Name>LootLockerExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="lootlocker.lootlockersdk.runtime.csproj">
+      <Project>{A9268033-106D-E062-9DA7-ACB8CDAEDB62}</Project>
+      <Name>lootlocker.lootlockersdk.runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

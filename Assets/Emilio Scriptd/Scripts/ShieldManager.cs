@@ -1,7 +1,7 @@
  using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-public class SheildManager : MonoBehaviour
+public class ShieldManager : MonoBehaviour
 {
     public static int sheild = 0;
     public Image[] sheilds;

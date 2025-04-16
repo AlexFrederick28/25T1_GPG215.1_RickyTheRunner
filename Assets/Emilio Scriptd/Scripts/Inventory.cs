@@ -34,11 +34,11 @@ public class Inventory : MonoBehaviour
     }
     public void Add()
     {
-        SheildManager.sheild++;
+        ShieldManager.sheild++;
     }
     public void Remove()
     {
-        SheildManager.sheild--;
+        ShieldManager.sheild--;
     }
     public void canFly()
     {
