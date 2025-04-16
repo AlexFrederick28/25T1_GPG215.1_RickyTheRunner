@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 1452313656587952196}
   - component: {fileID: 6811987087255187183}
   - component: {fileID: 1762201186875007375}
+  - component: {fileID: 4160716666984134637}
   - component: {fileID: 4600014217989669553}
   - component: {fileID: 5427206178496731869}
   - component: {fileID: 6244156281194319761}
+  - component: {fileID: 4698582960202522986}
   - component: {fileID: 5455694858794614182}
   - component: {fileID: 1065741238280171504}
   m_Layer: 0
@@ -82,7 +84,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 741214845
   m_SortingLayer: 5
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 5867824760196799500, guid: 4b1abe6938b93ea44b446e3961bd3221, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -107,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLevel: 10
-  maxExperience: 200
+  maxExperience: 180
   currentLevel: 1
   requiredCoinsForLevelUp: 0
   experienceAmplifier: 10
@@ -117,24 +119,78 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  levelUp: 0
+  activateOnce: 0
+  upgradeDisplay: {fileID: 0}
+  displayCards:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CardHandler, Assembly-CSharp
+        m_MethodName: DrawRandomCards
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  pauseGame:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GamePause, Assembly-CSharp
+        m_MethodName: TogglePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4160716666984134637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361712775249128078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b2f754b267ce3468ef49f221930560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circleCollider: {fileID: 1065741238280171504}
+  capsuleCollider: {fileID: 1065741238280171504}
+  rb: {fileID: 4600014217989669553}
+  coin: {fileID: 11400000, guid: 25f4928501a99dd40b03051b2dc4efb2, type: 2}
+  ghost: {fileID: 11400000, guid: c2a60a35863ffe645acac81e7a469ce4, type: 2}
+  shrink: {fileID: 11400000, guid: 7eabe0bc8a3ba5a47a1e7715ccce47d6, type: 2}
+  shrinkTime: 0.5
+  shrinkSize: 0.8
+  shield: {fileID: 11400000, guid: 6ec17c1adb8cd504daab5ddab309f124, type: 2}
 --- !u!50 &4600014217989669553
 Rigidbody2D:
   serializedVersion: 5
@@ -150,7 +206,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -206,6 +262,24 @@ MonoBehaviour:
   isJumping: 0
   firstJump: {fileID: 8300000, guid: 8a645a361dcea2b418673621e094f121, type: 3}
   secondJump: {fileID: 8300000, guid: b4aae8314693dab4399fc2c41acadc71, type: 3}
+--- !u!114 &4698582960202522986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361712775249128078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be55c2b6902fc7e45bd97b42d260500d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullShield: {fileID: -5299367048563840147, guid: 8d2747966a26c4e408bd10adc5bdd3a3, type: 3}
+  emptyShield: {fileID: -3114305938004383098, guid: 7733e7ac37db5c340a8cb8ec7e7db929, type: 3}
 --- !u!114 &5455694858794614182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,7 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShadowGroup: 0
-  m_Priority: 2
+  m_Priority: 1
   m_ComponentVersion: 5
   m_HasRenderer: 1
   m_UseRendererSilhouette: 1

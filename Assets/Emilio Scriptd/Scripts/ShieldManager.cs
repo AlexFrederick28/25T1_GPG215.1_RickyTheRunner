@@ -3,20 +3,20 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ShieldManager : MonoBehaviour
 {
-    public static int sheild = 0;
-    public Image[] sheilds;
-    public Sprite fullSheild;
-    public Sprite emptySheild;
+    public static int shield = 0;
+    public Image[] shieldImages;
+    public Sprite fullShield;
+    public Sprite emptyShield;
     // Update is called once per frame
     void Update()
     {
-     foreach (Image img in sheilds)
+     foreach (Image img in shieldImages)
         {
-            img.sprite = emptySheild;
+            img.sprite = emptyShield;
         }
-     for(int i = 0; i < sheild; i++)
+     for(int i = 0; i < shield; i++)
         {
-         sheilds[i].sprite = fullSheild;    
+         shieldImages[i].sprite = fullShield;    
         }
     }
  

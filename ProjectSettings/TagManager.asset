@@ -5,10 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Background
-  - PowerUp
   - Bomb
   - Small
   - Ghost
+  - Shield
   layers:
   - Default
   - TransparentFX

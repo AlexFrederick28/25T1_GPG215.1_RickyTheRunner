@@ -64,7 +64,7 @@ public class ScoreboardManager : MonoBehaviour
     public void AddScore(int scoreAdd) // used to add score for the player
     {
         currentScore += scoreAdd; // add text
-        Debug.Log("Score: [" + currentScore + "]");
+        //Debug.Log("Score: [" + currentScore + "]");
         scoreText.text = currentScore.ToString(); // change text
 
         //Debug.Log("Current score: [" + currentScore + "]");

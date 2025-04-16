@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -37,12 +38,15 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] private float coinObjectWaitTime;
     [Tooltip("How often a coin object spawns")]
     [SerializeField] private float largeGroundObjectWaitTime;
-    
+    [Tooltip("How often a power up spawns")]
+    [SerializeField] private float powerUpWaitTime;
+
     private float groundObjectTimeTillSpawn;
     private float objectTimeTillSpawn;
     private float dangerObjectTimeTillSpawn;
     private float coinObjectTimeTillSpawn;
     private float largeGroundObjectTimeTillSpawn;
+    private float powerUpTimeTillSpawn;
 
     [Space]
     [Header("Objects to Spawn")]
@@ -56,11 +60,16 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] private GameObject[] coinObjectToSpawn;
     [Tooltip("Array of gameobjects")]
     [SerializeField] private GameObject[] largeGroundObjectToSpawn;
+    public List<GameObject> powerUpToSpawnList;
 
-
+    [SerializeField] private PowerUps _PowerUps;
 
     #endregion
 
+    private void Start()
+    {
+        GetReferences();
+    }
 
     private void Update()
     {
@@ -73,6 +82,8 @@ public class ObjectSpawner : MonoBehaviour
        SpawnCoinObjects();
 
        SpawnLargeGroundObjects();
+
+       SpawnPowerUps();
     }
     private void SpawnObjects()
     {
@@ -145,6 +156,30 @@ public class ObjectSpawner : MonoBehaviour
             Instantiate(largeGroundObjectToSpawn[Random.Range(0, largeGroundObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
 
             largeGroundObjectTimeTillSpawn = 0;
+        }
+    }
+
+    private void SpawnPowerUps()
+    {
+        if (powerUpToSpawnList.Count > 0)
+        {
+            powerUpTimeTillSpawn += Time.deltaTime;
+
+            if (powerUpTimeTillSpawn >= powerUpWaitTime)
+            {
+                Vector2 objectSpawnPosition = new Vector2(Random.Range(airSpawnerOne.transform.position.x, airSpawnerTwo.transform.position.x), Random.Range(minAirHeight, maxAirHeight));
+
+                Instantiate(powerUpToSpawnList[Random.Range(0, powerUpToSpawnList.Count)], objectSpawnPosition, Quaternion.identity);
+
+                powerUpTimeTillSpawn = 0;
+            }
+        }
+    }
+    private void GetReferences()
+    {
+        if (_PowerUps == null)
+        {
+            _PowerUps = FindAnyObjectByType<PowerUps>();
         }
     }
 

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f56fbb722447345b6a73068e1fe173, type: 3}
+  m_Name: Shield
+  m_EditorClassIdentifier: 
+  cardName: Shield
+  description: Protects against being knocked back!
+  bronzeArtwork: {fileID: 21300000, guid: 91676e9aaafa3b14bbd1b7a3cdf1a7a7, type: 3}
+  silverArtwork: {fileID: 21300000, guid: cad0120a2bb3a03478a852cc5fb3d3da, type: 3}
+  goldArtwork: {fileID: 21300000, guid: e200b4868849d8d419de8666ddedf0db, type: 3}
+  upgradeLevel: 1
+  isBronze: 1
+  isSilver: 0
+  isGold: 0
+  cardUsed: 0
+  upgradeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6199290529235723080, guid: d892308ee3eb9c74d9743db3791de7be, type: 3}
+        m_TargetAssemblyTypeName: PowerUps, Assembly-CSharp
+        m_MethodName: ShieldPower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  powerUpPrefab: {fileID: 6706158630607792547, guid: 8b2fd69638a28c24792505457b094f33, type: 3}

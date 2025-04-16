@@ -3,36 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\uni 2024 - 2025\\25t1_uni\\25t1_gpg215.1_rickytherunner\\assets\\title\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\title\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\uni 2024 - 2025\\25t1_uni\\25t1_gpg215.1_rickytherunner\\assets\\emilio scriptd\\scripts\\powerupeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\emilio scriptd\\scripts\\powerupeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\uni 2024 - 2025\\25t1_uni\\25t1_gpg215.1_rickytherunner\\assets\\rogue-like\\scripts\\playerlevelhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\rogue-like\\scripts\\powerups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\rogue-like\\scripts\\powerups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\procedural generation\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\procedural generation\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\rogue-like\\scripts\\cardhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\rogue-like\\scripts\\cardhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\rogue-like\\scripts\\playerlevelhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\rogue-like\\scripts\\playerlevelhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\ScoreboardManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:Assets\\Score Package\\Scripts\\ScoreboardManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\rogue-like\\scripts\\upgradeevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\rogue-like\\scripts\\upgradeevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\procedural generation\\scripts\\enemy\\eviltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\procedural generation\\scripts\\enemy\\eviltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\procedural generation\\scripts\\objecteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\procedural generation\\scripts\\objecteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\emilio scriptd\\scripts\\charactercontroller-desktop-iog454j.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\emilio scriptd\\scripts\\charactercontroller-desktop-iog454j.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\rogue-like\\scripts\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\rogue-like\\scripts\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\procedural generation\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\procedural generation\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\ScoreboardManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:Assets\\Score Package\\Scripts\\ScoreboardManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\score package\\scripts\\gamepause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\score package\\scripts\\gamepause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\rogue-like\\scripts\\upgradeevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\rogue-like\\scripts\\upgradeevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\title\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\title\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\procedural generation\\scripts\\enemy\\eviltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\procedural generation\\scripts\\enemy\\eviltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\DespawnObjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,27 +59,8 @@
       "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:Assets\\Procedural Generation\\Scripts\\Centre Player\\ObjectToCentre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\assets\\procedural generation\\scripts\\enemy\\ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:assets\\procedural generation\\scripts\\enemy\\ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\CoinPickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:Assets\\Score Package\\Scripts\\CoinPickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\amd\\onedrive\\documents\\25t1_gpg215.1_rickytherunner\\assets\\scripts\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Scripts\\Death\\Death.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:Assets\\Emilio Scriptd\\Scripts\\Death\\Death.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Game Settings\\SettingsManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:Assets\\Procedural Generation\\Scripts\\Game Settings\\SettingsManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Paralllax\\parrallax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDECCA37-80B1-7B1A-932E-60E24F12CA3A}|Assembly-CSharp.csproj|solutionrelative:Assets\\Emilio Scriptd\\Paralllax\\parrallax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,6 +75,91 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PowerUpEditor.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Scripts\\PowerUpEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Scripts\\PowerUpEditor.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Scripts\\PowerUpEditor.cs",
+              "RelativeToolTip": "Assets\\Emilio Scriptd\\Scripts\\PowerUpEditor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T06:28:15.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PowerUps.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\PowerUps.cs",
+              "RelativeDocumentMoniker": "Assets\\Rogue-Like\\Scripts\\PowerUps.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\PowerUps.cs",
+              "RelativeToolTip": "Assets\\Rogue-Like\\Scripts\\PowerUps.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T07:02:16.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CardHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\CardHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Rogue-Like\\Scripts\\CardHandler.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\CardHandler.cs",
+              "RelativeToolTip": "Assets\\Rogue-Like\\Scripts\\CardHandler.cs",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAIwMkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T08:57:28.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerLevelHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\PlayerLevelHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Rogue-Like\\Scripts\\PlayerLevelHandler.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\PlayerLevelHandler.cs",
+              "RelativeToolTip": "Assets\\Rogue-Like\\Scripts\\PlayerLevelHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T03:52:19.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ObjectSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\ObjectSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\ObjectSpawner.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\ObjectSpawner.cs",
+              "RelativeToolTip": "Assets\\Procedural Generation\\Scripts\\ObjectSpawner.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAQwLcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T03:43:38.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GamePause.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\GamePause.cs",
+              "RelativeDocumentMoniker": "Assets\\Score Package\\Scripts\\GamePause.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\GamePause.cs",
+              "RelativeToolTip": "Assets\\Score Package\\Scripts\\GamePause.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T03:02:15.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\Card.cs",
+              "RelativeDocumentMoniker": "Assets\\Rogue-Like\\Scripts\\Card.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\Card.cs",
+              "RelativeToolTip": "Assets\\Rogue-Like\\Scripts\\Card.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T09:04:15.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "LevelManager.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Title\\LevelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Title\\LevelManager.cs",
@@ -85,121 +167,47 @@
               "RelativeToolTip": "Assets\\Title\\LevelManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T05:18:34.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T05:18:34.702Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerLevelHandler.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\PlayerLevelHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Rogue-Like\\Scripts\\PlayerLevelHandler.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\PlayerLevelHandler.cs",
-              "RelativeToolTip": "Assets\\Rogue-Like\\Scripts\\PlayerLevelHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T03:52:19.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ScoreboardManager.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\ScoreboardManager.cs",
               "RelativeDocumentMoniker": "Assets\\Score Package\\Scripts\\ScoreboardManager.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\ScoreboardManager.cs",
               "RelativeToolTip": "Assets\\Score Package\\Scripts\\ScoreboardManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAQAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwDgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T00:55:15.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "EvilTree.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Enemy\\EvilTree.cs",
               "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\Enemy\\EvilTree.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Enemy\\EvilTree.cs",
               "RelativeToolTip": "Assets\\Procedural Generation\\Scripts\\Enemy\\EvilTree.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwDYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T02:19:10.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "UpgradeEvents.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\UpgradeEvents.cs",
               "RelativeDocumentMoniker": "Assets\\Rogue-Like\\Scripts\\UpgradeEvents.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Rogue-Like\\Scripts\\UpgradeEvents.cs",
               "RelativeToolTip": "Assets\\Rogue-Like\\Scripts\\UpgradeEvents.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T01:38:27.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ObjectSpawner.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\ObjectSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\ObjectSpawner.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\ObjectSpawner.cs",
-              "RelativeToolTip": "Assets\\Procedural Generation\\Scripts\\ObjectSpawner.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAvwJYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T03:43:38.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "characterController-DESKTOP-IOG454J.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Scripts\\characterController-DESKTOP-IOG454J.cs",
-              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Scripts\\characterController-DESKTOP-IOG454J.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Scripts\\characterController-DESKTOP-IOG454J.cs",
-              "RelativeToolTip": "Assets\\Emilio Scriptd\\Scripts\\characterController-DESKTOP-IOG454J.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T10:00:10.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Ghost.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Enemy\\Ghost.cs",
-              "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\Enemy\\Ghost.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Enemy\\Ghost.cs",
-              "RelativeToolTip": "Assets\\Procedural Generation\\Scripts\\Enemy\\Ghost.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T09:45:10.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "characterController.cs",
-              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
-              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AMD\\OneDrive\\Documents\\25T1_GPG215.1_RickyTheRunner\\Assets\\Scripts\\characterController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowDIAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T05:05:49.669Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Death.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Scripts\\Death\\Death.cs",
-              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Scripts\\Death\\Death.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Scripts\\Death\\Death.cs",
-              "RelativeToolTip": "Assets\\Emilio Scriptd\\Scripts\\Death\\Death.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T04:57:42.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "ObjectToCentre.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Centre Player\\ObjectToCentre.cs",
               "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\Centre Player\\ObjectToCentre.cs",
@@ -211,31 +219,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SettingsManager.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Game Settings\\SettingsManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\Game Settings\\SettingsManager.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\Game Settings\\SettingsManager.cs",
-              "RelativeToolTip": "Assets\\Procedural Generation\\Scripts\\Game Settings\\SettingsManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T04:32:16.926Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ObjectEditor.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\ObjectEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\ObjectEditor.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\ObjectEditor.cs",
               "RelativeToolTip": "Assets\\Procedural Generation\\Scripts\\ObjectEditor.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAgwG4AAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T03:40:44.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "CoinPickup.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Score Package\\Scripts\\CoinPickup.cs",
               "RelativeDocumentMoniker": "Assets\\Score Package\\Scripts\\CoinPickup.cs",
@@ -247,19 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "parrallax.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Paralllax\\parrallax.cs",
-              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Paralllax\\parrallax.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Emilio Scriptd\\Paralllax\\parrallax.cs",
-              "RelativeToolTip": "Assets\\Emilio Scriptd\\Paralllax\\parrallax.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T01:57:04.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "DespawnObjects.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Uni 2024 - 2025\\25T1_Uni\\25T1_GPG215.1_RickyTheRunner\\Assets\\Procedural Generation\\Scripts\\DespawnObjects.cs",
               "RelativeDocumentMoniker": "Assets\\Procedural Generation\\Scripts\\DespawnObjects.cs",
