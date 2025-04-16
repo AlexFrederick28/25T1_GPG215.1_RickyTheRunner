@@ -14,7 +14,6 @@ public class Card : ScriptableObject
     public bool isSilver;
     public bool isGold;
     public bool cardUsed;
-    public UnityEvent upgradeEvent;
     public GameObject powerUpPrefab;
     public bool addedPowerUpToSpawn;
 

@@ -65,13 +65,10 @@ public class ObjectEditor : MonoBehaviour
         if (playerCollided == true)
         {
 
-            Debug.Log("Player hit!");
-
             _CharacterController.transform.position += new Vector3(pushDirectionX, pushDirectionY, 0) * pushMultiplier * Time.deltaTime;
 
             if (destroyOnInteraction == true)
             {
-                Debug.Log("Explosion");
                 StartCoroutine(ExplosionAnimation());
             }
 

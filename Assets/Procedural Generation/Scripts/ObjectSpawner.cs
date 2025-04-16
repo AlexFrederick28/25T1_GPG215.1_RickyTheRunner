@@ -174,6 +174,10 @@ public class ObjectSpawner : MonoBehaviour
                 powerUpTimeTillSpawn = 0;
             }
         }
+        else
+        {
+            return;
+        }
     }
     private void GetReferences()
     {

@@ -13,21 +13,11 @@ public class PowerUpEditor : MonoBehaviour
     [SerializeField] Collider2D capsuleCollider;
     [SerializeField] Rigidbody2D rb;
 
-    [Space]
-    [Header("Cards")]
-    [SerializeField] private Card coin;
-    [Space]
-    [SerializeField] private Card ghost;
-    [Space]
-    [SerializeField] private Card shrink;
-    [SerializeField] private float shrinkTime;
-    [SerializeField] private float shrinkSize;
-    [Space]
-    [SerializeField] private Card shield;
+    private PowerUps _PowerUps;
 
-    private void Update()
+    private void Start()
     {
-        PowerStatus();
+        GetReferences();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -44,13 +34,13 @@ public class PowerUpEditor : MonoBehaviour
         }
         if (other.CompareTag("Ghost"))
         {
-            canFly();
+            GhostPower();
 
             Destroy(other.gameObject);
         }
-        if (other.CompareTag("Small"))
+        if (other.CompareTag("Shrink"))
         {
-            Small();
+            ShrinkPower();
 
             Destroy(other.gameObject);
         }
@@ -63,16 +53,14 @@ public class PowerUpEditor : MonoBehaviour
     {
         ShieldManager.shield--;
     }
-    public void canFly()
+    public void GhostPower()
     {
 
-        Debug.Log("FLYING");
         transform.position = new Vector2(-0.31f, -0.63f);
         rb.gravityScale = 0f;
         capsuleCollider.enabled = false;
         circleCollider.enabled = false;
         
-
         IEnumerator Fly()
         {
             yield return new WaitForSecondsRealtime(3f);
@@ -82,76 +70,25 @@ public class PowerUpEditor : MonoBehaviour
             circleCollider.enabled = true;
         }
         StartCoroutine(Fly());
+
     }
-    public void Small()
+    public void ShrinkPower()
     {
-        transform.localScale = new Vector2(shrinkSize, shrinkSize);
+        transform.localScale = new Vector2(_PowerUps.shrinkSize, _PowerUps.shrinkSize);
 
         StartCoroutine(ShrinkDuration());
     }
     IEnumerator ShrinkDuration()
     {
-        yield return new WaitForSeconds(shrinkTime);
+        yield return new WaitForSeconds(_PowerUps.shrinkTime);
         transform.localScale = new Vector2(1f, 1f);
     }
 
-    private void PowerStatus()
+    private void GetReferences()
     {
-        // COIN
-        if (coin.isBronze)
+        if (_PowerUps == null)
         {
-
-        }
-        else if (coin.isSilver)
-        {
-
-        }
-        else if (coin.isGold)
-        {
-
-        }
-
-        // GHOST
-        if (ghost.isBronze)
-        {
-
-        }
-        else if (ghost.isSilver)
-        {
-
-        }
-        else if (ghost.isGold)
-        {
-
-        }
-
-        // SHRINK
-        if (shrink.isBronze)
-        {
-            // shrink duration stays as set in inspector
-            // shrink size stays as set in inspector
-        }
-        else if (shrink.isSilver)
-        {
-            
-        }
-        else if (shrink.isGold)
-        {
-            
-        }
-
-        // SHIELD
-        if (shield.isBronze)
-        {
-
-        }
-        else if (shield.isSilver)
-        {
-
-        }
-        else if (shield.isGold)
-        {
-
+            _PowerUps = FindAnyObjectByType<PowerUps>();
         }
     }
 }

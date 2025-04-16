@@ -162,7 +162,6 @@ public class CardHandler : MonoBehaviour
     {
         if (pressedUpgradeButton == false)
         {
-            leftCard.upgradeEvent.Invoke();
             _PlayerLevelHandler.levelUp = false; // finish level up sequence
             _PlayerLevelHandler.pauseGame.Invoke();
             _PlayerLevelHandler.activateOnce = false; // prevents function from looping (protective lock)
@@ -194,6 +193,7 @@ public class CardHandler : MonoBehaviour
                         upgradedCard = true;
                         break;
                     case 3: // card discarded from list
+                        leftCard.upgradeLevel = 4;
                         leftCard.cardUsed = true;
                         cards.Remove(leftCard);
                         break;
@@ -210,7 +210,6 @@ public class CardHandler : MonoBehaviour
 
         if (pressedUpgradeButton == false)
         {
-            middleCard.upgradeEvent.Invoke();
             _PlayerLevelHandler.levelUp = false; // finish level up sequence
             _PlayerLevelHandler.pauseGame.Invoke();
             _PlayerLevelHandler.activateOnce = false; // prevents function from looping (protective lock)
@@ -241,6 +240,7 @@ public class CardHandler : MonoBehaviour
                         upgradedCard = true;
                         break;
                     case 3:
+                        middleCard.upgradeLevel = 4;
                         middleCard.cardUsed = true;
                         cards.Remove(middleCard);
                         break;
@@ -255,7 +255,6 @@ public class CardHandler : MonoBehaviour
 
         if (pressedUpgradeButton == false)
         {
-            rightCard.upgradeEvent.Invoke();
             _PlayerLevelHandler.levelUp = false; // finish level up sequence
             _PlayerLevelHandler.pauseGame.Invoke();
             _PlayerLevelHandler.activateOnce = false; // prevents function from looping (protective lock)
@@ -286,6 +285,7 @@ public class CardHandler : MonoBehaviour
                         upgradedCard = true;
                         break;
                     case 3:
+                        rightCard.upgradeLevel = 4;
                         rightCard.cardUsed = true;
                         cards.Remove(rightCard);
                         break;

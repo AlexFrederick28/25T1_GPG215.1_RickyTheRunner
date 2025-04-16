@@ -157,9 +157,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2365412505439203266}
   - component: {fileID: 3676135795877104594}
+  - component: {fileID: 6199290529235723080}
   - component: {fileID: 4125549222907952510}
   - component: {fileID: 1564539071716034825}
-  - component: {fileID: 6199290529235723080}
   m_Layer: 0
   m_Name: --- GameManager ---
   m_TagString: Untagged
@@ -201,6 +201,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxFramerate: 60
+--- !u!114 &6199290529235723080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465670764160430583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60dbad46068bff4d9c26ce14046c14d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _CardHandler: {fileID: 0}
+  coin: {fileID: 11400000, guid: 25f4928501a99dd40b03051b2dc4efb2, type: 2}
+  ghost: {fileID: 11400000, guid: c2a60a35863ffe645acac81e7a469ce4, type: 2}
+  shrink: {fileID: 11400000, guid: 7eabe0bc8a3ba5a47a1e7715ccce47d6, type: 2}
+  shrinkTime: 1
+  shrinkSize: 0.8
+  shield: {fileID: 11400000, guid: 6ec17c1adb8cd504daab5ddab309f124, type: 2}
 --- !u!114 &4125549222907952510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,22 +282,6 @@ MonoBehaviour:
   AddSpeed:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6199290529235723080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2465670764160430583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a60dbad46068bff4d9c26ce14046c14d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shrink: 0
-  ghost: 0
-  shield: 0
-  coin: 0
 --- !u!1 &3837643551045269731
 GameObject:
   m_ObjectHideFlags: 0

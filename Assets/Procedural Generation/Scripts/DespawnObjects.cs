@@ -7,8 +7,6 @@ public class DespawnObjects : MonoBehaviour
         if (collision.GetComponent<ObjectEditor>())
         {
             Destroy(collision.gameObject);
-
-            Debug.Log("Destroy gameObject");
         }
     }
 }

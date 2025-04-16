@@ -6,9 +6,9 @@ TagManager:
   tags:
   - Background
   - Bomb
-  - Small
   - Ghost
   - Shield
+  - Shrink
   layers:
   - Default
   - TransparentFX
