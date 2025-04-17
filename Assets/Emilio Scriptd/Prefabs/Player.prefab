@@ -34,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 361712775249128078}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.782426, y: -3.0962343, z: 0}
+  m_LocalPosition: {x: 0, y: -3.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -185,12 +185,7 @@ MonoBehaviour:
   circleCollider: {fileID: 1065741238280171504}
   capsuleCollider: {fileID: 1065741238280171504}
   rb: {fileID: 4600014217989669553}
-  coin: {fileID: 11400000, guid: 25f4928501a99dd40b03051b2dc4efb2, type: 2}
-  ghost: {fileID: 11400000, guid: c2a60a35863ffe645acac81e7a469ce4, type: 2}
-  shrink: {fileID: 11400000, guid: 7eabe0bc8a3ba5a47a1e7715ccce47d6, type: 2}
-  shrinkTime: 0.5
-  shrinkSize: 0.8
-  shield: {fileID: 11400000, guid: 6ec17c1adb8cd504daab5ddab309f124, type: 2}
+  centreObject: {fileID: 0}
 --- !u!50 &4600014217989669553
 Rigidbody2D:
   serializedVersion: 5

@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7425716921749718376}
   - component: {fileID: 4787747034762722714}
-  - component: {fileID: 5613274471830360885}
+  - component: {fileID: 2928331494189877168}
   - component: {fileID: 142736101743881970}
-  - component: {fileID: 1068240209172865563}
   m_Layer: 0
-  m_Name: Circle
-  m_TagString: Small
+  m_Name: Ghost
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +89,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5613274471830360885
+--- !u!114 &2928331494189877168
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,10 +98,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 7163920288596131588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 408d6e2dd3b1d5444964425c5f475c63, type: 3}
+  m_Script: {fileID: 11500000, guid: efbc7cc762df31e4e8f6de020e643d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  move: {x: -1, y: 0, z: 0}
+  speed: 6
+  frequency: 0
+  amplitude: 0
+  pushPlayer: 0
+  destroyOnInteraction: 0
+  destroySound: {fileID: 0}
+  pushDirectionX: 0
+  pushDirectionY: 0
+  pushMultiplier: 0
 --- !u!58 &142736101743881970
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -139,16 +147,3 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &1068240209172865563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7163920288596131588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 408d6e2dd3b1d5444964425c5f475c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5

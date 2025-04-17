@@ -161,6 +161,7 @@ public class ObjectSpawner : MonoBehaviour
 
     private void SpawnPowerUps()
     {
+
         if (powerUpToSpawnList.Count > 0)
         {
             powerUpTimeTillSpawn += Time.deltaTime;

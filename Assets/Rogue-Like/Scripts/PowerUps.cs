@@ -9,6 +9,7 @@ using UnityEngine;
 public class PowerUps : MonoBehaviour
 {
     [SerializeField] private CardHandler _CardHandler;
+    private ObjectSpawner _ObjectSpawner;
 
     // All Cards and their info go here
     [Space]
@@ -16,18 +17,29 @@ public class PowerUps : MonoBehaviour
     [SerializeField] private Card coin;
     [Space]
     [SerializeField] private Card ghost;
+    [HideInInspector]
+    public float ghostTime;
     [Space]
     [SerializeField] private Card shrink;
+    [HideInInspector]
     public float shrinkTime;
+    [HideInInspector]
     public float shrinkSize;
     [Space]
     [SerializeField] private Card shield;
+    [HideInInspector]
+    public float shieldSize;
 
     private void Update()
     {
         GetReferences();
 
         ShrinkPower();
+
+        GhostPower();
+
+        ShieldPower();
+        ShieldSize();
     }
 
     public void ShrinkPower()
@@ -37,19 +49,16 @@ public class PowerUps : MonoBehaviour
         switch (shrink.upgradeLevel)
         {
             case 2: // '2' = bronze 
-                shrinkTime = 1;
+                shrinkTime = 2;
                 shrinkSize = 0.8f;
-                Debug.Log("Bronze Shrink size: " + shrinkSize);
                 break;
             case 3: // '3' = silver
-                shrinkTime = 2;
+                shrinkTime = 3;
                 shrinkSize = 0.6f;
-                Debug.Log("Silver Shrink size: " + shrinkSize);
                 break;
             case 4: // '4' = Gold
-                shrinkTime = 4;
+                shrinkTime = 5;
                 shrinkSize = 0.4f;
-                Debug.Log("Gold Shrink size: " + shrinkSize);
                 break;
         }
 
@@ -60,13 +69,17 @@ public class PowerUps : MonoBehaviour
         Debug.Log("Ghost: " + ghost);
 
         // GHOST
-        if (ghost.isSilver)
+        switch (ghost.upgradeLevel)
         {
-
-        }
-        else if (ghost.isGold)
-        {
-
+            case 2: // '2' = bronze 
+                ghostTime = 2;
+                break;
+            case 3: // '3' = silver
+                ghostTime = 3;
+                break;
+            case 4: // '4' = Gold
+                ghostTime = 5;
+                break;
         }
     }
 
@@ -75,13 +88,17 @@ public class PowerUps : MonoBehaviour
         Debug.Log("Shield: " + shield);
 
         // SHIELD
-        if (shield.isSilver)
+        switch (shield.upgradeLevel)
         {
-
-        }
-        else if (shield.isGold)
-        {
-
+            case 2: // '2' = bronze 
+                shieldSize = 5;
+                break;
+            case 3: // '3' = silver
+                shieldSize = 6;
+                break;
+            case 4: // '4' = Gold
+                shieldSize = 8;
+                break;
         }
     }
 
@@ -101,14 +118,19 @@ public class PowerUps : MonoBehaviour
 
     private void GetReferences()
     {
-        if (_CardHandler == null)
+        if (_CardHandler == null || _ObjectSpawner == null)
         {
+            _ObjectSpawner = FindAnyObjectByType<ObjectSpawner>();
             _CardHandler = FindAnyObjectByType<CardHandler>();
         }
     }
 
-    public void AddPowerLevel(int powerLevel, int powerType)
+    private void ShieldSize()
     {
-        powerType = powerLevel;
+        if (_ObjectSpawner.powerUpToSpawnList.Contains(shield.powerUpPrefab))
+        {
+            shield.powerUpPrefab.transform.localScale = new Vector3(shieldSize, shieldSize, 0);
+        }
     }
+
 }

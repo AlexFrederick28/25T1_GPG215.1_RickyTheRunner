@@ -1,10 +1,13 @@
 using NUnit.Framework.Constraints;
 using System.Collections;
 using System.Collections.Generic;
+using TreeEditor;
 using Unity.Android.Gradle.Manifest;
 using Unity.VisualScripting;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 using static UnityEditor.Progress;
+using static UnityEngine.GraphicsBuffer;
 
 public class PowerUpEditor : MonoBehaviour
 {
@@ -13,11 +16,26 @@ public class PowerUpEditor : MonoBehaviour
     [SerializeField] Collider2D capsuleCollider;
     [SerializeField] Rigidbody2D rb;
 
+    [Tooltip("Reference found under the GameManager")]
+    [SerializeField] private GameObject centreObject;
+
+    [HideInInspector]
+    public bool ghostPowerActive = false; 
+    private bool shieldPowerActive = false;
+
     private PowerUps _PowerUps;
 
     private void Start()
     {
         GetReferences();
+    }
+
+    private void Update()
+    {
+        if (ghostPowerActive == true)
+        {
+            StartCoroutine(CGhostPower());
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -28,13 +46,15 @@ public class PowerUpEditor : MonoBehaviour
 
             Destroy(other.gameObject);
         }
-        if (other.CompareTag("Bomb"))
+        if (other.CompareTag("DangerObject") && ShieldManager.shield != 0) // if player has shield
         {
+            // other.gameObject.GetComponent<ObjectEditor>().pushPlayer = false;
+
             RemoveShield();
         }
         if (other.CompareTag("Ghost"))
         {
-            GhostPower();
+            ghostPowerActive = true;
 
             Destroy(other.gameObject);
         }
@@ -47,30 +67,43 @@ public class PowerUpEditor : MonoBehaviour
     }
     public void AddShield()
     {
-        ShieldManager.shield++;
+        if (ShieldManager.shield != 3)
+        {
+            ShieldManager.shield++;
+        }
     }
     public void RemoveShield()
     {
-        ShieldManager.shield--;
-    }
-    public void GhostPower()
-    {
-
-        transform.position = new Vector2(-0.31f, -0.63f);
-        rb.gravityScale = 0f;
-        capsuleCollider.enabled = false;
-        circleCollider.enabled = false;
-        
-        IEnumerator Fly()
+        if (ShieldManager.shield != 0)
         {
-            yield return new WaitForSecondsRealtime(3f);
-            transform.position = new Vector2(-0.31f, -3.31f);
-            rb.gravityScale = 5f;
-            capsuleCollider.enabled = true;
-            circleCollider.enabled = true;
+            ShieldManager.shield--;
         }
-        StartCoroutine(Fly());
+    }
 
+    public IEnumerator CGhostPower()
+    {
+        Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();
+
+        BoxCollider2D boxCollider2D = GetComponent<BoxCollider2D>();
+
+        boxCollider2D.enabled = false;
+
+        if (transform.position.y != centreObject.transform.position.y)
+        {
+            rigidbody2D.gravityScale = 0;
+
+            Vector3 floatToMiddle = new Vector3(0, centreObject.transform.position.y - transform.position.y, 0).normalized;
+
+            transform.position += 2 * Time.deltaTime * floatToMiddle;
+        }
+
+        yield return new WaitForSeconds(_PowerUps.ghostTime);
+
+        rigidbody2D.gravityScale = 5;
+
+        boxCollider2D.enabled = true;
+
+        ghostPowerActive = false;
     }
     public void ShrinkPower()
     {

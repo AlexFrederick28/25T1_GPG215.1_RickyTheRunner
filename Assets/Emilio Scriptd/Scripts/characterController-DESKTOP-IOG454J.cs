@@ -21,17 +21,24 @@ public class characterController : MonoBehaviour
     [SerializeField] private AudioClip firstJump;
     [SerializeField] private AudioClip secondJump;
 
+    private PowerUpEditor _powerUpEditor;
+
     void Start()
     {
+
+        if (_powerUpEditor == null)
         {
-            rb = GetComponent<Rigidbody2D>();
-            anim = GetComponent<Animator>();
+            _powerUpEditor = FindAnyObjectByType<PowerUpEditor>();
         }
+
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && IsGrounded() || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && IsGrounded())
+        if (Input.GetMouseButtonDown(0) && IsGrounded() && !_powerUpEditor.ghostPowerActive|| Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && IsGrounded() && !_powerUpEditor.ghostPowerActive)
         {
             isJumping = true;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
@@ -43,7 +50,7 @@ public class characterController : MonoBehaviour
 
         }
 
-        else if (Input.GetMouseButtonDown(0) && isJumping == true || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && isJumping == true)
+        else if (Input.GetMouseButtonDown(0) && isJumping == true && !_powerUpEditor.ghostPowerActive || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && isJumping == true && !_powerUpEditor.ghostPowerActive)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isDoubleJumping", true);

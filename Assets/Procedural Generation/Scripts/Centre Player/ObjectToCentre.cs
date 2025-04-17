@@ -19,10 +19,10 @@ public class ObjectToCentre : MonoBehaviour
         UpgradeEvents.UpgradeSpeedToCentre -= SpeedUpgrade;
     }
 
-    private void Start()
-    {
-        centreObject.transform.position = objectToCentre.transform.position;
-    }
+    //private void Start()
+    //{
+    //    centreObject.transform.position = objectToCentre.transform.position;
+    //}
 
     private void Update()
     {
@@ -36,7 +36,7 @@ public class ObjectToCentre : MonoBehaviour
 
     private void MoveObjectToCentre()
     {
-        if (objectToCentre.transform.position.x != centreObject.transform.position.x)
+        if (objectToCentre.transform.position.x >= centreObject.transform.position.x || objectToCentre.transform.position.x <= centreObject.transform.position.x)
         {
             Vector3 movePosition = new Vector3(centreObject.transform.position.x - objectToCentre.transform.position.x, 0f, 0f).normalized;
 

@@ -19,13 +19,13 @@ public class ObjectEditor : MonoBehaviour
     [Tooltip("sin curve size")]
     [SerializeField] private float amplitude;
 
-    
+    private PowerUpEditor _PowerUpEditor;
     private characterController _CharacterController;
 
     [Space]
     [Header("Player Interaction")]
     [Tooltip("Activates push function for this object")]
-    [SerializeField] private bool pushPlayer;
+    public bool pushPlayer;
     [Tooltip("Destroy the object after interaction?")]
     [SerializeField] private bool destroyOnInteraction;
     [Tooltip("Drop the destroy sound here")]
@@ -41,13 +41,10 @@ public class ObjectEditor : MonoBehaviour
 
     #endregion
 
-    private void Start()
-    {
-        GetReferences(); // find references automatically
-    }
-
     private void Update()
     {
+        GetReferences(); // finds references automatically
+
         AddSpeedToObject(); // adds direction and speed to objects
 
         PushPlayerBack(); // if allowed, will push player back and then despawn
@@ -80,7 +77,14 @@ public class ObjectEditor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (pushPlayer == true && collision.transform.GetComponent<characterController>())
+        if (collision.gameObject.GetComponent<PowerUpEditor>() && ShieldManager.shield != 0)
+        {
+            if (pushPlayer == true)
+            {
+                pushPlayer = false;
+            }
+        }
+        else if (pushPlayer == true && collision.transform.GetComponent<characterController>())
         {
             playerCollided = true;
         }
@@ -104,9 +108,10 @@ public class ObjectEditor : MonoBehaviour
 
     private void GetReferences()
     {
-        if (_CharacterController == null)
+        if (_CharacterController == null || _PowerUpEditor == null)
         {
-            _CharacterController = FindFirstObjectByType<characterController>();
+            _PowerUpEditor = FindAnyObjectByType<PowerUpEditor>();
+            _CharacterController = FindAnyObjectByType<characterController>();
         }
     }
 }
