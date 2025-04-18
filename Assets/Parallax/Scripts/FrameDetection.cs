@@ -9,8 +9,6 @@ public class FrameDetection : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Background"))
         {
-            Debug.Log("Background frame detection triggered");
-
             collision.transform.position = new Vector3(_ParallaxBackground.movePosition, collision.transform.position.y, 0);
         }
     }

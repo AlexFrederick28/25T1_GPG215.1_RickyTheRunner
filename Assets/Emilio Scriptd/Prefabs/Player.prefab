@@ -185,7 +185,9 @@ MonoBehaviour:
   circleCollider: {fileID: 1065741238280171504}
   capsuleCollider: {fileID: 1065741238280171504}
   rb: {fileID: 4600014217989669553}
+  ghostPlayer: {fileID: -3308123370142042246, guid: f55e823aa827923418ae8427f20d0b4a, type: 3}
   centreObject: {fileID: 0}
+  ghostPowerActive: 0
 --- !u!50 &4600014217989669553
 Rigidbody2D:
   serializedVersion: 5

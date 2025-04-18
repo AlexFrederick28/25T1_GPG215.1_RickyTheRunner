@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TreeEditor;
 using Unity.Android.Gradle.Manifest;
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEditor.ShaderGraph;
 using UnityEngine;
 using static UnityEditor.Progress;
@@ -12,9 +13,11 @@ using static UnityEngine.GraphicsBuffer;
 public class PowerUpEditor : MonoBehaviour
 {
     public static PowerUpEditor instance;
-    [SerializeField] Collider2D circleCollider;
-    [SerializeField] Collider2D capsuleCollider;
+    //[SerializeField] Collider2D circleCollider;
+    [SerializeField] Collider2D playerCollider;
     [SerializeField] Rigidbody2D rb;
+
+    [SerializeField] AnimatorController ghostPlayer;
 
     [Tooltip("Reference found under the GameManager")]
     [SerializeField] private GameObject centreObject;
@@ -82,29 +85,27 @@ public class PowerUpEditor : MonoBehaviour
 
     public IEnumerator CGhostPower()
     {
-        Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();
-
         BoxCollider2D boxCollider2D = GetComponent<BoxCollider2D>();
-
         boxCollider2D.enabled = false;
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        Color currentColour = Color.white;
+        currentColour.a = 0.5f;
+        spriteRenderer.color = currentColour;
 
-        if (transform.position.y != centreObject.transform.position.y)
-        {
-            rigidbody2D.gravityScale = 0;
-
-            Vector3 floatToMiddle = new Vector3(0, centreObject.transform.position.y - transform.position.y, 0).normalized;
-
-            transform.position += 2 * Time.deltaTime * floatToMiddle;
-        }
+        float yLevel = centreObject.transform.position.y;
+        Vector3 floatToMiddle = new Vector3(transform.position.x, yLevel, transform.position.z);
+        transform.position = floatToMiddle;
 
         yield return new WaitForSeconds(_PowerUps.ghostTime);
 
-        rigidbody2D.gravityScale = 5;
-
         boxCollider2D.enabled = true;
+        currentColour.a = 1f;
+        spriteRenderer.color = currentColour;
+        rb.mass = 1.0f;
 
         ghostPowerActive = false;
     }
+
     public void ShrinkPower()
     {
         transform.localScale = new Vector2(_PowerUps.shrinkSize, _PowerUps.shrinkSize);

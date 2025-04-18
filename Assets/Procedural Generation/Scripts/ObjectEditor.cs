@@ -20,7 +20,7 @@ public class ObjectEditor : MonoBehaviour
     [SerializeField] private float amplitude;
 
     private PowerUpEditor _PowerUpEditor;
-    private characterController _CharacterController;
+    private CharacterController _CharacterController;
 
     [Space]
     [Header("Player Interaction")]
@@ -84,7 +84,7 @@ public class ObjectEditor : MonoBehaviour
                 pushPlayer = false;
             }
         }
-        else if (pushPlayer == true && collision.transform.GetComponent<characterController>())
+        else if (pushPlayer == true && collision.transform.GetComponent<CharacterController>())
         {
             playerCollided = true;
         }
@@ -111,7 +111,7 @@ public class ObjectEditor : MonoBehaviour
         if (_CharacterController == null || _PowerUpEditor == null)
         {
             _PowerUpEditor = FindAnyObjectByType<PowerUpEditor>();
-            _CharacterController = FindAnyObjectByType<characterController>();
+            _CharacterController = FindAnyObjectByType<CharacterController>();
         }
     }
 }

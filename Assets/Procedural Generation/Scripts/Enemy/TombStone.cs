@@ -11,7 +11,7 @@ public class TombStone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<characterController>() && triggered == false)
+        if (collision.GetComponent<CharacterController>() && triggered == false)
         {
             triggered = true;
         }

@@ -37,14 +37,9 @@ public class PlayerLevelHandler : MonoBehaviour
 
     #endregion
 
-
-    private void Start()
-    {
-        GetReferences();
-    }
-
     private void Update()
     {
+        GetReferences();
         ExperienceFormula();
     }
 
@@ -69,19 +64,23 @@ public class PlayerLevelHandler : MonoBehaviour
     {
         if (_ScoreboardManager == null || _CardHandler == null)
         {
+            _CardHandler = FindAnyObjectByType<CardHandler>();
             _ScoreboardManager = FindAnyObjectByType<ScoreboardManager>();
         }
     }
 
     private void ShowUpgradeDisplay()
     {
-        if (levelUp == true && activateOnce == false)
+        if (_CardHandler.cardsEmpty == false)
         {
-            Debug.Log("upgrading");
-            upgradeDisplay.SetActive(true);
-            pauseGame.Invoke();
-            displayCards.Invoke();
-            activateOnce = true;
+            if (levelUp == true && activateOnce == false)
+            {
+                Debug.Log("upgrading");
+                upgradeDisplay.SetActive(true);
+                pauseGame.Invoke();
+                displayCards.Invoke();
+                activateOnce = true;
+            }
         }
     }
 

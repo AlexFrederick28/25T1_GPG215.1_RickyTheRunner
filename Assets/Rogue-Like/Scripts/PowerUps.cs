@@ -15,6 +15,10 @@ public class PowerUps : MonoBehaviour
     [Space]
     [Header("Cards")]
     [SerializeField] private Card coin;
+    [SerializeField] private GameObject silverBundle;
+    [SerializeField] private GameObject goldBundle;
+    private bool coinIsSilver = false;
+    private bool coinIsGold = false;
     [Space]
     [SerializeField] private Card ghost;
     [HideInInspector]
@@ -40,6 +44,8 @@ public class PowerUps : MonoBehaviour
 
         ShieldPower();
         ShieldSize();
+
+        CoinPower();
     }
 
     public void ShrinkPower()
@@ -66,7 +72,6 @@ public class PowerUps : MonoBehaviour
 
     public void GhostPower()
     {
-        Debug.Log("Ghost: " + ghost);
 
         // GHOST
         switch (ghost.upgradeLevel)
@@ -85,7 +90,6 @@ public class PowerUps : MonoBehaviour
 
     public void ShieldPower()
     {
-        Debug.Log("Shield: " + shield);
 
         // SHIELD
         switch (shield.upgradeLevel)
@@ -104,15 +108,42 @@ public class PowerUps : MonoBehaviour
 
     public void CoinPower()
     {
-        Debug.Log("Coin: " + coin);
 
-        if (coin.isSilver)
+        switch (coin.upgradeLevel)
         {
-
+            case 2: // '2' = bronze 
+                // use default prefab
+                break;
+            case 3: // '3' = silver
+                coinIsSilver = true;
+                break;
+            case 4: // '4' = Gold
+                coinIsSilver= false;
+                coinIsGold = true;
+                break;
         }
-        else if (coin.isGold)
-        {
 
+        if (coinIsSilver == true && !_ObjectSpawner.powerUpToSpawnList.Contains(silverBundle))
+        {
+            if (_ObjectSpawner.powerUpToSpawnList.Contains(coin.powerUpPrefab))
+            {
+                _ObjectSpawner.powerUpToSpawnList.Remove(coin.powerUpPrefab);
+            }
+            else
+            {
+                _ObjectSpawner.powerUpToSpawnList.Add(silverBundle);
+            }  
+        }
+        else if (coinIsGold == true && !_ObjectSpawner.powerUpToSpawnList.Contains(goldBundle))
+        {
+            if (_ObjectSpawner.powerUpToSpawnList.Contains(silverBundle))
+            {
+                _ObjectSpawner.powerUpToSpawnList.Remove(silverBundle);
+            }
+            else
+            {
+                _ObjectSpawner.powerUpToSpawnList.Add(goldBundle);
+            }
         }
     }
 

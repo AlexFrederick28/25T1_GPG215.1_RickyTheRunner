@@ -5,7 +5,7 @@ using Unity.Android.Gradle.Manifest;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class characterController : MonoBehaviour
+public class CharacterController : MonoBehaviour
 {
     public float jumpPower = 6f;
     private float horizontal;
@@ -22,12 +22,14 @@ public class characterController : MonoBehaviour
     [SerializeField] private AudioClip secondJump;
 
     private PowerUpEditor _powerUpEditor;
+    private PlayerLevelHandler _playerLevelHandler;
 
     void Start()
     {
 
-        if (_powerUpEditor == null)
+        if (_powerUpEditor == null || _playerLevelHandler == null)
         {
+            _playerLevelHandler = FindAnyObjectByType<PlayerLevelHandler>();
             _powerUpEditor = FindAnyObjectByType<PowerUpEditor>();
         }
 
@@ -38,7 +40,7 @@ public class characterController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && IsGrounded() && !_powerUpEditor.ghostPowerActive|| Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && IsGrounded() && !_powerUpEditor.ghostPowerActive)
+        if (Input.GetMouseButtonDown(0) && IsGrounded() && !_powerUpEditor.ghostPowerActive && !_playerLevelHandler.levelUp || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && IsGrounded() && !_powerUpEditor.ghostPowerActive && !_playerLevelHandler.levelUp)
         {
             isJumping = true;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
@@ -50,7 +52,7 @@ public class characterController : MonoBehaviour
 
         }
 
-        else if (Input.GetMouseButtonDown(0) && isJumping == true && !_powerUpEditor.ghostPowerActive || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && isJumping == true && !_powerUpEditor.ghostPowerActive)
+        else if (Input.GetMouseButtonDown(0) && isJumping == true && !_powerUpEditor.ghostPowerActive && !_playerLevelHandler.levelUp || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && isJumping == true && !_powerUpEditor.ghostPowerActive && !_playerLevelHandler.levelUp)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
             anim.SetBool("isDoubleJumping", true);

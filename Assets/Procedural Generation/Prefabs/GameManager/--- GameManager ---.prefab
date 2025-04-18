@@ -215,11 +215,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _CardHandler: {fileID: 0}
   coin: {fileID: 11400000, guid: 25f4928501a99dd40b03051b2dc4efb2, type: 2}
+  silverBundle: {fileID: 2092563985376998471, guid: 6a0aeae9862808e47982d5236f778a57, type: 3}
+  goldBundle: {fileID: 7863848726901925631, guid: a6a7ab0a1617f9a449bd279d9495d379, type: 3}
   ghost: {fileID: 11400000, guid: c2a60a35863ffe645acac81e7a469ce4, type: 2}
+  ghostTime: 0
   shrink: {fileID: 11400000, guid: 7eabe0bc8a3ba5a47a1e7715ccce47d6, type: 2}
   shrinkTime: 1
   shrinkSize: 0.8
   shield: {fileID: 11400000, guid: 6ec17c1adb8cd504daab5ddab309f124, type: 2}
+  shieldSize: 0
 --- !u!114 &4125549222907952510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +248,7 @@ MonoBehaviour:
   dangerObjectWaitTime: 2
   coinObjectWaitTime: 4
   largeGroundObjectWaitTime: 16
-  powerUpWaitTime: 20
+  powerUpWaitTime: 10
   groundObjectToSpawn:
   - {fileID: 6068525469355468071, guid: 5bfee76f15fc35447a2b57806e374d93, type: 3}
   - {fileID: 7873829117620065064, guid: 88229bb04c9ded64fb0bbc908eb56663, type: 3}

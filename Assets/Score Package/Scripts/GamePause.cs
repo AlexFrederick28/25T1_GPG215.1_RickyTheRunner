@@ -17,12 +17,30 @@ public class GamePause : MonoBehaviour
     [SerializeField] private Sprite pauseSprite;
     [SerializeField] private Sprite playSprite;
 
+    private PlayerLevelHandler _PlayerLevelhander;
+
 
     public void Start()
     {
         Time.timeScale = 1.0f;
         isPaused = false;
         buttonImage = pauseButton.GetComponent<Image>();
+    }
+
+    private void Update()
+    {
+        if (_PlayerLevelhander == null)
+        {
+            _PlayerLevelhander = FindAnyObjectByType<PlayerLevelHandler>();
+        }
+        if (_PlayerLevelhander.levelUp == true)
+        {
+            pauseButton.enabled = false;
+        }
+        else
+        {
+            pauseButton.enabled = true;
+        }
     }
 
     public void TogglePause()

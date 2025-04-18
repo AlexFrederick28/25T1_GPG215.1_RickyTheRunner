@@ -30,6 +30,9 @@ public class CardHandler : MonoBehaviour
     private bool pressedUpgradeButton = false;
     private bool resetCards = false;
     private bool upgradedCard = false;
+    [HideInInspector]
+    public bool cardsEmpty = false;
+    private bool closeCardPool = false;
 
     [SerializeField] private ObjectSpawner _ObjectSpawner;
 
@@ -56,99 +59,120 @@ public class CardHandler : MonoBehaviour
     public void Update()
     {
         GetReferences();
+
+        CheckCardList();
+
         SelectPowerUp();
+    }
+
+    private void CheckCardList()
+    {
+        if (cards.Count == 0 && closeCardPool == false)
+        {
+            cardsEmpty = true;
+
+            Debug.Log("Player has all cards");
+
+            closeCardPool = true;
+        }
+        else
+        {
+            cardsEmpty = false;
+        }
     }
 
     public void DrawRandomCards()
     {
-        pressedUpgradeButton = false;
-        upgradedCard = false; // ensures that cards do not upgrade more than once on a single button press
-
-        cardImage[0].sprite = null;
-        cardImage[1].sprite = null;
-        cardImage[2].sprite = null;
-
-        // STILL NEED (If card was chosen - upgrade)
-
-        if (cardImage[0].sprite == null)
+        if (cardsEmpty == false)
         {
-            // Slot One
-            int randomCardPicker = Random.Range(0, cards.Count);
-            Card card = cards[randomCardPicker]; // picking a random card from the list
+            pressedUpgradeButton = false;
+            upgradedCard = false; // ensures that cards do not upgrade more than once on a single button press
 
-            if (card.isBronze) // custom card logic here
+            cardImage[0].sprite = null;
+            cardImage[1].sprite = null;
+            cardImage[2].sprite = null;
+
+            // STILL NEED (If card was chosen - upgrade)
+
+            if (cardImage[0].sprite == null)
             {
-                cardImage[0].sprite = card.bronzeArtwork;
+                // Slot One
+                int randomCardPicker = Random.Range(0, cards.Count);
+                Card card = cards[randomCardPicker]; // picking a random card from the list
+
+                if (card.isBronze) // custom card logic here
+                {
+                    cardImage[0].sprite = card.bronzeArtwork;
+                }
+                else if (card.isSilver) // custom card logic here
+                {
+                    cardImage[0].sprite = card.silverArtwork;
+                }
+                else if (card.isGold) // custom card logic here
+                {
+                    cardImage[0].sprite = card.goldArtwork;
+                }
+
+                // set card texts
+                cardDescription[0].text = card.description;
+                cardName[0].text = card.cardName;
+
+                leftCard = card;
+
             }
-            else if (card.isSilver) // custom card logic here
+            if (cardImage[1].sprite == null)
             {
-                cardImage[0].sprite = card.silverArtwork;
+                // Slot Two
+                int randomCardPicker = Random.Range(0, cards.Count);
+                Card card = cards[randomCardPicker]; // picking a random card from the list
+
+                if (card.isBronze) // custom card logic here
+                {
+                    cardImage[1].sprite = card.bronzeArtwork;
+                }
+                else if (card.isSilver) // custom card logic here
+                {
+                    cardImage[1].sprite = card.silverArtwork;
+                }
+                else if (card.isGold) // custom card logic here
+                {
+                    cardImage[1].sprite = card.goldArtwork;
+                }
+
+                // card texts
+                cardDescription[1].text = card.description;
+                cardName[1].text = card.cardName;
+
+                middleCard = card;
+
             }
-            else if (card.isGold) // custom card logic here
+            if (cardImage[2].sprite == null)
             {
-                cardImage[0].sprite = card.goldArtwork;
+                // Slot Three
+                int randomCardPicker = Random.Range(0, cards.Count);
+                Card card = cards[randomCardPicker]; // picking a random card from the list
+
+                if (card.isBronze) // custom card logic here
+                {
+                    cardImage[2].sprite = card.bronzeArtwork;
+                }
+                else if (card.isSilver) // custom card logic here
+                {
+                    cardImage[2].sprite = card.silverArtwork;
+                }
+                else if (card.isGold) // custom card logic here
+                {
+                    cardImage[2].sprite = card.goldArtwork;
+                }
+
+                // card texts
+                cardDescription[2].text = card.description;
+                cardName[2].text = card.cardName;
+
+                rightCard = card;
+
             }
-
-            // set card texts
-            cardDescription[0].text = card.description;
-            cardName[0].text = card.cardName;
-
-            leftCard = card;
-
         }
-        if (cardImage[1].sprite == null)
-        {
-            // Slot Two
-            int randomCardPicker = Random.Range(0, cards.Count);
-            Card card = cards[randomCardPicker]; // picking a random card from the list
-
-            if (card.isBronze) // custom card logic here
-            {
-                cardImage[1].sprite = card.bronzeArtwork;
-            }
-            else if (card.isSilver) // custom card logic here
-            {
-                cardImage[1].sprite = card.silverArtwork;
-            }
-            else if (card.isGold) // custom card logic here
-            {
-                cardImage[1].sprite = card.goldArtwork;
-            }
-
-            // card texts
-            cardDescription[1].text = card.description;
-            cardName[1].text = card.cardName;
-
-            middleCard = card;
-
-        }
-        if (cardImage[2].sprite == null)
-        {
-            // Slot Three
-            int randomCardPicker = Random.Range(0, cards.Count);
-            Card card = cards[randomCardPicker]; // picking a random card from the list
-
-            if (card.isBronze) // custom card logic here
-            {
-                cardImage[2].sprite = card.bronzeArtwork;
-            }
-            else if (card.isSilver) // custom card logic here
-            {
-                cardImage[2].sprite = card.silverArtwork;
-            }
-            else if (card.isGold) // custom card logic here
-            {
-                cardImage[2].sprite = card.goldArtwork;
-            }
-
-            // card texts
-            cardDescription[2].text = card.description;
-            cardName[2].text = card.cardName;
-
-            rightCard = card;
-
-        }
-
     }
 
     private void SelectPowerUp()
