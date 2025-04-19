@@ -21,6 +21,7 @@ public class ObjectEditor : MonoBehaviour
 
     private PowerUpEditor _PowerUpEditor;
     private CharacterController _CharacterController;
+    private PlayerLevelHandler _PlayerLevelHandler;
 
     [Space]
     [Header("Player Interaction")]
@@ -37,14 +38,18 @@ public class ObjectEditor : MonoBehaviour
     [Tooltip("How effective is the push? (Eg. 100%)")]
     [SerializeField] private float pushMultiplier;
     private bool playerCollided; // if the player touches collider then set true
-    
+
 
     #endregion
 
-    private void Update()
+    private void Start()
     {
         GetReferences(); // finds references automatically
+        AddSpeedOnLevelUp();
+    }
 
+    private void Update()
+    {
         AddSpeedToObject(); // adds direction and speed to objects
 
         PushPlayerBack(); // if allowed, will push player back and then despawn
@@ -53,7 +58,7 @@ public class ObjectEditor : MonoBehaviour
     void AddSpeedToObject()
     {
 
-        transform.position += new Vector3(move.x, Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude + move.z) * speed * Time.deltaTime;
+        this.gameObject.transform.position += new Vector3(move.x, Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude + move.z) * speed * Time.deltaTime;
         
     }
 
@@ -106,10 +111,23 @@ public class ObjectEditor : MonoBehaviour
         Destroy(gameObject);
     }
 
+    private void AddSpeedOnLevelUp()
+    {
+        if (this.gameObject.CompareTag("DangerObject"))
+        {
+            for (int i = 1; i < _PlayerLevelHandler.currentLevel; i++)
+            {
+                Debug.Log("Adding speed");
+                speed += 0.1f;
+            }
+        }
+    }
+
     private void GetReferences()
     {
-        if (_CharacterController == null || _PowerUpEditor == null)
+        if (_CharacterController == null || _PowerUpEditor == null || _PlayerLevelHandler == null)
         {
+            _PlayerLevelHandler = FindAnyObjectByType<PlayerLevelHandler>();
             _PowerUpEditor = FindAnyObjectByType<PowerUpEditor>();
             _CharacterController = FindAnyObjectByType<CharacterController>();
         }

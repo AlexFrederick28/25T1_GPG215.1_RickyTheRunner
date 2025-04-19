@@ -249,25 +249,29 @@ MonoBehaviour:
   coinObjectWaitTime: 4
   largeGroundObjectWaitTime: 16
   powerUpWaitTime: 10
-  groundObjectToSpawn:
-  - {fileID: 6068525469355468071, guid: 5bfee76f15fc35447a2b57806e374d93, type: 3}
+  groundObjectSpawnList:
   - {fileID: 7873829117620065064, guid: 88229bb04c9ded64fb0bbc908eb56663, type: 3}
-  airObjectToSpawn:
+  - {fileID: 6068525469355468071, guid: 5bfee76f15fc35447a2b57806e374d93, type: 3}
+  groundObjectToSpawn: []
+  airObjectSpawnList:
   - {fileID: 120090171531513127, guid: 1d548fd5160c6244188103ac78449d34, type: 3}
   - {fileID: 7103166076161636843, guid: 4f3ae708a2056c442bce119d4ed03083, type: 3}
+  airDangerObjectSpawnList: []
   airDangerObjectToSpawn:
   - {fileID: 4522826855581712352, guid: 9cc0b501c866d3b4b9d7da4de741826b, type: 3}
+  coinObjectSpawnList:
+  - {fileID: 5313431788319921194, guid: 760b639ebcc83e348809f1eb622eeeee, type: 3}
+  - {fileID: 755100480978875891, guid: a33e69bcc825d1149b16e9429fbf4209, type: 3}
   coinObjectToSpawn:
   - {fileID: 3769823325824382554, guid: 8b123e1a0737f6441909ea30686ca2a8, type: 3}
-  - {fileID: 755100480978875891, guid: a33e69bcc825d1149b16e9429fbf4209, type: 3}
-  - {fileID: 5313431788319921194, guid: 760b639ebcc83e348809f1eb622eeeee, type: 3}
   - {fileID: 1227316388090210752, guid: ef962eca2559d744387eb0b40cc40494, type: 3}
-  - {fileID: 8477988880034465826, guid: 6182a42ca4fb49c479cb750acde91b97, type: 3}
-  largeGroundObjectToSpawn:
+  largeGroundSpawnList:
   - {fileID: 5486546985926046117, guid: 7852d37a6a43dfd4995beffab25ef22e, type: 3}
   - {fileID: 5518267327298905420, guid: d01a0f68168409d4f86e08c9bcdf9ddf, type: 3}
+  largeGroundObjectToSpawn: []
   powerUpToSpawnList: []
   _PowerUps: {fileID: 0}
+  _PlayerLevelHandler: {fileID: 0}
 --- !u!114 &1564539071716034825
 MonoBehaviour:
   m_ObjectHideFlags: 0

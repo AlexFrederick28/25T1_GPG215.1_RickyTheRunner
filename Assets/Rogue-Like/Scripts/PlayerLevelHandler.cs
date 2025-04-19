@@ -18,7 +18,7 @@ public class PlayerLevelHandler : MonoBehaviour
     [SerializeField] private int maxLevel;
     [SerializeField] private int maxExperience;
 
-    [SerializeField] private int currentLevel;
+    public int currentLevel;
     [SerializeField] private int requiredCoinsForLevelUp;
     [SerializeField] private int experienceAmplifier;
 
@@ -26,6 +26,7 @@ public class PlayerLevelHandler : MonoBehaviour
 
     private ScoreboardManager _ScoreboardManager;
     private CardHandler _CardHandler;
+    private ObjectSpawner _ObjectSpawner; 
 
     public bool levelUp = false;
     public bool activateOnce = false;
@@ -62,8 +63,9 @@ public class PlayerLevelHandler : MonoBehaviour
 
     private void GetReferences()
     {
-        if (_ScoreboardManager == null || _CardHandler == null)
+        if (_ScoreboardManager == null || _CardHandler == null || _ObjectSpawner == null)
         {
+            _ObjectSpawner = FindAnyObjectByType<ObjectSpawner>();
             _CardHandler = FindAnyObjectByType<CardHandler>();
             _ScoreboardManager = FindAnyObjectByType<ScoreboardManager>();
         }
@@ -79,6 +81,10 @@ public class PlayerLevelHandler : MonoBehaviour
                 upgradeDisplay.SetActive(true);
                 pauseGame.Invoke();
                 displayCards.Invoke();
+                _ObjectSpawner.AddLargeObjectToSpawn();
+                _ObjectSpawner.AddCoinToSpawn();
+                _ObjectSpawner.AddDangerObjectToSpawn();
+                _ObjectSpawner.AddGroundObjectToSpawn();
                 activateOnce = true;
             }
         }

@@ -49,20 +49,33 @@ public class ObjectSpawner : MonoBehaviour
     private float powerUpTimeTillSpawn;
 
     [Space]
-    [Header("Objects to Spawn")]
-    [Tooltip("Array of gameobjects")]
-    [SerializeField] private GameObject[] groundObjectToSpawn;
-    [Tooltip("Array of gameobjects")]
-    [SerializeField] private GameObject[] airObjectToSpawn;
-    [Tooltip("Array of gameobjects")]
-    [SerializeField] private GameObject[] airDangerObjectToSpawn;
-    [Tooltip("Array of gameobjects")]
-    [SerializeField] private GameObject[] coinObjectToSpawn;
-    [Tooltip("Array of gameobjects")]
-    [SerializeField] private GameObject[] largeGroundObjectToSpawn;
+    [Header("All Objects")]
+    [Tooltip("List of gameobjects")]
+    [SerializeField] private List<GameObject> groundObjectSpawnList;
+    [Tooltip("List of gameobjects")]
+    [SerializeField] private List<GameObject> airObjectSpawnList;
+    [Tooltip("List of gameobjects")]
+    [SerializeField] private List<GameObject> airDangerObjectSpawnList;
+    [Tooltip("List of gameobjects")]
+    [SerializeField] private  List<GameObject> coinObjectSpawnList;
+    [Tooltip("List of gameobjects")]
+    [SerializeField] private List<GameObject> largeGroundSpawnList;
+
+    [Space]
+    [Header("Objects To Spawn")]
+    [Tooltip("This list should be empty in inspector before first level up")]
+    public List<GameObject> groundObjectToSpawn;
+    [Tooltip("This list should be empty in inspector before first level up")]
+    public List<GameObject> airDangerObjectToSpawn;
+    [Tooltip("This list should be empty in inspector before first level up")]
+    public List<GameObject> coinObjectToSpawn;
+    [Tooltip("This list should be empty in inspector before first level up")]
+    public List<GameObject> largeGroundObjectToSpawn;
     public List<GameObject> powerUpToSpawnList;
 
+    [Space]
     [SerializeField] private PowerUps _PowerUps;
+    [SerializeField] private PlayerLevelHandler _PlayerLevelHandler;
 
     #endregion
 
@@ -73,17 +86,17 @@ public class ObjectSpawner : MonoBehaviour
 
     private void Update()
     {
-       SpawnObjects();
+        SpawnObjects();
 
-       SpawnGroundObjects();
+        SpawnGroundObjects();
 
-       SpawnDangerObjects();   
+        SpawnDangerObjects();   
         
-       SpawnCoinObjects();
+        SpawnCoinObjects();
 
-       SpawnLargeGroundObjects();
+        SpawnLargeGroundObjects();
 
-       SpawnPowerUps();
+        SpawnPowerUps();
     }
     private void SpawnObjects()
     {
@@ -93,7 +106,7 @@ public class ObjectSpawner : MonoBehaviour
         {
             Vector2 objectSpawnPosition = new Vector2(Random.Range(airSpawnerOne.transform.position.x, airSpawnerTwo.transform.position.x), Random.Range(minAirHeight, maxAirHeight));
 
-            Instantiate(airObjectToSpawn[Random.Range(0, airObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
+            Instantiate(airObjectSpawnList[Random.Range(0, airObjectSpawnList.Count)], objectSpawnPosition, Quaternion.identity);
 
             objectTimeTillSpawn = 0;
         }
@@ -102,66 +115,114 @@ public class ObjectSpawner : MonoBehaviour
 
     private void SpawnGroundObjects()
     {
-        groundObjectTimeTillSpawn += Time.deltaTime;
-
-        if (groundObjectTimeTillSpawn >= groundObjectWaitTime)
+        if (groundObjectToSpawn.Count != 0)
         {
-            Vector2 objectSpawnPosition = new Vector2(Random.Range(groundSpawnerOne.transform.position.x, groundSpawnerTwo.transform.position.x), groundSpawnerOne.transform.position.y);
+            groundObjectTimeTillSpawn += Time.deltaTime;
 
-            Instantiate(groundObjectToSpawn[Random.Range(0, groundObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
+            if (groundObjectTimeTillSpawn >= groundObjectWaitTime)
+            {
+                Vector2 objectSpawnPosition = new Vector2(Random.Range(groundSpawnerOne.transform.position.x, groundSpawnerTwo.transform.position.x), groundSpawnerOne.transform.position.y);
 
-            groundObjectTimeTillSpawn = 0;
+                Instantiate(groundObjectToSpawn[Random.Range(0, groundObjectSpawnList.Count)], objectSpawnPosition, Quaternion.identity);
+
+                groundObjectTimeTillSpawn = 0;
+            }
         }
-
+    }
+    public void AddGroundObjectToSpawn()
+    {
+        if (groundObjectSpawnList.Count != 0) // adds new large obstacles based on player level - introducing a new one each time at random
+        {
+            int newObject = (Random.Range(0, groundObjectSpawnList.Count));
+            groundObjectToSpawn.Add(groundObjectSpawnList[newObject]);
+            groundObjectSpawnList.Remove(groundObjectSpawnList[newObject]);
+        }
     }
 
     private void SpawnDangerObjects()
     {
-        dangerObjectTimeTillSpawn += Time.deltaTime;
-
-        if (dangerObjectTimeTillSpawn >= dangerObjectWaitTime)
+        if (airDangerObjectToSpawn.Count != 0)
         {
-            Vector2 objectSpawnPosition = new Vector2(Random.Range(airSpawnerOne.transform.position.x, airSpawnerTwo.transform.position.x), Random.Range(minAirHeight, maxAirHeight));
+            dangerObjectTimeTillSpawn += Time.deltaTime;
 
-            Instantiate(airDangerObjectToSpawn[Random.Range(0, airDangerObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
+            if (dangerObjectTimeTillSpawn >= dangerObjectWaitTime)
+            {
+                Vector2 objectSpawnPosition = new Vector2(Random.Range(airSpawnerOne.transform.position.x, airSpawnerTwo.transform.position.x), Random.Range(minAirHeight, maxAirHeight));
 
-            dangerObjectTimeTillSpawn = 0;
+                Instantiate(airDangerObjectToSpawn[Random.Range(0, airDangerObjectSpawnList.Count)], objectSpawnPosition, Quaternion.identity);
+
+                dangerObjectTimeTillSpawn = 0;
+            }
         }
-
+    }
+    public void AddDangerObjectToSpawn()
+    {
+        if (airDangerObjectSpawnList.Count != 0) // adds new large obstacles based on player level - introducing a new one each time at random
+        {
+            int newObject = (Random.Range(0, airDangerObjectSpawnList.Count));
+            airDangerObjectToSpawn.Add(airDangerObjectSpawnList[newObject]);
+            airDangerObjectSpawnList.Remove(airDangerObjectSpawnList[newObject]);
+        }
     }
 
     private void SpawnCoinObjects()
     {
-        coinObjectTimeTillSpawn += Time.deltaTime;
-
-        if (coinObjectTimeTillSpawn >= coinObjectWaitTime)
+        if (coinObjectToSpawn.Count != 0)
         {
-            Vector2 objectSpawnPosition = new Vector2(Random.Range(airSpawnerOne.transform.position.x, airSpawnerTwo.transform.position.x), Random.Range(minAirHeight, maxAirHeight));
+            coinObjectTimeTillSpawn += Time.deltaTime;
 
-            Instantiate(coinObjectToSpawn[Random.Range(0, coinObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
+            if (coinObjectTimeTillSpawn >= coinObjectWaitTime)
+            {
+                Vector2 objectSpawnPosition = new Vector2(Random.Range(airSpawnerOne.transform.position.x, airSpawnerTwo.transform.position.x), Random.Range(minAirHeight, maxAirHeight));
 
-            coinObjectTimeTillSpawn = 0;
+                Instantiate(coinObjectToSpawn[Random.Range(0, coinObjectSpawnList.Count)], objectSpawnPosition, Quaternion.identity);
+
+                coinObjectTimeTillSpawn = 0;
+            }
         }
-
+    }
+    public void AddCoinToSpawn()
+    {
+        if (coinObjectSpawnList.Count != 0) // adds new large obstacles based on player level - introducing a new one each time at random
+        {
+            int newObject = (Random.Range(0, coinObjectSpawnList.Count));
+            coinObjectToSpawn.Add(coinObjectSpawnList[newObject]);
+            coinObjectSpawnList.Remove(coinObjectSpawnList[newObject]);
+        }
     }
 
     private void SpawnLargeGroundObjects()
     {
-        largeGroundObjectTimeTillSpawn += Time.deltaTime;
-
-        if (largeGroundObjectTimeTillSpawn >= largeGroundObjectWaitTime)
+        if (largeGroundObjectToSpawn.Count != 0)
         {
-            Vector2 objectSpawnPosition = new Vector2(Random.Range(groundSpawnerOne.transform.position.x, groundSpawnerTwo.transform.position.x), groundSpawnerOne.transform.position.y);
+            largeGroundObjectTimeTillSpawn += Time.deltaTime;
 
-            Instantiate(largeGroundObjectToSpawn[Random.Range(0, largeGroundObjectToSpawn.Length)], objectSpawnPosition, Quaternion.identity);
+            if (largeGroundObjectTimeTillSpawn >= largeGroundObjectWaitTime)
+            {
+                Vector2 objectSpawnPosition = new Vector2(Random.Range(groundSpawnerOne.transform.position.x, groundSpawnerTwo.transform.position.x), groundSpawnerOne.transform.position.y);
 
-            largeGroundObjectTimeTillSpawn = 0;
+                Instantiate(largeGroundObjectToSpawn[Random.Range(0, largeGroundObjectToSpawn.Count)], objectSpawnPosition, Quaternion.identity);
+
+                largeGroundObjectTimeTillSpawn = 0;
+            }
+        }
+        else
+        {
+            return;
+        }
+    }
+    public void AddLargeObjectToSpawn()
+    {
+        if (largeGroundSpawnList.Count != 0) // adds new large obstacles based on player level - introducing a new one each time at random
+        {
+            int newObject = (Random.Range(0, largeGroundSpawnList.Count));
+            largeGroundObjectToSpawn.Add(largeGroundSpawnList[newObject]);
+            largeGroundSpawnList.Remove(largeGroundSpawnList[newObject]);
         }
     }
 
     private void SpawnPowerUps()
     {
-
         if (powerUpToSpawnList.Count > 0)
         {
             powerUpTimeTillSpawn += Time.deltaTime;
@@ -180,10 +241,12 @@ public class ObjectSpawner : MonoBehaviour
             return;
         }
     }
+
     private void GetReferences()
     {
-        if (_PowerUps == null)
+        if (_PowerUps == null || _PlayerLevelHandler == null)
         {
+            _PlayerLevelHandler = FindAnyObjectByType<PlayerLevelHandler>();
             _PowerUps = FindAnyObjectByType<PowerUps>();
         }
     }
