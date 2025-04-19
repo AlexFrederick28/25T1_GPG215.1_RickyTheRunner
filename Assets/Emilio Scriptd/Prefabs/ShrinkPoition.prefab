@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9037498460632660612}
   - component: {fileID: 340409253781473376}
   m_Layer: 0
-  m_Name: Fairy
+  m_Name: ShrinkPoition
   m_TagString: Shrink
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.617215, y: -3.2883282, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 6.25, y: 6.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,8 +78,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 741214845
   m_SortingLayer: 5
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7093444496697236754, guid: 1c2b62867b96fe1499c75c4a4930fd76, type: 3}
+  m_SortingOrder: 10
+  m_Sprite: {fileID: -71491677136843696, guid: caf592902747ae34fb7708a404bec557, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,7 +122,7 @@ Animator:
   m_GameObject: {fileID: 66937226615150171}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: abcf2d56d1f74ab4f99ea1b16661b250, type: 2}
+  m_Controller: {fileID: 9100000, guid: f64abaf7603de2747b1ed9df821810eb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -168,5 +168,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.02232939, y: 0.14514124}
-  m_Radius: 0.3301168
+  m_Offset: {x: -0.000112648006, y: 0.0017854308}
+  m_Radius: 0.09628452

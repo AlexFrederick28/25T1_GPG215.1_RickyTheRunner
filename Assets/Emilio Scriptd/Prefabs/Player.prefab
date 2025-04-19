@@ -182,8 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b2f754b267ce3468ef49f221930560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circleCollider: {fileID: 1065741238280171504}
-  capsuleCollider: {fileID: 1065741238280171504}
+  playerCollider: {fileID: 1065741238280171504}
   rb: {fileID: 4600014217989669553}
   ghostPlayer: {fileID: -3308123370142042246, guid: f55e823aa827923418ae8427f20d0b4a, type: 3}
   centreObject: {fileID: 0}

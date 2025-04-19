@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Title/Scenes/Title-DESKTOP-IOG454J.unity
     guid: 488d2b7c81e633f4e8dae9f68de7dc39
   - enabled: 1
-    path: Assets/RickyTheRunner/Scenes/Prototype.unity
-    guid: a0756302c254a3e4eac042bab7068e86
+    path: Assets/RickyTheRunner/Scenes/RickyTheRunner.unity
+    guid: 51dbae5c7df6dfd48abe818e394703e5
   - enabled: 1
     path: Assets/Score Package/How-to-play/Scenes/How-to-play.unity
     guid: c6674162854bfc046a13029be3a3a056

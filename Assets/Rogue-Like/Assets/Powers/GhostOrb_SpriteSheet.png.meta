@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 13337539303d0d94281a8ed21175a273
+guid: 505a439e82b417a498348bcfa754081c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 547017881176774553
-    second: Card_Bronze_Coin_0
+      213: -6210195979486115079
+    second: GhostOrb_SpriteSheet_0
+  - first:
+      213: 7557306550617382215
+    second: GhostOrb_SpriteSheet_1
+  - first:
+      213: -802023320906778804
+    second: GhostOrb_SpriteSheet_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +52,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -72,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -139,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Card_Bronze_Coin_0
+      name: GhostOrb_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 56
-        height: 71
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +160,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 997145d5dd5679700800000000000000
-      internalID: 547017881176774553
+      spriteID: 9facb21e8a3f0d9a0800000000000000
+      internalID: -6210195979486115079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostOrb_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d18487442f0e860800000000000000
+      internalID: 7557306550617382215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostOrb_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47b5c7f904aed4f0800000000000000
+      internalID: -802023320906778804
       vertices: []
       indices: 
       edges: []
@@ -164,7 +214,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: c734ca3e70266de449942966c0be59ec
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +224,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Card_Bronze_Coin_0: 547017881176774553
+      GhostOrb_SpriteSheet_0: -6210195979486115079
+      GhostOrb_SpriteSheet_1: 7557306550617382215
+      GhostOrb_SpriteSheet_2: -802023320906778804
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

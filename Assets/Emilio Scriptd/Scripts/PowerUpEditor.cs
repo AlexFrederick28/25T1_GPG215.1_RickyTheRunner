@@ -1,13 +1,8 @@
 using NUnit.Framework.Constraints;
 using System.Collections;
 using System.Collections.Generic;
-using TreeEditor;
-using Unity.Android.Gradle.Manifest;
 using Unity.VisualScripting;
-using UnityEditor.Animations;
-using UnityEditor.ShaderGraph;
 using UnityEngine;
-using static UnityEditor.Progress;
 using static UnityEngine.GraphicsBuffer;
 
 public class PowerUpEditor : MonoBehaviour
@@ -16,8 +11,6 @@ public class PowerUpEditor : MonoBehaviour
     //[SerializeField] Collider2D circleCollider;
     [SerializeField] Collider2D playerCollider;
     [SerializeField] Rigidbody2D rb;
-
-    [SerializeField] AnimatorController ghostPlayer;
 
     [Tooltip("Reference found under the GameManager")]
     [SerializeField] private GameObject centreObject;

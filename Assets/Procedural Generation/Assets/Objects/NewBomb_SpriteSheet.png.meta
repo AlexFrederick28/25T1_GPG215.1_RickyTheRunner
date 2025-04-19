@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 13337539303d0d94281a8ed21175a273
+guid: 5ceee58576c38bd4eab227570dfbcc07
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 547017881176774553
-    second: Card_Bronze_Coin_0
+      213: -1137619503537677518
+    second: NewBomb_SpriteSheet_0
+  - first:
+      213: -1206046274632464637
+    second: NewBomb_SpriteSheet_1
+  - first:
+      213: 5007732303451518489
+    second: NewBomb_SpriteSheet_2
+  - first:
+      213: 4823507566762417671
+    second: NewBomb_SpriteSheet_3
+  - first:
+      213: -3188806686791546293
+    second: NewBomb_SpriteSheet_4
+  - first:
+      213: -7748159053282483993
+    second: NewBomb_SpriteSheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +61,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -72,7 +87,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -98,14 +113,14 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
-    maxTextureSize: 256
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: 47
     textureCompression: 1
-    compressionQuality: 50
+    compressionQuality: 100
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -139,13 +154,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Card_Bronze_Coin_0
+      name: NewBomb_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 56
-        height: 71
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +169,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 997145d5dd5679700800000000000000
-      internalID: 547017881176774553
+      spriteID: 23b9412c61d5630f0800000000000000
+      internalID: -1137619503537677518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBomb_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30749d99d43434fe0800000000000000
+      internalID: -1206046274632464637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBomb_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916f9757ff90f7540800000000000000
+      internalID: 5007732303451518489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBomb_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e5840739a80f240800000000000000
+      internalID: 4823507566762417671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBomb_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a4660a6351fb3d0800000000000000
+      internalID: -3188806686791546293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBomb_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0eedd7462097490800000000000000
+      internalID: -7748159053282483993
       vertices: []
       indices: 
       edges: []
@@ -164,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: ca09aaf57d7f9744ba324f96982169c6
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +299,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Card_Bronze_Coin_0: 547017881176774553
+      NewBomb_SpriteSheet_0: -1137619503537677518
+      NewBomb_SpriteSheet_1: -1206046274632464637
+      NewBomb_SpriteSheet_2: 5007732303451518489
+      NewBomb_SpriteSheet_3: 4823507566762417671
+      NewBomb_SpriteSheet_4: -3188806686791546293
+      NewBomb_SpriteSheet_5: -7748159053282483993
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

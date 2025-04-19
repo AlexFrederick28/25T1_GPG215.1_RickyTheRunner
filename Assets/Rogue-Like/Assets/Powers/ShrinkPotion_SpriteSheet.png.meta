@@ -1,52 +1,10 @@
 fileFormatVersion: 2
-guid: e09c3f52b7eb12f41923563b3685dd32
+guid: caf592902747ae34fb7708a404bec557
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1205334074933050931
-    second: bomb_explode_SpriteSheet_0
-  - first:
-      213: 7245927192364446644
-    second: bomb_explode_SpriteSheet_1
-  - first:
-      213: -5157633162186065034
-    second: bomb_explode_SpriteSheet_2
-  - first:
-      213: -258068945765960778
-    second: bomb_explode_SpriteSheet_3
-  - first:
-      213: -9012684776786276030
-    second: bomb_explode_SpriteSheet_4
-  - first:
-      213: -360285271575674791
-    second: bomb_explode_SpriteSheet_5
-  - first:
-      213: 9135770769819730912
-    second: bomb_explode_SpriteSheet_6
-  - first:
-      213: 2475348579674386670
-    second: bomb_explode_SpriteSheet_7
-  - first:
-      213: -4229630329513286662
-    second: bomb_explode_SpriteSheet_8
-  - first:
-      213: 547036239413709030
-    second: bomb_explode_SpriteSheet_9
-  - first:
-      213: 3205109000251400180
-    second: bomb_explode_SpriteSheet_10
-  - first:
-      213: -4123715718321270946
-    second: bomb_explode_SpriteSheet_11
-  - first:
-      213: 4382334455224984726
-    second: bomb_explode_SpriteSheet_12
-  - first:
-      213: 1213428753130264094
-    second: bomb_explode_SpriteSheet_13
-  - first:
-      213: 3753469751648555943
-    second: bomb_explode_SpriteSheet_14
+      213: -71491677136843696
+    second: ShrinkPotion_SpriteSheet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -93,7 +51,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -140,7 +98,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
-    maxTextureSize: 512
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: 47
     textureCompression: 1
@@ -181,35 +139,35 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bomb_explode_SpriteSheet_0
+      name: ShrinkPotion_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 150
-        height: 150
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 58885be52476085409bd1b765e59d844
-      internalID: -1682664786
+      spriteID: 05c8cdbc2b2020ff0800000000000000
+      internalID: -71491677136843696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb_explode_SpriteSheet_1
+      name: ShrinkPotion_SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 150
+        x: 13
         y: 0
-        width: 150
-        height: 150
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d6ffe0a84db15b46b429ebb166ae1c4
-      internalID: -2108759076
+      spriteID: 7d529c1762d7d544392e3c39213c5a51
+      internalID: 356818080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb_explode_SpriteSheet_2
+      name: ShrinkPotion_SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 300
+        x: 26
         y: 0
-        width: 150
-        height: 150
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfb6e880e89288e489daa302df6c96e2
-      internalID: 1505220572
+      spriteID: 21236a12f6f48d342885ecc93a8ce183
+      internalID: 694828740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb_explode_SpriteSheet_3
+      name: ShrinkPotion_SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 450
+        x: 39
         y: 0
-        width: 150
-        height: 150
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,20 +220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb63d916b185fb42b4722db32d421dc
-      internalID: -585399582
+      spriteID: 4381e2a9406c3e640a857c4808ebe4f9
+      internalID: -489178624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb_explode_SpriteSheet_4
+      name: ShrinkPotion_SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 600
+        x: 52
         y: 0
-        width: 150
-        height: 150
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a578ededcac0bf4bb8ae6e4d6ee6215
-      internalID: -530465305
+      spriteID: 917d7b94078be9740b60315fb5880a0f
+      internalID: 1117960406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb_explode_SpriteSheet_5
+      name: ShrinkPotion_SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 750
+        x: 65
         y: 0
-        width: 150
-        height: 150
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,20 +264,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16d238891c7f0bd4bb08c5eb39385080
-      internalID: -1114605752
+      spriteID: 76c6d1da74e99c0458af471310d0f2ba
+      internalID: -1647769804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb_explode_SpriteSheet_6
+      name: ShrinkPotion_SpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 900
+        x: 78
         y: 0
-        width: 150
-        height: 150
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,8 +286,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b8e47c9ce9edf846a67bf560efebf29
-      internalID: 1406838138
+      spriteID: 2ecd9d53dd2dd8c47b257ad0a1ab8e7f
+      internalID: 378980294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShrinkPotion_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 0
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b903776e06f264db94ed824aacda94
+      internalID: -1814300021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShrinkPotion_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f71fed5459f7b44abded8cc669dffae
+      internalID: 315206344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShrinkPotion_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8e92688a9dcbd40a1d91912b8b6e63
+      internalID: -249369815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShrinkPotion_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c531d4d4238d0ca41a44f2f7c6d66801
+      internalID: 925010327
       vertices: []
       indices: 
       edges: []
@@ -338,7 +384,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 588f79959540dcd4c9ebe7ec8af41f2c
+    spriteID: 814a86cfc89c2724db5441b137ea6f75
     internalID: 0
     vertices: []
     indices: 
@@ -348,13 +394,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bomb_explode_SpriteSheet_0: -1682664786
-      bomb_explode_SpriteSheet_1: -2108759076
-      bomb_explode_SpriteSheet_2: 1505220572
-      bomb_explode_SpriteSheet_3: -585399582
-      bomb_explode_SpriteSheet_4: -530465305
-      bomb_explode_SpriteSheet_5: -1114605752
-      bomb_explode_SpriteSheet_6: 1406838138
+      ShrinkPotion_SpriteSheet_0: -71491677136843696
+      ShrinkPotion_SpriteSheet_1: 356818080
+      ShrinkPotion_SpriteSheet_10: 925010327
+      ShrinkPotion_SpriteSheet_2: 694828740
+      ShrinkPotion_SpriteSheet_3: -489178624
+      ShrinkPotion_SpriteSheet_4: 1117960406
+      ShrinkPotion_SpriteSheet_5: -1647769804
+      ShrinkPotion_SpriteSheet_6: 378980294
+      ShrinkPotion_SpriteSheet_7: -1814300021
+      ShrinkPotion_SpriteSheet_8: 315206344
+      ShrinkPotion_SpriteSheet_9: -249369815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
