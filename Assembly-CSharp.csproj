@@ -65,6 +65,7 @@
     <Compile Include="Assets\Score Package\Scripts\ScoreboardManager.cs" />
     <Compile Include="Assets\Rogue-Like\Scripts\Card.cs" />
     <Compile Include="Assets\Score Package\Scripts\Highscore\PlayerManager.cs" />
+    <Compile Include="Assets\Score Package\How-to-play\Scripts\PageChanger.cs" />
     <Compile Include="Assets\Emilio Scriptd\Scripts\ShieldManager.cs" />
     <Compile Include="Assets\Emilio Scriptd\Camera.cs" />
     <Compile Include="Assets\Rogue-Like\Scripts\UpgradeEvents.cs" />

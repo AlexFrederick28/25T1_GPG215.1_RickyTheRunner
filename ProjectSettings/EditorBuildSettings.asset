@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/RickyTheRunner/Scenes/Prototype.unity
     guid: a0756302c254a3e4eac042bab7068e86
   - enabled: 1
-    path: Assets/RickyTheRunner/Scenes/How-To-Play.unity
-    guid: b8f8ef52066414b4b8ccd901f254bee4
+    path: Assets/Score Package/How-to-play/Scenes/How-to-play.unity
+    guid: c6674162854bfc046a13029be3a3a056
   - enabled: 1
     path: Assets/Title/Scenes/Death.unity
     guid: bcb599c010f1e7241b3c16808ac715a7
