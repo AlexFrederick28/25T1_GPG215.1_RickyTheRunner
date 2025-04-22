@@ -39,7 +39,7 @@ public class ScoreboardManager : MonoBehaviour
     {
         // used to reset score when game starts
 
-        if (SceneManager.GetActiveScene().name == "Prototype")
+        if (SceneManager.GetActiveScene().name == "RickyTheRunner") // the orange text should be the game scene's name
         {
             currentScore = 0;
             //Debug.Log("reset score");
