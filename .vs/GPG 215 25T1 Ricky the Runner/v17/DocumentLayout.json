@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9268033-106D-E062-9DA7-ACB8CDAEDB62}|lootlocker.lootlockersdk.runtime.csproj|C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\LootLockerSDK\\Runtime\\Game\\LootLockerSDKManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9268033-106D-E062-9DA7-ACB8CDAEDB62}|lootlocker.lootlockersdk.runtime.csproj|solutionrelative:Assets\\LootLockerSDK\\Runtime\\Game\\LootLockerSDKManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\ShieldManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|solutionrelative:Assets\\Emilio Scriptd\\Scripts\\ShieldManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|c:\\users\\amd\\onedrive\\documents\\gpg 215 25t1 ricky the runner\\assets\\emilio scriptd\\scripts\\powerupeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|solutionrelative:assets\\emilio scriptd\\scripts\\powerupeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|c:\\users\\amd\\onedrive\\documents\\gpg 215 25t1 ricky the runner\\assets\\emilio scriptd\\scripts\\moving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|solutionrelative:assets\\emilio scriptd\\scripts\\moving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\SheildManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Emilio Scriptd\\Scripts\\SheildManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\assets\\emilio scriptd\\scripts\\charactercontroller-desktop-iog454j.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|solutionrelative:assets\\emilio scriptd\\scripts\\charactercontroller-desktop-iog454j.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\assets\\transformsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|solutionrelative:assets\\transformsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\assets\\emilio scriptd\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F0E1491-0DBD-9B0C-66AF-8B50AFABA280}|Assembly-CSharp.csproj|solutionrelative:assets\\emilio scriptd\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Moving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Moving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\Inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Emilio Scriptd\\Scripts\\Inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PowerUpEditor.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\PowerUpEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Scripts\\PowerUpEditor.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\PowerUpEditor.cs",
+              "RelativeToolTip": "Assets\\Emilio Scriptd\\Scripts\\PowerUpEditor.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T04:41:50.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SheildManager.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\SheildManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Scripts\\SheildManager.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\SheildManager.cs",
+              "RelativeToolTip": "Assets\\Emilio Scriptd\\Scripts\\SheildManager.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T05:22:45.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Moving.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\Moving.cs",
+              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Scripts\\Moving.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\Moving.cs",
+              "RelativeToolTip": "Assets\\Emilio Scriptd\\Scripts\\Moving.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T05:53:24.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Camera.cs",
+              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Camera.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Camera.cs",
+              "RelativeToolTip": "Assets\\Emilio Scriptd\\Camera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T00:57:27.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "transformSize.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\transformSize.cs",
+              "RelativeDocumentMoniker": "Assets\\transformSize.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\transformSize.cs",
+              "RelativeToolTip": "Assets\\transformSize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T05:47:51.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\Inventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Scripts\\Inventory.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\Inventory.cs",
+              "RelativeToolTip": "Assets\\Emilio Scriptd\\Scripts\\Inventory.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T05:58:21.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Move.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Move.cs",
+              "RelativeDocumentMoniker": "Assets\\Move.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Move.cs",
+              "RelativeToolTip": "Assets\\Move.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T05:51:36.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "characterController-DESKTOP-IOG454J.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\characterController-DESKTOP-IOG454J.cs",
+              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Scripts\\characterController-DESKTOP-IOG454J.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\characterController-DESKTOP-IOG454J.cs",
+              "RelativeToolTip": "Assets\\Emilio Scriptd\\Scripts\\characterController-DESKTOP-IOG454J.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwFEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T01:17:12.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShieldManager.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\ShieldManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Emilio Scriptd\\Scripts\\ShieldManager.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Emilio Scriptd\\Scripts\\ShieldManager.cs",
+              "RelativeToolTip": "Assets\\Emilio Scriptd\\Scripts\\ShieldManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T01:16:38.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Moving.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Moving.cs",
+              "RelativeDocumentMoniker": "Assets\\Moving.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\Moving.cs",
+              "RelativeToolTip": "Assets\\Moving.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T01:05:41.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LootLockerSDKManager.cs",
+              "DocumentMoniker": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\LootLockerSDK\\Runtime\\Game\\LootLockerSDKManager.cs",
+              "RelativeDocumentMoniker": "Assets\\LootLockerSDK\\Runtime\\Game\\LootLockerSDKManager.cs",
+              "ToolTip": "C:\\Users\\AMD\\OneDrive\\Documents\\GPG 215 25T1 Ricky the Runner\\Assets\\LootLockerSDK\\Runtime\\Game\\LootLockerSDKManager.cs",
+              "RelativeToolTip": "Assets\\LootLockerSDK\\Runtime\\Game\\LootLockerSDKManager.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAiwEYAAADkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T00:32:11.684Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
