@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b75b3ed1cb03f5f4da9af7ee3f3540fb
+guid: 87de16744c1471842ae9c6315c4e437a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9023721513258547352
-    second: pixel game font 3_0
+      213: -1603291472181913768
+    second: New Piskel (3)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixel game font 3_0
+      name: New Piskel (3)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1820
-        height: 1215
+        x: 21
+        y: 51
+        width: 84
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89873d518e2ba3d70800000000000000
-      internalID: 9023721513258547352
+      spriteID: 8571f2196e6ffb9e0800000000000000
+      internalID: -1603291472181913768
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      pixel game font 3_0: 9023721513258547352
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
