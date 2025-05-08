@@ -1,3 +1,0 @@
-C:\Users\AMD\OneDrive\Documents\25T1_GPG215.1_RickyTheRunner\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
-C:\Users\AMD\OneDrive\Documents\25T1_GPG215.1_RickyTheRunner\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
-C:\Users\AMD\OneDrive\Documents\25T1_GPG215.1_RickyTheRunner\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
